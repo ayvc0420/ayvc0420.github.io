@@ -1,0 +1,82 @@
+
+.ytb_text{
+    font-size: 20px;
+    line-height: 2rem;
+    text-align: center;
+    margin: 0% 10% 0% 10%;
+}
+
+.ytb_text span{
+    color: red;
+}
+
+.ytb_text h2{
+    color: red;
+}
+
+.h2_title{
+    text-align: center;
+    color: red;
+    margin-bottom: 3%;
+}
+
+.content_ytb{
+    margin: 2% 20% 0% 20%;
+}
+
+@media screen and (max-width:1024px) {
+    .content_ytb{
+        /* display: flex; */
+        margin: 2% 10% 0% 10%;
+    }
+    .ytb_text{
+        font-size: 16px;
+    }
+}
+
+thead {
+    color: red;
+}
+
+table{
+    background-color: rgb(255, 255, 255);
+}
+
+section{
+    text-align: center;
+    font-size: 20px;
+    margin-top: 3%;
+}
+
+section h2{
+    font-size: 32px;
+    color: red;
+}
+
+
+@keyframes fadeWidth {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(-500px);
+        -ms-transform: translateY(-500px);
+        transform: translateY(-500px);
+    }
+    50%{
+        opacity: 1;
+        -webkit-transform: translateY(50px);
+        -ms-transform: translateY(50px);
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+        transform: translateY(0);
+    }
+
+}
+.fadeWidth {
+    -webkit-animation-name: fadeWidth;
+    animation-name: fadeWidth;
+    /* animation-duration: 1s; */
+} 
