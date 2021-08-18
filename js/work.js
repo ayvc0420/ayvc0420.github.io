@@ -36,6 +36,11 @@ $(function(){
 
         
     })
+
+    $('#nav_button').click(function(){
+        $('.mob_title').toggle()
+    })
+
     // $(window).scroll(function(){
     //     let html_high = $(this).scrollTop();
     //     console.log(html_high)

@@ -139,7 +139,13 @@ h2 {font-family: 'Lato', sans-serif;
 /*以上動畫*/
 
 
+.navbar{
+    display: none;
+}
 
+.mob_hr{
+    display: none;
+}
 
 header {
     margin: 2% 20% 1% 20%;
@@ -205,6 +211,7 @@ footer {
 }
 
 
+
 /* 1921寬以上 */
 @media screen and (min-width:1921px) {
     .content{
@@ -249,6 +256,34 @@ footer {
     .go_top , .go_top img{
         display: none;
     }
+    .navbar{
+        display: flex;
+    }
+    .mob_hr{
+        display: flex;
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .navbar-dark{
+        position: relative;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+    #nav_button {
+        position: absolute;
+        right: 0px;
+    }
+
+    .title{
+        display: none;
+    }
+    .mob_title{
+        display: none;
+        font-size: 26px;
+    }
+
 }
 
 

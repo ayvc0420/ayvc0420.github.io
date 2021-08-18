@@ -22,4 +22,10 @@ $(function(){
         $('.content_aidoru').animate();
     })
     
+
+    $('#nav_button').click(function(){
+        $('.mob_title').toggle()
+    })
+
+
 })

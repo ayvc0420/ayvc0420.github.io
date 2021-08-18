@@ -24,6 +24,9 @@ $(function(){
         $('.content_ytb').animate();
     })
 
+    $('#nav_button').click(function(){
+        $('.mob_title').toggle()
+    })
 
     function year(){
         $(function(){
