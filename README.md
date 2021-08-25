@@ -3,4 +3,4 @@ WebDesign
 
 title : Vtuber
 
-https://www.ayvc0420.github.io
+https://ayvc0420.github.io/
