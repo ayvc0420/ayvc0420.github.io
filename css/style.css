@@ -12,6 +12,10 @@ h2 {font-family: 'Lato', sans-serif;
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
 }
+::selection{
+    background-color: yellow;
+    color: blue
+}
 /*CSS動畫效果參考   https://www.oxxostudio.tw/articles/201803/css-animation.html */
 /* 由左至右動畫
 @-webkit-keyframes fadeInLeft {
