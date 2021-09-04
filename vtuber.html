@@ -20,30 +20,25 @@
 
 <body style="background-color: rgb(254, 255, 234);">
 
-    <nav class="navbar navbar-dark bg-dark">
-        <button class="navbar-toggler" type="button" id="nav_button">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <ul class="nav justify-content-center mob_title">
-            <li class="nav-item">
-                <a class="nav-link" href="index.html">首頁</a>
+    <nav class="mob_nav">
+        <a type="button" id="nav_button">
+            <svg viewBox="0 0 130 80" width="50" height="50">
+                <rect width="100" height="20" rx="10"></rect>
+                <rect y="30" width="100" height="20" rx="10"></rect>
+                <rect y="60" width="100" height="20" rx="10"></rect>
+            </svg>
+        </a>
+        <ul class="mob_title">
+            <li><h2><a href="index.html">首頁</a></h2></li>
+            <li><h2><a href="vtuber.html">快速了解VTuber</a></h2></li>
+                <li class="vt_menu">
+                    <h2><a href="pekora.html">兔田佩克拉</a></h2>
+                    <h2><a href="rushia.html">潤羽露西婭</a></h2>
+                    <h2><a href="miko.html">櫻巫女</a></h2>
+                    <h2><a href="https://www.hololive.tv/member" target="new">hololive全成員</a></h2>
+                </li>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="vtuber.html">快速了解VTuber</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">介紹成員</a>
-                <div class="dropdown-menu">
-                    <a class="dropdown-item" href="pekora.html">兎田ぺこら(兔田佩克拉)</a>
-                    <a class="dropdown-item" href="miko.html">桜巫女(櫻巫女)</a>
-                    <a class="dropdown-item" href="rushia.html">潤羽るしあ(潤羽露西婭)</a>
-                    <div class="dropdown-divider"></div>
-                    <a href="https://www.hololive.tv/member" class="dropdown-item" target="new">hololive全成員</a>
-                </div>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link " href="recommendYoutube.html" tabindex="-1" aria-disabled="true">推薦的YouTube中文翻譯頻道</a>
-            </li>
+            <li><a href="recommendYoutube.html">推薦的YouTube中文翻譯頻道</a></li>
         </ul>
     </nav>
 
