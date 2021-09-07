@@ -1,7 +1,12 @@
-.aidoru_img{
+.aidoru_img , .aidoru_img img{
+    margin: 0 auto;
     display: block;
-    margin: auto;
+    box-sizing: border-box;
     border-radius: 1rem;
+    width: 600px;
+}
+.aidoru_img img{
+    width: 100%;
 }
 
 

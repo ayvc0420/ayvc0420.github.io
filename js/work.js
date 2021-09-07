@@ -15,12 +15,26 @@ $(function(){
     })
 
     
-    $('.go_top img').click(function(){
+    $('.go_top img,#mob_top').click(function(){
         $('html').animate({scrollTop: 0,},1000);
     });
     // var html_width = $(window).innerWidth(); //取得寬
+    // console.log(html_width)
     // var html_height = $(window).height();    //取得高 
-
+    // console.log(html_height)
+    $(window).scroll(function(){
+        let html_width = $(window).innerWidth()
+        if(html_width <= 1024){
+            const html_high = $(this).scrollTop();
+            if(html_high >= 400){
+                $('#mob_top').css({'display':'block'})
+            }else{
+                $('#mob_top').css({'display':'none'})
+            }
+        }else{
+            $('#mob_top').css({'display':'none'})
+        }
+    })
 
     $(function(){
 

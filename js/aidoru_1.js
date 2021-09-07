@@ -13,7 +13,7 @@ $(function(){
         $(this).css({'font-size':''});
     })
     
-    $('.go_top img').click(function(){
+    $('.go_top img,#mob_top').click(function(){
         $('html').animate({scrollTop: 0,},1000);
     });
 
@@ -27,5 +27,18 @@ $(function(){
         $('.mob_title').toggle()
     })
 
+    $(window).scroll(function(){
+        let html_width = $(window).innerWidth()
+        if(html_width <= 1024){
+            const html_high = $(this).scrollTop();
+            if(html_high >= 400){
+                $('#mob_top').css({'display':'block'})
+            }else{
+                $('#mob_top').css({'display':'none'})
+            }
+        }else{
+            $('#mob_top').css({'display':'none'})
+        }
+    })
 
 })

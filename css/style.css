@@ -141,7 +141,16 @@ h2 {font-family: 'Lato', sans-serif;
 
 
 /*以上動畫*/
-
+#mob_top{
+    display: none;
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    z-index: 9999;
+    opacity: 0.7;
+    width: 8%;
+    cursor: pointer;
+}
 
 .mob_nav{
     display: none;
@@ -153,7 +162,6 @@ h2 {font-family: 'Lato', sans-serif;
 
 header {
     margin: 2% 20% 1% 20%;
-    
 }
 
 header div , header div div a img{
@@ -236,7 +244,9 @@ footer {
 }
 
 /*1024寬以下 偏手機 轉上下式*/
+
 @media screen and (max-width:1024px) {
+
     .content_1 ,.content_3{
         display: inline-block;
     }
