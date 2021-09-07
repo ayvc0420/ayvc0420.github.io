@@ -57,7 +57,10 @@ section h2{
     color: red;
 }
 
-
+#facebook{
+    margin: auto;
+    width: 600px;
+}
 
 @keyframes fadeWidth {
     0% {
