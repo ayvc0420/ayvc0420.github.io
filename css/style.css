@@ -140,6 +140,14 @@ h2 {font-family: 'Lato', sans-serif;
     }
 
 
+@keyframes mob_btn_anim {
+    0%{
+        opacity: 0;
+    }  
+    100%{
+        opacity: 0.7;
+    }
+}
 /*以上動畫*/
 #mob_top{
     display: none;
@@ -150,6 +158,9 @@ h2 {font-family: 'Lato', sans-serif;
     opacity: 0.7;
     width: 8%;
     cursor: pointer;
+}
+.mob_btn_anim{
+    animation: mob_btn_anim 1500ms;
 }
 
 .mob_nav{
