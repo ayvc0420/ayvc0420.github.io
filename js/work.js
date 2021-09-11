@@ -1,20 +1,6 @@
 
 $(function(){
 
-
-    $('.nav-item a').hover(function(){
-        $(this).css({'background-color':'rgb(245, 222, 131,0.4)'});
-    },function(){
-        $(this).css({'background-color':''});
-    })
-
-    $('.nav-link').hover(function(){
-        $(this).css({'font-size':'1.5rem'});
-    },function(){
-        $(this).css({'font-size':''});
-    })
-
-    
     $('.go_top img,#mob_top').click(function(){
         $('html').animate({scrollTop: 0,},1000);
     });

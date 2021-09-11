@@ -183,6 +183,18 @@ header div , header div div a img{
     background: linear-gradient(to top,#FAEBD7,#7FFFD4);
 }
 
+.nav-item a{
+    font-size: 18px;
+}
+
+.nav-item a:hover{
+    background-color: rgb(245, 222, 131,0.6);
+    transition: background-color 0.6s 0s ease;
+}
+.nav-link:hover{
+    font-size:1.5rem;
+}
+
 .dropdown-item{
     color: blue;
 }
