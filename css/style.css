@@ -274,6 +274,12 @@ nav{
 .nav_menu3 ul li:nth-of-type(4) a ,.mob_menu3 ul li:nth-of-type(4) a{
     color: orange;
 }
+.nav_menu3 ul li:nth-of-type(5) a {
+    border-top: 1px solid rgb(236, 236, 236);
+}
+.nav_menu3 ul li:nth-of-type(5) a ,.mob_menu3 ul li:nth-of-type(5) a{
+    color: rgb(93, 93, 255);
+}
 
 
 .nav_down{
@@ -480,7 +486,7 @@ footer .footer_top_text{
 
 
     /*手機選單結束*/
-    
+
     header .slideshow_img div:not(.img0) img{
         padding: 0 20px;
         box-sizing: border-box;
