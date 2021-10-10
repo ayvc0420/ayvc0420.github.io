@@ -235,14 +235,19 @@
     font-weight: 900;
     
 }
-.content3_fb_pc{
+/* .content3_fb_pc{
     width: 600px;
     display: block;
     margin: auto;
-}
-.content3_fb_mob{
+} */
+/* .content3_fb_mob{
     width: 400px;
-    display: none;
+    display: block;
+    margin: auto;
+} */
+.content3_fb{
+    width: 400px;
+    display: block;
     margin: auto;
 }
 
