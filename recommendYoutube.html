@@ -1,245 +1,291 @@
 <!DOCTYPE html>
-<html lang="zh-TW">
+<html lang="en">
 <head>
-    <link rel="shortcut icon" href="images/logo.png"></link>
-    <title>推薦的YouTube中文翻譯頻道</title>
-    <meta charset="utf-8">
-    <meta property="fb:app_id" content="396306465225067">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name=”description” content=”hololive中文翻譯推薦頻道” />
-    <meta name="Keywords" content="hololive,hololive中文,VTuber,VTuber中文,VTuber翻譯"/>
-
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VTuber常見術語|推薦的日翻中頻道</title>
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/ytb.css">
-    
-    <script src="js/jquery-3.6.0.min.js"></script>
-    <script src="js/ytb.js"></script>
-    <script src="js/jquery.fancybox.min.js"></script>
-    <script src="js/ytb_scroll.js"></script>
-    <script src="js/popper.min.js" ></script>
-    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/recommendYoutube.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
     <div id="fb-root"></div>
     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v11.0&appId=396306465225067&autoLogAppEvents=1" nonce="pELLxFUz"></script>
-
 </head>
-<body style="background-color: rgb(255, 242, 228);">
-
-    <main>
-        <nav class="mob_nav">
-            <img src="images/mob_top.png" alt="go_top" id="mob_top">
-            <a type="button" id="nav_button">
-                <svg viewBox="0 0 130 80" width="50" height="50">
-                    <rect width="100" height="20" rx="10"></rect>
-                    <rect y="30" width="100" height="20" rx="10"></rect>
-                    <rect y="60" width="100" height="20" rx="10"></rect>
-                </svg>
-            </a>
-            <ul class="mob_title">
-                <li><h2><a href="index.html">首頁</a></h2></li>
-                <li><h2><a href="vtuber.html">快速了解VTuber</a></h2></li>
-                    <li class="vt_menu">
-                        <h2><a href="pekora.html">兔田佩克拉</a></h2>
-                        <h2><a href="rushia.html">潤羽露西婭</a></h2>
-                        <h2><a href="miko.html">櫻巫女</a></h2>
-                        <h2><a href="https://www.hololive.tv/member" target="new">hololive全成員</a></h2>
-                    </li>
+<body style="background-color: #d7f6ff;">
+    <img src="images/mob_top.png" alt="go_top" id="mob_top" class="mob_btn_anim" title="回去頂部囉">
+    <section class="mob_header">
+        <label for="mob_menu" class="mob_menu_control" id="mob_menu_control">
+            <svg width="50" height="40" class="svg1" id="svg1">
+                <line x1="10" y1="10" x2="40" y2="10" stroke="black" stroke-width="4"> </line>
+                <line x1="10" y1="20" x2="40" y2="20" stroke="black" stroke-width="4"> </line>
+                <line x1="10" y1="30" x2="40" y2="30" stroke="black" stroke-width="4"> </line>
+            </svg>
+            <svg width="50" height="40" class="svg2" id="svg2">
+                <line x1="10" y1="30" x2="40" y2="10" stroke="black" stroke-width="4"> </line>
+                <line x1="10" y1="10" x2="40" y2="30" stroke="black" stroke-width="4"> </line>
+            </svg>
+        </label>
+        <input type="checkbox" name="" id="mob_menu">
+        <div class="mob_menu" id="mob_menu_div">
+            <ul>
+                <li><a href="index.html">首頁</a></li>
+                <li><a href="vtuber.html">速覽VTuber</a></li>
+                <li class="mob_menu3">
+                    <a href="#" class="menu3_control">介紹成員&nbsp;<img src="images/chevron-down.svg" class="nav_down"></a>
+                    <ul class="menu3">
+                        <li><a href="pekora.html">兔田佩克拉</a></li>
+                        <li><a href="miko.html">櫻巫女</a></li>
+                        <li><a href="rushia.html">潤羽露西婭</a></li>
+                        <li><a href="korone.html">戌神沁音</a></li>
+                    </ul>
                 </li>
                 <li><a href="recommendYoutube.html">推薦的YouTube中文翻譯頻道</a></li>
             </ul>
-        </nav>
-    
-        <hr class="mob_hr">
-    
-        <header>
-            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-                </ol>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <a href="https://www.pixiv.net/artworks/90195061" title="去pixiv上!" target="new"><img src="images/rushia_header.jpg" class="d-block w-100" alt="繪師 @www.pixiv.net/users/523251"></a>
-                    </div>
-                    <div class="carousel-item">
-                        <a href="https://www.pixiv.net/artworks/85282387" title="去pixiv上!" target="new"><img src="images/85282387_header.jpg" class="d-block w-100" alt="繪師twitter : @Sco_ttie"></a>
-                    </div>
-                    <div class="carousel-item">
-                        <a href="https://www.pixiv.net/artworks/88300974" title="去pixiv上!" target="new"><img src="images/sakuramiko_header.jpg" class="d-block w-100" alt="繪師twitter @ARThimeno"></a>
-                    </div>
-                    <div class="carousel-item">
-                        <a href="https://www.pixiv.net/artworks/81424109" title="去pixiv上!" target="new"><img src="images/rushia_kanata_header.jpg" class="d-block w-100" alt="繪師twitter @m_o_s_o"></a>
-                    </div>
-                </div>
-                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
+        </div>
+    </section>
+
+    <header>
+        <div class="slideshow_img">
+            <input type="radio" name="control_header_img" id="control_header_img1" checked>
+            <input type="radio" name="control_header_img" id="control_header_img2">
+            <input type="radio" name="control_header_img" id="control_header_img3">
+            <input type="radio" name="control_header_img" id="control_header_img4">
+            <div class="header_label_div">
+                <label for="control_header_img1" class="header_label"></label>
+                <label for="control_header_img2" class="header_label"></label>
+                <label for="control_header_img3" class="header_label"></label>
+                <label for="control_header_img4" class="header_label"></label>
             </div>
-        </header>
-    
-        <hr class="mob_hr">
-    
-        <br>
-        <section class="title">
-            <ul class="nav justify-content-center title">
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html">首頁</a>
+            <div class="img0"><a href="https://www.pixiv.net/artworks/90195061" target="new"><img src="images/rushia_header.jpg" alt="pixiv90195061" ></a></div>
+            <div class="img1"><a href="https://www.pixiv.net/artworks/90195061" target="new"><img src="images/rushia_header.jpg" alt="pixiv90195061"></a></div>
+            <div class="img2"><a href="https://www.pixiv.net/artworks/91479662" target="new"><img src="images/usadapekora_header.jpg" alt="pixiv91479662"></a></div>
+            <div class="img3"><a href="https://www.pixiv.net/artworks/88300974" target="new"><img src="images/sakuramiko_header.jpg" alt="pixiv88300974"></a></div>
+            <div class="img4"><a href="https://www.pixiv.net/artworks/92148396" target="new"><img src="images/korone_header.jpg" alt="pixiv92148396"></a></div>
+        </div>
+    </header>
+    <nav>
+        <div class="nav_menu">
+            <ul>
+                <li><a href="index.html">首頁</a></li>
+                <li><a href="vtuber.html">速覽VTuber</a></li>
+                <li class="nav_menu3">
+                    <a href="#">介紹成員&nbsp;<img src="images/chevron-down.svg" class="nav_down"></a>
+                    <ul>
+                        <li><a href="pekora.html">兔田佩克拉</a></li>
+                        <li><a href="miko.html">櫻巫女</a></li>
+                        <li><a href="rushia.html">潤羽露西婭</a></li>
+                        <li><a href="korone.html">戌神沁音</a></li>
+                    </ul>
                 </li>
-    
-                <li class="nav-item">
-                    <a class="nav-link" href="vtuber.html">快速了解VTuber</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">介紹成員</a>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="pekora.html">兎田ぺこら(兔田佩克拉)</a>
-                        <a class="dropdown-item" href="miko.html">桜巫女(櫻巫女)</a>
-                        <a class="dropdown-item" href="rushia.html">潤羽るしあ(潤羽露西婭)</a>
-                        <div class="dropdown-divider"></div>
-                        <a href="https://www.hololive.tv/member" class="dropdown-item" target="new">hololive全成員</a>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link " href="#" tabindex="-1" aria-disabled="true">推薦的YouTube中文翻譯頻道</a>
-                </li>
+                <li><a href="recommendYoutube.html">推薦的YouTube中文翻譯頻道</a></li>
             </ul>
-        </section>
-    
-        <hr style="margin-bottom: 3%; width: 80%; margin-left: 10%; margin-right: 10%;" class="yt_hr">
-    
-        <article class="ytb_text">
-            <h2 style="font-size: 40px;">生肉?熟肉?&nbsp;&nbsp;<span title="不是指吃的烤肉">烤肉??</span></h2>
-            無論你是否剛接觸這個圈子，又或者想加入這個圈子。
-            <br>
-            對於日文不是很上手的人要馬上了解VTuber當下再說什麼是很困難的。
-            <br>
-            不管是漫畫、小說、動畫等等，只要是尚未翻譯成中文的，我們稱為<span title="尚未翻譯的他國語言作品">生肉</span>。
-            <br>
-            透過個人或團體加上中文字幕後，我們稱為<span title="翻譯的過程中稱為烤肉">熟肉</span>。
-            <br>
-            如此一來即使你對日文一竅不通也可以透過他人所剪輯的精華搭配中文字幕好好的<span title="看今天自家的VTuber又做了什麼蠢事">看個過癮</span>!
+        </div>
+    </nav>
+    </nav>
+
+
+    <section class="main">
+        <article class="recommend_content1">
+            <div class="content1_explanation">
+                <p>透過前面的分享介紹你是否對VTuber產生興趣了呢？</p>
+                <p>無論你是否剛接觸這個圈子，又或者想加入這個圈子。</p>
+                <p>觀看非本國語言的VTuber實況時想要馬上了解他們當下再說什麼是很困難的。</p>
+                <p>以下將分享一些了解VTuber必備的常見術語與日翻中頻道。</p>
+                <p>其中部分術語不僅僅涵蓋VTuber圈，而透過日翻中頻道所剪輯的一系列影片可以好好的<span title="看看今天自家的VTuber又做了什麼蠢事">看得過癮</span>！</p>
+            </div>
+            <div class="content1_title" id="c1_title">
+                <h2>VTuber圈術語</h2>
+                <!-- <h3>在這個圈子會有各種術語以下將簡略介紹一些常見術語。</h3> -->
+            </div>
+            <div class="content1_table">
+                
+                <table id="c1_table">
+                    <tbody>
+                        <tr>
+                            <td>生肉</td>
+                            <td>未翻譯的他國語言作品/影片等等。</td>
+                        </tr>
+                        <tr>
+                            <td>熟肉</td>
+                            <td>指個人或團體將生肉影片透過製作字幕等方式提升影片可讀性。</td>
+                        </tr>
+                        <tr>
+                            <td>精華</td>
+                            <td>將原影片部分精彩畫面剪輯製作加上字幕、特效等的二次製作影片，常見如:一系列精華等。</td>
+                        </tr>
+                        <tr>
+                            <td title="對於那些說某位V是我眾多單推之一，本人強烈譴責">單推</td>
+                            <td>只關注某一位VTuber。</td>
+                        </tr>
+                        <tr>
+                            <td>DD</td>
+                            <td>取自日文「誰でも大好き」兩個開頭D字母，與單推相反，關注非常多VTuber。</td>
+                        </tr>
+                        <tr>
+                            <td>出道</td>
+                            <td>指VTuber開始活動的那一天。</td>
+                        </tr>
+                        <tr>
+                            <td>中之人</td>
+                            <td>指扮演VTuber後真實的人。</td>
+                        </tr>
+                        <tr>
+                            <td>沖塔</td>
+                            <td>根據各種資料去挖掘VTuber背後真實的人身份。(大部份的粉絲皆對這部份反感，慎用)</td>
+                        </tr>
+                        <tr>
+                            <td>畢業</td>
+                            <td>結束這個VTuber的身份，停止一切活動。</td>
+                        </tr>
+                        <tr>
+                            <td>配信</td>
+                            <td>日文「はいしん」的漢字詞，意思與直播相似。</td>
+                        </tr>
+                        <tr>
+                            <td>貼貼</td>
+                            <td>日文「てぇてぇ」發音轉換的詞語，縮寫為「TT」，指VTuber親密的互動。</td>
+                        </tr>
+                        <tr>
+                            <td>炎上</td>
+                            <td>日文「えんじょう」的漢字詞，指事情越傳越大像燃燒一樣難以撲滅，VT圈中皆有不少次炎上事件。</td>
+                        </tr>
+                        <tr>
+                            <td>某某股</td>
+                            <td>常見如:PekoMiko股，指對象的互動或出場次數增加而導致股價大漲投資成功的意思。</td>
+                        </tr>
+                        <tr>
+                            <td>媽媽</td>
+                            <td>指VTuber角色的設計師/繪師。</td>
+                        </tr>
+                        <tr>
+                            <td>前世</td>
+                            <td>指上一個活躍的網路身份，以現在的活躍身份被人挖掘出以前的資料。(不少粉絲對這部分反感，慎用)</td>
+                        </tr>
+                        <tr>
+                            <td>轉生</td>
+                            <td>指上一個網路身份停止活動或降低活躍度，以現在這個身份為主要活躍。</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </article>
-        <section>
-            <article>
-                <hr style="width: 80%; margin-left: 10%; margin-right: 10%; margin-top: 3%;">
-                <h2 class="h2_title">以下是個人推薦的VTuber日翻中YouTube頻道</h2>
-                <div class="content_ytb">
 
-                    <table class="table">
-                        <thead>
-                            <tr>
-                                <th scope="col">順序</th>
-                                <th scope="col">頻道名稱</th>
-                                <th scope="col">頻道連結</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th scope="row">1</th>
-                                <td title="號稱一生只烤白上吹雪的すこん部">なぞなぞ仮面</td>
-                                <td><a href="https://www.youtube.com/channel/UCiiUiG1iSAz5Pip5Qn1m4aQ" target="new">YouTube頻道</a></td>
-                            </tr>
-                            <tr>
-                                <th scope="row">2</th>
-                                <td title="るしあ大好き">hololive 露西婭監視中</td>
-                                <td><a href="https://www.youtube.com/channel/UCXR8XqwKWHSFQ26ec9-4NUA" target="new">YouTube頻道</a></td>
-                            </tr>
-                            <tr>
-                                <th scope="row">3</th>
-                                <td>米凱胡烤起來</td>
-                                <td><a href="https://www.youtube.com/channel/UCWBxpy9L8SrR7e7RfYSIpYw" target="new">YouTube頻道</a></td>
-                            </tr>
-                            <tr>
-                                <th scope="row">4</th>
-                                <td>寶鐘兔賊團Hololive布教砲撃隊</td>
-                                <td><a href="https://www.youtube.com/channel/UCEPcLKruXUnbZ_5uN06Xztw" target="new">YouTube頻道</a></td>
-                            </tr>
-                            <tr>
-                                <th scope="row">5</th>
-                                <td>克巴の翻譯 - 烤肉屋</td>
-                                <td><a href="https://www.youtube.com/channel/UCSDc6bjIfFMCYClGbqKigvg" target="new">YouTube頻道</a></td>
-                            </tr>
-                            <tr>
-                                <th scope="row">6</th>
-                                <td>Hololive大好き台湾勢</td>
-                                <td><a href="https://www.youtube.com/channel/UCZHfuQl4Tisotwoz1Ns0iuQ" target="new">YouTube頻道</a></td>
-                            </tr>
-                            <tr>
-                                <th scope="row">7</th>
-                                <td>阿崙的熟肉製所</td>
-                                <td><a href="https://www.youtube.com/channel/UCwnVtGbMROSpxoD4g7ia47g" target="new">YouTube頻道</a></td>
-                            </tr>
-                            <tr>
-                                <th scope="row">8</th>
-                                <td>UF烤肉莊【ゆーエフ切り抜き莊】</td>
-                                <td><a href="https://www.youtube.com/channel/UC43Si2gldb0ZUW5xcv4ao3w" target="new">YouTube頻道</a></td>
-                            </tr>
-                            <tr>
-                                <th scope="row">9</th>
-                                <td>Hololiveに肝を捧げよう</td>
-                                <td><a href="https://www.youtube.com/channel/UCLB9LPemPH4fb8Nci1cDzBg" target="new">YouTube頻道</a></td>
-                            </tr>
-                            <tr>
-                                <th scope="row">10</th>
-                                <td>OJ亂翻譯</td>
-                                <td><a href="https://www.youtube.com/channel/UCDg_0ZSPOEqsiM-p_ZLfMXQ" target="new">YouTube頻道</a></td>
-                            </tr>
-                            <tr>
-                                <th scope="row">11</th>
-                                <td>シェール幸春</td>
-                                <td><a href="https://www.youtube.com/channel/UCyT1NaeIYXkYruk2pgYafGg" target="new">YouTube頻道</a></td>
-                            </tr>
-                            <tr>
-                                <th scope="row">12</th>
-                                <td>屍體在翻譯 Hololive Vtuber</td>
-                                <td><a href="https://www.youtube.com/channel/UC5EnPNvbYTKwJC2NxL4OwRg" target="new">YouTube頻道</a></td>
-                            </tr>
-                        </tbody>
-                        <!-- jQ nth太神啦 用檢查看我還以為我真的每個都寫style勒 -->
-                    </table>
-                </div>
-            </article>
-            <br>
-            <section>
-                距離今年結束時間還有
-                <div id="year">過年倒數時間</div>
+        <article class="recommend_content2">
+            <div class="content2_title" id="c2_title">
+                <h2>以下是個人推薦的VTuber日翻中YouTube頻道</h2>
+            </div>
+            <div class="content2_table">
+                <table id="c2_table">
+                    <thead>
+                        <tr>
+                            <th>順序</th>
+                            <th>頻道名稱</th>
+                            <th>頻道連結</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td title="唯一單推白上吹雪">なぞなぞ仮面</td>
+                            <td><a href="https://www.youtube.com/channel/UCiiUiG1iSAz5Pip5Qn1m4aQ" target="new">YouTube頻道</a></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>hololive 露西婭監視中</td>
+                            <td><a href="https://www.youtube.com/channel/UCXR8XqwKWHSFQ26ec9-4NUA" target="new">YouTube頻道</a></td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>米凱胡烤起來</td>
+                            <td><a href="https://www.youtube.com/channel/UCWBxpy9L8SrR7e7RfYSIpYw" target="new">YouTube頻道</a></td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>寶鐘兔賊團Hololive布教砲撃隊</td>
+                            <td><a href="https://www.youtube.com/channel/UCEPcLKruXUnbZ_5uN06Xztw" target="new">YouTube頻道</a></td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>ウルトラP【戌神切り抜き.ch】</td>
+                            <td><a href="https://www.youtube.com/channel/UC9PAEgyE8LdWN9nJopahRIg" target="new">YouTube頻道</a></td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>克巴の翻譯 - 烤肉屋</td>
+                            <td><a href="https://www.youtube.com/channel/UCSDc6bjIfFMCYClGbqKigvg" target="new">YouTube頻道</a></td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>Hololive大好き台湾勢</td>
+                            <td><a href="https://www.youtube.com/channel/UCZHfuQl4Tisotwoz1Ns0iuQ" target="new">YouTube頻道</a></td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>阿崙的熟肉製所</td>
+                            <td><a href="https://www.youtube.com/channel/UCwnVtGbMROSpxoD4g7ia47g" target="new">YouTube頻道</a></td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>UF烤肉莊【ゆーエフ切り抜き莊】</td>
+                            <td><a href="https://www.youtube.com/channel/UC43Si2gldb0ZUW5xcv4ao3w" target="new">YouTube頻道</a></td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>Hololiveに肝を捧げよう</td>
+                            <td><a href="https://www.youtube.com/channel/UCLB9LPemPH4fb8Nci1cDzBg" target="new">YouTube頻道</a></td>
+                        </tr>
+                        <tr>
+                            <td>11</td>
+                            <td>屍體在翻譯 Hololive Vtuber</td>
+                            <td><a href="https://www.youtube.com/channel/UC5EnPNvbYTKwJC2NxL4OwRg" target="new">YouTube頻道</a></td>
+                        </tr>
+                        <tr>
+                            <td>12</td>
+                            <td>偶像撿到槍【Hololive精華】</td>
+                            <td><a href="https://www.youtube.com/channel/UCFQIN_DGnTI1Szlpb8F7Glg" target="new">YouTube頻道</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </article>
+
+        <article class="recommend_content3">
+            <div class="content3_time" id="content3_time">
+                <!-- 年末時間 -->
+                <h4>距離今年結束還有</h4>
+                <div id="now_year"></div>
                 <h2 title="日本時間比台灣時間還要早一個小時 不要忘記了">(hololive年末節目)</h2>
-            </section>
-        </section>
-    
-    <hr>
-    <div id="facebook">
-        <div class="fb-comments" data-href="https://ayvc0420.github.io/recommendYoutube.html" data-width="600" data-numposts="5"></div>
-    </div>
+            </div>
+            <div class="content3_fb_pc">
+                <div id="facebook">
+                    <div class="fb-comments" data-href="https://ayvc0420.github.io/recommendYoutube.html" data-width="600" data-numposts="5"></div>
+                </div>
+            </div>
+            <div class="content3_fb_mob">
+                <div id="facebook">
+                    <div class="fb-comments" data-href="https://ayvc0420.github.io/recommendYoutube.html" data-width="400" data-numposts="5"></div>
+                </div>
+            </div>
+        </article>
+    </section>
 
-    
-        <!-- ajax   路徑role/hololive.json    idea:一覽全角色及暱稱、專長-->
-    
-        <footer> 
-    
-            <a>這邊是個人推薦的日翻中YouTube頻道</a>
-            <br>
-            <a href="#" class="go_top"><img src="images/top.png" title="回去頂部囉"></a>
-            <a>&nbsp;&nbsp;如您為頻道擁有者不想出現在這請與我聯絡!&nbsp;&nbsp;</a>
-            <a href="#" class="go_top"><img src="images/top.png" title="回去頂部囉"></a>
-            <br>
-            <a href="mailto:ayvc0420@gmail.com">ayvc0420@gmail.com</a>
-            <br>
-            <a title="跪謝">ｍ（__ __）ｍ</a>
-    
-        </footer>
-    </main>
+    <footer>
+        <!-- Copyright &copy;  -->
+        <p>本頁面所分享的術語如有任何錯誤請與我聯絡或留言補充告知</p>
+        <div class="footer_top_text"><a href="#" class="go_top go_top1"><img src="images/top.png" title="回去頂部囉"></a>如您為頻道擁有者不想出現在本頁面與我聯絡<a href="#" class="go_top go_top2"><img src="images/top.png" title="回去頂部囉"></a></div>
+        <p></p>
+        <a href="mailto:ayvc0420@gmail.com">ayvc0420@gmail.com</a>
+        <p title="跪謝">ｍ（__ __）ｍ</p>
+        <!-- <p>為確保效能消耗最低，本網頁有異常顯示請重新整理頁面。</p> -->
+        <p class="footer_pc">本網站使用flex佈局，請使用firefox或chrome瀏覽器獲得最佳體驗</p>
+
+    </footer>
 
 
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/layout.js"></script>
+    <script src="js/recommendYoutube.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>    
 </body>
-
-
 </html>

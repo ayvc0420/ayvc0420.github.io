@@ -1,0 +1,342 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,300&family=Ubuntu:wght@400;700&display=swap');
+
+h2 {font-family: 'Lato', sans-serif;
+    font-family: 'Ubuntu', sans-serif;}
+
+
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+::selection{
+    background-color: yellow;
+    color: blue
+}
+/*CSS動畫效果參考   https://www.oxxostudio.tw/articles/201803/css-animation.html */
+/* 由左至右動畫
+@-webkit-keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateX(-20px);
+        transform: translateX(-20px);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateX(-20px);
+        -ms-transform: translateX(-20px);
+        transform: translateX(-20px);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateX(0);
+        -ms-transform: translateX(0);
+        transform: translateX(0);
+        }
+    }
+.fadeInLeft {
+    -webkit-animation-name: fadeInLeft;
+    animation-name: fadeInLeft;
+} */
+
+/*由上到下透明度改變動畫*/
+
+/* @-webkit-keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(-20px);
+        transform: translateY(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+} */
+
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(500px);
+        -ms-transform: translateY(500px);
+        transform: translateY(500px);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+        transform: translateY(0);
+    }
+
+}
+.fadeInDown {
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+    /* animation-duration: 1s; */
+} 
+
+
+
+@keyframes fadeOutRightBig {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateX(2000px);
+        -ms-transform: translateX(2000px);
+        transform: translateX(2000px);
+    }
+    50% {
+        opacity: 1;
+        -webkit-transform: translateX(-50px);
+        -ms-transform: translateX(-50px);
+        transform: translateX(-50px);
+        }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateX(0px);
+        -ms-transform: translateX(0px);
+        transform: translateX(0px);
+        }
+    }
+@keyframes fadeOutLeftBig {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateX(-2000px);
+        -ms-transform: translateX(-2000px);
+        transform: translateX(-2000px);
+        }
+    50% {
+        opacity: 1;
+        -webkit-transform: translateX(50px);
+        -ms-transform: translateX(-50px);
+        transform: translateX(50px);
+        }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateX(0px);
+        -ms-transform: translateX(0px);
+        transform: translateX(0px);
+        }
+    }
+    .fadeOutRightBig {
+        -webkit-animation-name: fadeOutRightBig;
+        animation-name: fadeOutRightBig;
+    }
+    .fadeOutLeftBig {
+        -webkit-animation-name: fadeOutLeftBig;
+        animation-name: fadeOutLeftBig;
+    }
+
+
+@keyframes mob_btn_anim {
+    0%{
+        opacity: 0;
+    }  
+    100%{
+        opacity: 0.7;
+    }
+}
+/*以上動畫*/
+#mob_top{
+    display: none;
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    z-index: 9999;
+    opacity: 0.7;
+    width: 8%;
+    cursor: pointer;
+}
+.mob_btn_anim{
+    animation: mob_btn_anim 1500ms;
+}
+
+.mob_nav{
+    display: none;
+}
+
+.mob_hr{
+    display: none;
+}
+
+header {
+    margin: 2% 20% 1% 20%;
+}
+
+header div , header div div a img{
+    border-radius: 2rem;
+}
+
+.title{
+    background: linear-gradient(to top,#FAEBD7,#7FFFD4);
+}
+
+.nav-item a{
+    font-size: 18px;
+}
+
+.nav-item a:hover{
+    background-color: rgb(245, 222, 131,0.6);
+    transition: background-color 0.6s 0s ease;
+}
+.nav-link:hover{
+    font-size:1.5rem;
+}
+
+.dropdown-item{
+    color: blue;
+}
+
+.content{
+    margin: 5% 15% 0% 15%;
+}
+
+hr{
+    margin: 5% 0% 5% 0%;
+}
+
+.col a{
+    line-height: 2rem;
+}
+
+.col , .col col{
+    margin: auto;
+}
+
+.row .col a img{
+    border-radius: 2rem;
+}
+
+.col h2{
+    color: red;
+    font-size: 40px;
+}
+
+.col span{
+    color: red;
+}
+
+.content_1_text , .content_2_text ,.content_3_text ,.content_4_text{
+    font-size: 20px;
+}
+
+footer {
+    padding: 1% 0% 1% 0%;
+    margin-top: 5%;
+    background-color: black;
+    text-align: center;
+    color: white;
+}
+.go_top , .go_top img{
+    width: 3%;
+    display: inline;
+    margin: auto;
+}
+
+
+
+/* 1921寬以上 */
+@media screen and (min-width:1921px) {
+    .content{
+        margin: 5% 20% 0% 20%;
+    }
+}
+/*1365寬以下*/
+@media screen and (max-width:1365px){
+    .content{
+        margin: 5% 8% 0% 8%;
+    }
+}
+/*1025寬以上*/
+@media screen and (min-width:1025px) {
+    .nav-link {
+        padding: 3rem;
+    }
+}
+
+/*1024寬以下 偏手機 轉上下式*/
+
+@media screen and (max-width:1024px) {
+
+    .content_1 ,.content_3{
+        display: inline-block;
+    }
+    .col h2{
+        margin-top: 1rem;
+        text-align: center;
+    }
+    header {
+        margin: 0% 10% 0% 10%;
+    }
+    .content_2 ,.content_4{
+        display: flex;
+        flex-direction: column;
+    }
+    .content_2 div:nth-of-type(1),.content_4 div:nth-of-type(1){
+        order: 2;
+    }
+    .content_2 div:nth-of-type(2),.content_4 div:nth-of-type(2){
+        order: 1;
+    }
+    .go_top , .go_top img{
+        display: none;
+    }
+    .navbar{
+        display: flex;
+    }
+    .mob_hr{
+        display: flex;
+        width: 90%;
+        margin-top: 5%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .mob_nav{
+        display: block;
+    }
+    nav{
+        margin: 15px 0px 0px 0px;
+        margin-bottom: 3.5rem;
+    }
+    #nav_button {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 50px;
+        height: 50px;
+    }
+    .mob_title li{
+        list-style: none;
+        text-align: center;
+        z-index: 999;
+        margin-top: 5%;
+    }
+    .mob_title li a,.mob_title li h2 a{
+        text-decoration: none;
+    }
+    .title{
+        display: none;
+    }
+    .mob_title{
+        display: none;
+        font-size: 26px;
+        width: 100%;
+        padding: 0;
+    }
+
+}
+
+

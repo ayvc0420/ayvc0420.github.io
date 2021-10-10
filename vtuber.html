@@ -1,211 +1,593 @@
-<!doctype html>
-<html lang="zh-TW">
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <link rel="shortcut icon" href="https://ayvc0420.github.io/images/logo.png" type="image/x-icon">
-    <title>快速了解Vtuber</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name=”description” content="快速了解Vtuber" />
-
-    <link rel="stylesheet" href="css/bootstrap.min.css">    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>速覽VTuber</title>
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/introduce.css">
     <link rel="stylesheet" href="css/jquery.fancybox.min.css">
-    
-    <script src="js/jquery-3.6.0.min.js"></script>
-    <script src="js/work.js"></script>
-    <script src="js/jquery.fancybox.min.js"></script>
-    <script src="js/vtuberLeft.js"></script>
-    <script src="js/popper.min.js" ></script>
-    <script src="js/bootstrap.min.js"></script>
 
 </head>
-
-<body style="background-color: rgb(254, 255, 234);">
-    <main>
-        <img src="images/mob_top.png" alt="go_top" id="mob_top">
-        <nav class="mob_nav">
-            <a type="button" id="nav_button">
-                <svg viewBox="0 0 130 80" width="50" height="50">
-                    <rect width="100" height="20" rx="10"></rect>
-                    <rect y="30" width="100" height="20" rx="10"></rect>
-                    <rect y="60" width="100" height="20" rx="10"></rect>
-                </svg>
-            </a>
-            <ul class="mob_title">
-                <li><h2><a href="index.html">首頁</a></h2></li>
-                <li><h2><a href="vtuber.html">快速了解VTuber</a></h2></li>
-                    <li class="vt_menu">
-                        <h2><a href="pekora.html">兔田佩克拉</a></h2>
-                        <h2><a href="rushia.html">潤羽露西婭</a></h2>
-                        <h2><a href="miko.html">櫻巫女</a></h2>
-                        <h2><a href="https://www.hololive.tv/member" target="new">hololive全成員</a></h2>
-                    </li>
+<body style="background-color: #d7f6ff;">
+    <img src="images/mob_top.png" alt="go_top" id="mob_top" class="mob_btn_anim" title="回去頂部囉">
+    <section class="mob_header">
+        <label for="mob_menu" class="mob_menu_control" id="mob_menu_control">
+            <svg width="50" height="40" class="svg1" id="svg1">
+                <line x1="10" y1="10" x2="40" y2="10" stroke="black" stroke-width="4"> </line>
+                <line x1="10" y1="20" x2="40" y2="20" stroke="black" stroke-width="4"> </line>
+                <line x1="10" y1="30" x2="40" y2="30" stroke="black" stroke-width="4"> </line>
+            </svg>
+            <svg width="50" height="40" class="svg2" id="svg2">
+                <line x1="10" y1="30" x2="40" y2="10" stroke="black" stroke-width="4"> </line>
+                <line x1="10" y1="10" x2="40" y2="30" stroke="black" stroke-width="4"> </line>
+            </svg>
+        </label>
+        <input type="checkbox" name="" id="mob_menu">
+        <div class="mob_menu" id="mob_menu_div">
+            <ul>
+                <li><a href="index.html">首頁</a></li>
+                <li><a href="vtuber.html">速覽VTuber</a></li>
+                <li class="mob_menu3">
+                    <a href="#" class="menu3_control">介紹成員&nbsp;<img src="images/chevron-down.svg" class="nav_down"></a>
+                    <ul class="menu3">
+                        <li><a href="pekora.html">兔田佩克拉</a></li>
+                        <li><a href="miko.html">櫻巫女</a></li>
+                        <li><a href="rushia.html">潤羽露西婭</a></li>
+                        <li><a href="korone.html">戌神沁音</a></li>
+                    </ul>
                 </li>
                 <li><a href="recommendYoutube.html">推薦的YouTube中文翻譯頻道</a></li>
             </ul>
-        </nav>
-    
-        <hr class="mob_hr">
-    
-        <header>
-            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-                </ol>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <a href="https://www.pixiv.net/artworks/90195061" title="去pixiv上!" target="new"><img src="images/rushia_header.jpg" class="d-block w-100" alt="繪師pixiv : www.pixiv.net/users/523251"></a>
-                    </div>
-                    <div class="carousel-item">
-                        <a href="https://www.pixiv.net/artworks/91479662" title="去pixiv上!" target="new"><img src="images/usadapekora_header.jpg" class="d-block w-100" alt="繪師twitter : @magowasabi"></a>
-                    </div>
-                    <div class="carousel-item">
-                        <a href="https://www.pixiv.net/artworks/88300974" title="去pixiv上!" target="new"><img src="images/sakuramiko_header.jpg" class="d-block w-100" alt="繪師twitter @ARThimeno"></a>
-                    </div>
-                    <div class="carousel-item">
-                        <a href="https://www.pixiv.net/artworks/81424109" title="去pixiv上!" target="new"><img src="images/rushia_kanata_header.jpg" class="d-block w-100" alt="twitter @m_o_s_o"></a>
-                    </div>
-                </div>
-                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
+        </div>
+    </section>
+
+    <header>
+        <div class="slideshow_img">
+            <input type="radio" name="control_header_img" id="control_header_img1" checked>
+            <input type="radio" name="control_header_img" id="control_header_img2">
+            <input type="radio" name="control_header_img" id="control_header_img3">
+            <input type="radio" name="control_header_img" id="control_header_img4">
+            <div class="header_label_div">
+                <label for="control_header_img1" class="header_label"></label>
+                <label for="control_header_img2" class="header_label"></label>
+                <label for="control_header_img3" class="header_label"></label>
+                <label for="control_header_img4" class="header_label"></label>
             </div>
-        </header>
-    
-        <hr class="mob_hr">
-    
-        <br>
-        <section class="title">
-            <ul class="nav justify-content-center title">
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html">首頁</a>
+            <div class="img0"><a href="https://www.pixiv.net/artworks/90195061" target="new"><img src="images/rushia_header.jpg" alt="pixiv90195061" ></a></div>
+            <div class="img1"><a href="https://www.pixiv.net/artworks/90195061" target="new"><img src="images/rushia_header.jpg" alt="pixiv90195061"></a></div>
+            <div class="img2"><a href="https://www.pixiv.net/artworks/91479662" target="new"><img src="images/usadapekora_header.jpg" alt="pixiv91479662"></a></div>
+            <div class="img3"><a href="https://www.pixiv.net/artworks/88300974" target="new"><img src="images/sakuramiko_header.jpg" alt="pixiv88300974"></a></div>
+            <div class="img4"><a href="https://www.pixiv.net/artworks/92148396" target="new"><img src="images/korone_header.jpg" alt="pixiv92148396"></a></div>
+        </div>
+    </header>
+    <nav>
+        <div class="nav_menu">
+            <ul>
+                <li><a href="index.html">首頁</a></li>
+                <li><a href="vtuber.html">速覽VTuber</a></li>
+                <li class="nav_menu3">
+                    <a href="#">介紹成員&nbsp;<img src="images/chevron-down.svg" class="nav_down"></a>
+                    <ul>
+                        <li><a href="pekora.html">兔田佩克拉</a></li>
+                        <li><a href="miko.html">櫻巫女</a></li>
+                        <li><a href="rushia.html">潤羽露西婭</a></li>
+                        <li><a href="korone.html">戌神沁音</a></li>
+                    </ul>
                 </li>
-    
-                <li class="nav-item">
-                    <a class="nav-link" href="#" title="你現在就在這個頁面了! 點我十次都不會有反應">快速了解VTuber</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">介紹成員</a>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="pekora.html">兎田ぺこら(兔田佩克拉)</a>
-                        <a class="dropdown-item" href="miko.html">桜巫女(櫻巫女)</a>
-                        <a class="dropdown-item" href="rushia.html">潤羽るしあ(潤羽露西婭)</a>
-                        <div class="dropdown-divider"></div>
-                        <a href="https://www.hololive.tv/member" class="dropdown-item" target="new">hololive全成員</a>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link " href="recommendYoutube.html" tabindex="-1" aria-disabled="true">推薦的YouTube中文翻譯頻道</a>
-                </li>
+                <li><a href="recommendYoutube.html">推薦的YouTube中文翻譯頻道</a></li>
             </ul>
-        </section>
-        <section class="allContent">
-        <!-- <div class="container content">   //bootstrap排版 -->
-            <article class="content">
-                <div class="row content_1 content_01">
-                    <div class="col">
-                        <a href="images/AIChannel.jpg" data-fancybox data-caption="圖片取於【Official Music Video】First Light Supported by sanipak 影片截圖"><img src="images/AIChannel_contentt.jpg" alt="一張絆愛的照片" class="col" title="絆愛"></a>
-                    </div>
-                    <div class="col content_1_text">
-                        <h2 class="content_1_text_h2">第一位VTuber的誕生</h2>
-                        <a class="content_1_css">VTuber，全名為 : <span title="虛擬YouTuber">Virtual YouTuber</span>，2016年底絆愛(<span title="絆愛的日文名稱">キズナアイ</span>)在YouTube開設頻道「A.I.Channel」並首次使用Virtual Streamer(<span title="虛擬YouTuber、虛擬實況主">バーチャルライバー</span>)一詞，為其配音的聲優一直至2020年才由官方確認為「春日望」進行配音。</a>
-                        <br>
-                        <br>
-                        <a class="content_1_css">VTuber的外觀出自繪師之手，因其<span title="VTuber特點">可愛外貌</span>、<span title="VTuber特點">魅力</span>等因素，絆愛受到世界各地的粉絲關注，YouTube頻道的訂閱數也進行了跳躍式增長，絆愛的出現打破一往傳統的直播模式由真人透過虛擬人物的外觀與粉絲互動。</a>
-                        <br>
-                        <br>
-                        <a class="content_1_css">更多關於絆愛相關資訊可以參考 : <a href="https://zh.wikipedia.org/wiki/%E7%B5%86%E6%84%9B" target="new" title="去維基百科" class="content_1_css" >維基百科</a></a>
-                    </div>
-                </div>
-            </article>
-    
-            <div style="background-color: rgb(205, 255, 205);">
-                <hr>
-                    <article class="content content_02">
-                        <div class="row content_2">
-                            <div class="col content_2_text">
-                                <h2 class="content_2_text_h2">VTuber的崛起</h2>
-                                <a>隨著絆愛的出現，各家公司也逐漸推出代表自身形象的虛擬人物作為VTuber，可自由設計的外觀及新興的行銷創作使得「虛擬實況主」一詞在世界各地逐漸熱門。</a>
-                                <br>
-                                <a>虛擬人物的動作是透過科技捕捉動作的方式去控制的，也有部份是使用<a href="https://www.live2d.com/en/" title="Live2D" target="new">建模軟體</a>建立虛擬人物的形象再由其他方式實現人物的動作。</a>
-                                <br>
-                                <a>至今，每日仍有許多VTuber宣布<span title="演藝界術語，在這裡指虛擬人物初次登場的時間點">出道</span>以及畢業，據統計，YouTube推出的<span title="超級留言">Super Chat</span>年度前十名排行榜仍為VTuber佔據多位。</a>
-                                <br>
-                                <a>每位VTuber出道皆有不同的設定伴隨，稱為<span title="人物設定，如同小說一般描述人物的特點令觀眾印象更深刻">人設</span>，不同的設定是VTuber的一個重大特點，部份經紀公司甚至會為熱門的VTuber舉辦線上演唱會。</a>
-                                <br>
-                                <br>
-                                <a>關於更多Super Chat的收益金額可參考 : <a href="https://playboard.co/en/youtube-ranking/most-superchatted-all-channels-in-worldwide-yearly" target="new" title="去playboard網站">playboard統計資料</a>。</a>
-                            </div>
-                            <div class="col">
-                                <div class="col">
-                                    <a href="images/vtuber_king.jpg" data-fancybox data-caption="曾經活躍的VTuber五天王 圖片取自於twitter" ><img src="images/vtuber_king_content.jpg" alt="VTuber五天王" class="col" title="VTuber五天王" ></a>
-                                </div>
-                            </div>
-                        </div>
-                    </article>
-                <hr>
-            </div>
-    
-            <article class="content">
-                <div class="row content_3 content_03">
-                    <div class="col">
-                        <a href="images/vtuber_company.jpg" data-fancybox data-caption="上方為 : hololive(ホロライブ) 下方為 : 彩虹社(ANYCOLOR) 圖片取於兩社公司的官網"><img src="images/vtuber_company.jpg" alt="hololive跟ANYCOLOR的圖片" class="col" title="hololive與彩虹社的圖片"></a>
-                    </div>
-                    <div class="col content_3_text"> 
-                        <h2 class="content_3_text_h2">VTuber界的兩大巨頭</h2>
-                        <a>hololive與彩虹社(<span title="にじさんじ">anycolor</span>)熱門時間皆於2018年左右開始至今，相較於hololive；彩虹社的VTuber招募計畫更為寬鬆，旗下成員也多出數倍人數，兩社的商業經營手法大相逕庭。</a>
-                        <br>
-                        <a>現今，兩社旗下較知名的VTuber每次直播觀看人數約為數千至數萬人不等，其中，<span title="桐生可可畢業會">hololive最高同時觀看人數將近50萬人</span>，全球VTuber粉絲榜也由兩社的成員佔據大部分，其成果取決於公司的行銷資源以及VTuber個人與粉絲的互動。</a>
-                    </div>
-                </div>
-            </article>
-    
-            <div style="background-color: rgb(205, 255, 205);" >
-                <hr>
-                    <article class="content content_04">
-                        <div class="row content_4">
-                            <div class="col content_4_text">
-                                <h2 class="content_4_text_h2">虛擬人物界的遊戲</h2>
-                                <a>如同VTuber一般，個人創作逐漸成為主流，讓遊戲玩家也找到了新的天堂。</a>
-                                <br>
-                                <a>VR Chat是一款大型多人線上互動遊戲，你可以使用公開免費的模組套用在自己人物上也可以自行製作角色，遊戲玩家透過鍵鼠操作方式或VR裝置進入VR Chat世界，透過扮演3D角色與其他玩家互動是這個遊戲最大的特點。</a>
-                                <br>
-                                <a>雖然目前放眼望去全球的虛擬人物趨勢逐漸上漲，但虛擬人物的外觀仍然以<span title="VTuber的起源地">日系風格為主</span>，也許是虛擬人物不會衰老的外觀，也許是商業成本的考量，在這種增長的趨勢下你應該都要了解他。</a>
-                            </div>
-                            <div class="col">
-                                <div class="col">
-                                    <a href="images/vrchat.jpg" data-fancybox data-caption="VR CHAT 圖片取自於VR Chat官網" ><img src="images/vrchat_centent.jpg" alt="VR CHAT圖片" class="col" title="VR Chat" ></a>
-                                </div>
-                            </div>
-                        </div>
-                    </article>
-                <hr class="con04">
-            </div>
-    
-        </section>
-    
-        <footer> 
-            <a>網站最後紀錄日期</a> 
-            <br>
-            <a href="#" class="go_top">
-            <img src="images/top.png" title="回去頂部囉">
-            </a>&nbsp;&nbsp;2021 年 09 月 07 日&nbsp;&nbsp;</a>
-            <a href="#" class="go_top"><img src="images/top.png" title="回去頂部囉"></a>
-            <br>
-            <a><span title="我只是一個表情">＜(。_。)＞</span></a>
-        </footer>
-    </main>
+        </div>
+    </nav>
+    </nav>
 
 
+    <section class="main">
+
+        <div><!-- class="vt_container0" -->
+            <div class="vt_player0">
+                <div>
+                    <img src="images/vt_01.jpg" alt="ホロライブ" title="hololive">
+                </div>
+                <div>
+                    <h3>hololive | ホロライブ</h3>
+                    <p>虛擬YouTuber經紀公司 </p>
+                    <a href="https://www.youtube.com/channel/UCJFZiqLMntJufDCHc6bQixg" target="new"><div class="player_href"><img src="images/youtube.svg">頻道連結</div></a>
+                </div>
+            </div>
+            <div class="vt_player0">
+                <div>
+                    <img src="images/vt_02.jpg" alt="にじさんじ" title="彩虹社">
+                </div>
+                <div>
+                    <h3>彩虹社 | にじさんじ</h3>
+                    <p>虛擬YouTuber經紀公司 </p>
+                    <a href="https://www.youtube.com/channel/UCX7YkU9nEeaoZbkVLVajcMg" target="new"><div class="player_href"><img src="images/youtube.svg">頻道連結</div></a>
+                </div>
+            </div>
+        </div>
+        <!-- 以下動畫開始 -->
+        <div>
+            <div class="vt_player" id="vt_player1">
+                <div>
+                    <img src="images/vt_03.jpg" alt="潤羽るしあ" title="潤羽るしあ">
+                </div>
+                <div>
+                    <h3>潤羽るしあ</h3>
+                    <p>日本VTuber<br>實況/影片類型:遊戲、音樂、雜談、ASMR</p>
+                    <a href="https://www.youtube.com/channel/UCl_gCybOJRIgOXw6Qb4qJzQ" target="new"><div class="player_href"><img src="images/youtube.svg">頻道連結</div></a>
+                </div>
+            </div>
+            <div class="vt_player" id="vt_player2">
+                <div>
+                    <img src="images/vt_04.jpg" alt="宝鐘マリン" title="宝鐘マリン">
+                </div>
+                <div>
+                    <h3>宝鐘マリン</h3>
+                    <p>日本VTuber<br>實況/影片類型:遊戲、音樂、雜談</p>
+                    <a href="https://www.youtube.com/channel/UCCzUftO8KOVkV4wQG1vkUvg" target="new"><div class="player_href"><img src="images/youtube.svg">頻道連結</div></a>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="vt_player" id="vt_player3">
+                <div>
+                    <img src="images/vt_05.jpg" alt="夏色まつり" title="夏色まつり">
+                </div>
+                <div>
+                    <h3>夏色まつり</h3>
+                    <p>日本VTuber<br>實況/影片類型:遊戲、音樂</p>
+                    <a href="https://www.youtube.com/channel/UCQ0UDLQCjY0rmuxCDE38FGg" target="new"><div class="player_href"><img src="images/youtube.svg">頻道連結</div></a>
+                </div>
+            </div>
+            <div class="vt_player" id="vt_player4">
+                <div>
+                    <img src="images/vt_06.jpg" alt="白上フブキ" title="白上フブキ">
+                </div>
+                <div>
+                    <h3>白上フブキ</h3>
+                    <p>日本VTuber<br>實況/影片類型:遊戲、音樂</p>
+                    <a href="https://www.youtube.com/channel/UCdn5BQ06XqgXoAxIhbqw5Rg" target="new"><div class="player_href"><img src="images/youtube.svg">頻道連結</div></a>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="vt_player" id="vt_player5">
+                <div>
+                    <img src="images/vt_07.jpg" alt="兎田ぺこら" title="兎田ぺこら">
+                </div>
+                <div>
+                    <h3>兎田ぺこら</h3>
+                    <p>日本VTuber<br>實況/影片類型:遊戲、音樂、雜談</p>
+                    <a href="https://www.youtube.com/channel/UC1DCedRgGHBdm81E1llLhOQ" target="new"><div class="player_href"><img src="images/youtube.svg">頻道連結</div></a>
+                </div>
+            </div>
+            <div class="vt_player" id="vt_player6">
+                <div>
+                    <img src="images/vt_08.jpg" alt="音時エラー" title="音時エラー">
+                </div>
+                <div>
+                    <h3>音時エラー</h3>
+                    <p>台灣VTuber<br>實況/影片類型:遊戲、音樂、雜談</p>
+                    <a href="https://www.youtube.com/channel/UCaV2RmU3drZBtPuOkXZri3w" target="new"><div class="player_href"><img src="images/youtube.svg">頻道連結</div></a>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="vt_player" id="vt_player7">
+                <div>
+                    <img src="images/vt_09.jpg" alt="戌神ころね" title="戌神ころね">
+                </div>
+                <div>
+                    <h3>戌神ころね</h3>
+                    <p>日本VTuber<br>實況/影片類型:遊戲、音樂、雜談</p>
+                    <a href="https://www.youtube.com/channel/UChAnqc_AY5_I3Px5dig3X1Q" target="new"><div class="player_href"><img src="images/youtube.svg">頻道連結</div></a>
+                </div>
+            </div>
+            <div class="vt_player" id="vt_player8">
+                <div>
+                    <img src="images/vt_10.jpg" alt="桜巫女" title="桜巫女">
+                </div>
+                <div>
+                    <h3>桜巫女</h3>
+                    <p>日本VTuber<br>實況/影片類型:遊戲、音樂、雜談</p>
+                    <a href="https://www.youtube.com/channel/UC-hM6YJuNYVAmUWxeIr9FeA" target="new"><div class="player_href"><img src="images/youtube.svg">頻道連結</div></a>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="vt_player" id="vt_player9">
+                <div>
+                    <img src="images/vt_11.jpg" alt="天音かなた" title="天音かなた">
+                </div>
+                <div>
+                    <h3>天音かなた</h3>
+                    <p>日本VTuber<br>實況/影片類型:遊戲、音樂、雜談</p>
+                    <a href="https://www.youtube.com/channel/UCZlDXzGoo7d44bwdNObFacg" target="new"><div class="player_href"><img src="images/youtube.svg">頻道連結</div></a>
+                </div>
+            </div>
+            <div class="vt_player" id="vt_player10">
+                <div>
+                    <img src="images/vt_12.jpg" alt="湊あくあ" title="湊あくあ">
+                </div>
+                <div>
+                    <h3>湊あくあ</h3>
+                    <p>日本VTuber<br>實況/影片類型:遊戲、音樂、雜談</p>
+                    <a href="https://www.youtube.com/channel/UC1opHUrw8rvnsadT-iGp7Cg" target="new"><div class="player_href"><img src="images/youtube.svg">頻道連結</div></a>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="vt_player" id="vt_player11">
+                <div>
+                    <img src="images/vt_13.jpg" alt="Kuzuha Channel" title="Kuzuha Channel">
+                </div>
+                <div>
+                    <h3>Kuzuha Channel</h3>
+                    <p>日本VTuber<br>實況/影片類型:遊戲、音樂、雜談</p>
+                    <a href="https://www.youtube.com/channel/UCSFCh5NL4qXrAy9u-u2lX3g" target="new"><div class="player_href"><img src="images/youtube.svg">頻道連結</div></a>
+                </div>
+            </div>
+            <div class="vt_player" id="vt_player12">
+                <div>
+                    <img src="images/vt_14.jpg" alt="白銀ノエル" title="白銀ノエル">
+                </div>
+                <div>
+                    <h3>白銀ノエル</h3>
+                    <p>日本VTuber<br>實況/影片類型:ASMR、音樂、雜談</p>
+                    <a href="https://www.youtube.com/channel/UCdyqAaZDKHXg4Ahi7VENThQ" target="new"><div class="player_href"><img src="images/youtube.svg">頻道連結</div></a>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="vt_player" id="vt_player13">
+                <div>
+                    <img src="images/vt_15.jpg" alt="猫又おかゆ" title="猫又おかゆ">
+                </div>
+                <div>
+                    <h3>猫又おかゆ</h3>
+                    <p>日本VTuber<br>實況/影片類型:遊戲、音樂、雜談</p>
+                    <a href="https://www.youtube.com/channel/UCvaTdHTWBGv3MKj3KVqJVCw" target="new"><div class="player_href"><img src="images/youtube.svg">頻道連結</div></a>
+                </div>
+            </div>
+            <div class="vt_player" id="vt_player14">
+                <div>
+                    <img src="images/vt_16.jpg" alt="Siro Channel" title="Siro Channel">
+                </div>
+                <div>
+                    <h3>Siro Channel</h3>
+                    <p>日本VTuber<br>實況/影片類型:遊戲、雜談</p>
+                    <a href="https://www.youtube.com/channel/UCLhUvJ_wO9hOvv_yYENu4fQ" target="new"><div class="player_href"><img src="images/youtube.svg">頻道連結</div></a>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="vt_player" id="vt_player15">
+                <div>
+                    <img src="images/vt_17.jpg" alt="社築" title="社築">
+                </div>
+                <div>
+                    <h3>社築</h3>
+                    <p>日本VTuber<br>實況/影片類型:遊戲、雜談</p>
+                    <a href="https://www.youtube.com/channel/UCKMYISTJAQ8xTplUPHiABlA" target="new"><div class="player_href"><img src="images/youtube.svg">頻道連結</div></a>
+                </div>
+            </div>
+            <div class="vt_player" id="vt_player16">
+                <div>
+                    <img src="images/vt_18.jpg" alt="雪花ラミィ" title="雪花ラミィ">
+                </div>
+                <div>
+                    <h3>雪花ラミィ</h3>
+                    <p>日本VTuber<br>實況/影片類型:遊戲、音樂、雜談</p>
+                    <a href="https://www.youtube.com/channel/UCFKOVgVbGmX65RxO3EtH3iw" target="new"><div class="player_href"><img src="images/youtube.svg">頻道連結</div></a>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="vt_player" id="vt_player17">
+                <div>
+                    <img src="images/vt_19.jpg" alt="角巻わため" title="角巻わため">
+                </div>
+                <div>
+                    <h3>角巻わため</h3>
+                    <p>日本VTuber<br>實況/影片類型:遊戲、音樂</p>
+                    <a href="https://www.youtube.com/channel/UCqm3BQLlJfvkTsX_hvm0UmA" target="new"><div class="player_href"><img src="images/youtube.svg">頻道連結</div></a>
+                </div>
+            </div>
+            <div class="vt_player" id="vt_player18">
+                <div>
+                    <img src="images/vt_20.jpg" alt="大空スバル" title="大空スバル">
+                </div>
+                <div>
+                    <h3>大空スバル</h3>
+                    <p>日本VTuber<br>實況/影片類型:遊戲、雜談</p>
+                    <a href="https://www.youtube.com/channel/UCvzGlP9oQwU--Y0r9id_jnA" target="new"><div class="player_href"><img src="images/youtube.svg">頻道連結</div></a>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="vt_player" id="vt_player19">
+                <div>
+                    <img src="images/vt_21.jpg" alt="櫻野露" title="櫻野露">
+                </div>
+                <div>
+                    <h3>櫻野露</h3>
+                    <p>台灣VTuber<br>實況/影片類型:遊戲、漫畫創作、音樂</p>
+                    <a href="https://www.youtube.com/c/%E6%AB%BB%E9%87%8E%E9%9C%B2" target="new"><div class="player_href"><img src="images/youtube.svg">頻道連結</div></a>
+                </div>
+            </div>
+            <div class="vt_player" id="vt_player20">
+                <div>
+                    <img src="images/vt_22.jpg" alt="">
+                </div>
+                <div>
+                    <h3>Nanashi Mumei</h3>
+                    <p>日本VTuber-EN組<br>實況/影片類型:遊戲、雜談</p>
+                    <a href="https://www.youtube.com/channel/UC3n5uGu18FoCy23ggWWp8tA" target="new"><div class="player_href"><img src="images/youtube.svg">頻道連結</div></a>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="vt_player" id="vt_player21">
+                <div>
+                    <img src="images/vt_23.jpg" alt="Moona Hoshinova" title="Moona Hoshinova">
+                </div>
+                <div>
+                    <h3>Moona Hoshinova</h3>
+                    <p>日本VTuber-ID組<br>實況/影片類型:遊戲、音樂</p>
+                    <a href="https://www.youtube.com/channel/UCP0BspO_AMEe3aQqqpo89Dg" target="new"><div class="player_href"><img src="images/youtube.svg">頻道連結</div></a>
+                </div>
+            </div>
+            <div class="vt_player" id="vt_player22">
+                <div>
+                    <img src="images/vt_24.jpg" alt="Takanashi Kiara" title="Takanashi Kiara">
+                </div>
+                <div>
+                    <h3>Takanashi Kiara</h3>
+                    <p>日本VTuber-EN組<br>實況/影片類型:遊戲、冷笑話</p>
+                    <a href="https://www.youtube.com/channel/UCHsx4Hqa-1ORjQTh9TYDhww" target="new"><div class="player_href"><img src="images/youtube.svg">頻道連結</div></a>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="vt_player" id="vt_player23">
+                <div>
+                    <img src="images/vt_25.jpg" alt="夜見愛夢" title="夜見愛夢">
+                </div>
+                <div>
+                    <h3>夜見愛夢</h3>
+                    <p>台灣VTuber<br>實況/影片類型:遊戲、音樂、雜談</p>
+                    <a href="https://www.youtube.com/channel/UCgYobGgRQSOS2NMbNAGKtuw" target="new"><div class="player_href"><img src="images/youtube.svg">頻道連結</div></a>
+                </div>
+            </div>
+            <div class="vt_player" id="vt_player24">
+                <div>
+                    <img src="images/vt_26.jpg" alt="Aoi Hinamori" title="Aoi Hinamori">
+                </div>
+                <div>
+                    <h3>Aoi Hinamori</h3>
+                    <p>台灣VTuber<br>實況/影片類型:遊戲、雜談、彈奏舒眠</p>
+                    <a href="https://www.youtube.com/channel/UCJSBNjYCB1pu_t0FajsY17g" target="new"><div class="player_href"><img src="images/youtube.svg">頻道連結</div></a>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="vt_player" id="vt_player25">
+                <div>
+                    <img src="images/vt_27.jpg" alt="Ayunda Risu" title="Ayunda Risu">
+                </div>
+                <div>
+                    <h3>Ayunda Risu</h3>
+                    <p>日本VTuber-ID組<br>實況/影片類型:遊戲、音樂</p>
+                    <a href="https://www.youtube.com/channel/UCOyYb1c43VlX9rc_lT6NKQw" target="new"><div class="player_href"><img src="images/youtube.svg">頻道連結</div></a>
+                </div>
+            </div>
+            <div class="vt_player" id="vt_player26">
+                <div>
+                    <img src="images/vt_28.jpg" alt="Gawr Gura" title="Gawr Gura">
+                </div>
+                <div>
+                    <h3>Gawr Gura</h3>
+                    <p>日本VTuber-EN組<br>實況/影片類型:遊戲、音樂、雜談</p>
+                    <a href="https://www.youtube.com/channel/UCoSrY_IQQVpmIRZ9Xf-y93g" target="new"><div class="player_href"><img src="images/youtube.svg">頻道連結</div></a>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="vt_player" id="vt_player27">
+                <div>
+                    <img src="images/vt_29.jpg" alt="Suisei Channel" title="Suisei Channel">
+                </div>
+                <div>
+                    <h3>Suisei Channel</h3>
+                    <p>日本VTuber<br>實況/影片類型:遊戲、音樂、雜談</p>
+                    <a href="https://www.youtube.com/channel/UC5CwaMl1eIgY8h02uZw7u8A" target="new"><div class="player_href"><img src="images/youtube.svg">頻道連結</div></a>
+                </div>
+            </div>
+            <div class="vt_player" id="vt_player28">
+                <div>
+                    <img src="images/vt_30.jpg" alt="不知火フレア" title="不知火フレア">
+                </div>
+                <div>
+                    <h3>不知火フレア</h3>
+                    <p>日本VTuber<br>實況/影片類型:遊戲、音樂、雜談</p>
+                    <a href="https://www.youtube.com/channel/UCvInZx9h3jC2JzsIzoOebWg" target="new"><div class="player_href"><img src="images/youtube.svg">頻道連結</div></a>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="vt_player" id="vt_player29">
+                <div>
+                    <img src="images/vt_31.jpg" alt="姫森ルーナ" title="姫森ルーナ">
+                </div>
+                <div>
+                    <h3>姫森ルーナ</h3>
+                    <p>日本VTuber<br>實況/影片類型:音樂、遊戲、雜談</p>
+                    <a href="https://www.youtube.com/channel/UCa9Y57gfeY0Zro_noHRVrnw" target="new"><div class="player_href"><img src="images/youtube.svg">頻道連結</div></a>
+                </div>
+            </div>
+            <div class="vt_player" id="vt_player30">
+                <div>
+                    <img src="images/vt_32.jpg" alt="獅白ぼたん" title="獅白ぼたん">
+                </div>
+                <div>
+                    <h3>獅白ぼたん</h3>
+                    <p>日本VTuber<br>實況/影片類型:遊戲、唱歌、雜談</p>
+                    <a href="https://www.youtube.com/channel/UCUKD-uaobj9jiqB-VXt71mA" target="new"><div class="player_href"><img src="images/youtube.svg">頻道連結</div></a>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="vt_player" id="vt_player31">
+                <div>
+                    <img src="images/vt_33.jpg" alt="癒月ちょこ" title="癒月ちょこ">
+                </div>
+                <div>
+                    <h3>癒月ちょこ</h3>
+                    <p>日本VTuber<br>實況/影片類型:遊戲、音樂、雜談</p>
+                    <a href="https://www.youtube.com/channel/UC1suqwovbL1kzsoaZgFZLKg" target="new"><div class="player_href"><img src="images/youtube.svg">頻道連結</div></a>
+                </div>
+            </div>
+            <div class="vt_player" id="vt_player32">
+                <div>
+                    <img src="images/vt_34.jpg" alt="ときのそら" title="ときのそら">
+                </div>
+                <div>
+                    <h3>ときのそら</h3>
+                    <p>日本VTuber<br>實況/影片類型:遊戲、音樂、音樂影片</p>
+                    <a href="https://www.youtube.com/channel/UCp6993wxpyDPHUpavwDFqgg" target="new"><div class="player_href"><img src="images/youtube.svg">頻道連結</div></a>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="vt_player" id="vt_player33">
+                <div>
+                    <img src="images/vt_35.jpg" alt="荒咬オウガ" title="荒咬オウガ">
+                </div>
+                <div>
+                    <h3>荒咬オウガ</h3>
+                    <p>日本VTuber<br>實況/影片類型:遊戲、音樂、雜談、ASMR</p>
+                    <a href="https://www.youtube.com/channel/UCwL7dgTxKo8Y4RFIKWaf8gA" target="new"><div class="player_href"><img src="images/youtube.svg">頻道連結</div></a>
+                </div>
+            </div>
+            <div class="vt_player" id="vt_player34">
+                <div>
+                    <img src="images/vt_36.jpg" alt="夕刻ロベル" title="夕刻ロベル">
+                </div>
+                <div>
+                    <h3>夕刻ロベル</h3>
+                    <p>日本VTuber<br>實況/影片類型:遊戲、音樂、聯動合作</p>
+                    <a href="https://www.youtube.com/channel/UCANDOlYTJT7N5jlRC3zfzVA" target="new"><div class="player_href"><img src="images/youtube.svg">頻道連結</div></a>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="vt_player" id="vt_player35">
+                <div>
+                    <img src="images/vt_37.jpg" alt="Watson Amelia" title="Watson Amelia">
+                </div>
+                <div>
+                    <h3>Watson Amelia</h3>
+                    <p>日本VTuber-EN組<br>實況/影片類型:遊戲、音樂、ASMR</p>
+                    <a href="https://www.youtube.com/channel/UCyl1z3jo3XHR1riLFKG5UAg" target="new"><div class="player_href"><img src="images/youtube.svg">頻道連結</div></a>
+                </div>
+            </div>
+            <div class="vt_player" id="vt_player36">
+                <div>
+                    <img src="images/vt_38.jpg" alt="Mori Calliope" title="Mori Calliope">
+                </div>
+                <div>
+                    <h3>Mori Calliope</h3>
+                    <p>日本VTuber-EN組<br>實況/影片類型:遊戲、音樂</p>
+                    <a href="https://www.youtube.com/channel/UCL_qhgtOy0dy1Agp8vkySQg" target="new"><div class="player_href"><img src="images/youtube.svg">頻道連結</div></a>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="vt_player" id="vt_player37">
+                <div>
+                    <img src="images/vt_39.jpg" alt="Pavolia Reine" title="Pavolia Reine">
+                </div>
+                <div>
+                    <h3>Pavolia Reine</h3>
+                    <p>日本VTuber-ID組<br>實況/影片類型:遊戲、音樂、聯動教學</p>
+                    <a href="https://www.youtube.com/channel/UChgTyjG-pdNvxxhdsXfHQ5Q" target="new"><div class="player_href"><img src="images/youtube.svg">頻道連結</div></a>
+                </div>
+            </div>
+            <div class="vt_player" id="vt_player38">
+                <div>
+                    <img src="images/vt_40.jpg" alt="Ninomae Ina'nis" title="Ninomae Ina'nis">
+                </div>
+                <div>
+                    <h3>Ninomae Ina'nis</h3>
+                    <p>日本VTuber-EN組<br>實況/影片類型:遊戲、音樂、畫圖</p>
+                    <a href="https://www.youtube.com/channel/UCMwGHR0BTZuLsmjY_NT5Pwg" target="new"><div class="player_href"><img src="images/youtube.svg">頻道連結</div></a>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="vt_player" id="vt_player39">
+                <div>
+                    <img src="images/vt_41.jpg" alt="常闇トワ" title="常闇トワ">
+                </div>
+                <div>
+                    <h3>常闇トワ</h3>
+                    <p>日本VTuber<br>實況/影片類型:遊戲、音樂</p>
+                    <a href="https://www.youtube.com/channel/UC1uv2Oq6kNxgATlCiez59hw" target="new"><div class="player_href"><img src="images/youtube.svg">頻道連結</div></a>
+                </div>
+            </div>
+            <div class="vt_player" id="vt_player40">
+                <div>
+                    <img src="images/vt_42.jpg" alt="友人A" title="友人A">
+                </div>
+                <div>
+                    <h3 title="驚不驚喜，意不意外">hololive官方人員-友人A</h3>
+                    <p>hololive-Group<br>實況/影片類型:各項發表、雜談</p>
+                    <a href="https://www.youtube.com/channel/UCJFZiqLMntJufDCHc6bQixg" target="new"><div class="player_href"><img src="images/youtube.svg">頻道連結</div></a>
+                </div>
+            </div>
+        </div>
+        <!-- <div>
+            <div class="vt_player vt_player41">
+                <div>
+                    <img src="images/vt_43.jpg" alt="" title="">
+                </div>
+                <div>
+                    <h3></h3>
+                    <p>VTuber<br>實況/影片類型:</p>
+                    <a href="" target="new"><div class="player_href"><img src="images/youtube.svg">頻道連結</div></a>
+                </div>
+            </div>
+            <div class="vt_player vt_player42">
+                <div>
+                    <img src="images/vt_44.jpg" alt="" title="">
+                </div>
+                <div>
+                    <h3></h3>
+                    <p><br>實況/影片類型:</p>
+                    <a href="" target="new"><div class="player_href"><img src="images/youtube.svg">頻道連結</div></a>
+                </div>
+            </div>
+        </div> -->
+    </section>
+
+    <footer>
+        <!-- Copyright &copy;  -->
+        <p>本頁面蒐集VTuber相關資訊，排序規則不固定</p>
+        <div class="footer_top_text"><a href="#" class="go_top go_top1"><img src="images/top.png" title="回去頂部囉"></a>如您的資訊不想出現在網站上請與我聯絡!<a href="#" class="go_top go_top2"><img src="images/top.png" title="回去頂部囉"></a></div>
+        <p><a href="mailto:ayvc0420@gmail.com">ayvc0420@gmail.com</a></p>
+        <p title="跪謝">ｍ（__ __）ｍ</p>
+        <!-- <p>為確保效能消耗最低，本網頁有異常顯示請重新整理頁面。</p> -->
+        <p class="footer_pc">本網站使用flex佈局，請使用firefox或chrome瀏覽器 1920x1080解析度獲得最佳體驗</p>
+
+    </footer>
+
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/layout.js"></script>
+    <script src="js/introduce.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>    
 </body>
-
 </html>

@@ -1,168 +1,267 @@
 <!DOCTYPE html>
-<html lang="zh-TW">
+<html lang="en">
 <head>
-    <link rel="shortcut icon" href="images/logo.png"></link>
-    <title>潤羽露西婭|潤羽るしあ</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hololive成員|潤羽露西婭-潤羽るしあ</title>
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/vt_style.css">
     <link rel="stylesheet" href="css/jquery.fancybox.min.css">
-    <link rel="stylesheet" href="css/aidoru.css">
-    
-    <script src="js/jquery-3.6.0.min.js"></script>
-    <script src="js/jquery.fancybox.min.js"></script>
-    <script src="js/aidoru_1.js"></script>
-    <script src="js/aidoru.js"></script>
-    <script src="js/popper.min.js" ></script>
-    <script src="js/bootstrap.min.js"></script>
+    <style>
+        #mob_menu_div::before{
+            content: url(images/mob_rushia.png);
+            position:relative;
+            left: 5%;
+        }
+        .vt_main>section:nth-of-type(odd){
+            background: rgb(225, 255, 224);
+        }
+        .vt_main>section:nth-of-type(even){
+            background: rgba(253, 234, 255, 0.7);
+        }
+        #vt_audio_title{
+            text-align: center;
+            font-size: 30px;
+            padding-top: 20px;
+            margin: auto;
+            color: rgb(255, 0, 0);
+            font-weight: 700;
+            padding-bottom: 60px;
+            line-height: 1.3;
+            width: 70vw;
+            border-bottom: 1px solid rgba(114, 114, 114, 0.2); 
+            opacity: 0;
+            transform: translateX(-100%);
+        }
+        /* rushia不放svg */
+        .vt_audio_div::before{
+            opacity: 0;
+        }
+        #rushia_audio_img{
+            width: 100px;
+            height: 100px;
+            margin: 30px auto 0;
+            background-image: url(images/rushia_audio.jpg);
+            background-size: cover;
+            border-radius: 50%;
+            opacity: 0;
+            transform: translateY(50%);
+        }
+    </style>
 
 </head>
-<body style="background-color: rgb(235, 255, 238);">
-
-    <main>
-        <nav class="mob_nav">
-            <img src="images/mob_top.png" alt="go_top" id="mob_top">
-            <a type="button" id="nav_button">
-                <svg viewBox="0 0 130 80" width="50" height="50">
-                    <rect width="100" height="20" rx="10"></rect>
-                    <rect y="30" width="100" height="20" rx="10"></rect>
-                    <rect y="60" width="100" height="20" rx="10"></rect>
-                </svg>
-            </a>
-            <ul class="mob_title">
-                <li><h2><a href="index.html">首頁</a></h2></li>
-                <li><h2><a href="vtuber.html">快速了解VTuber</a></h2></li>
-                    <li class="vt_menu">
-                        <h2><a href="pekora.html">兔田佩克拉</a></h2>
-                        <h2><a href="rushia.html">潤羽露西婭</a></h2>
-                        <h2><a href="miko.html">櫻巫女</a></h2>
-                        <h2><a href="https://www.hololive.tv/member" target="new">hololive全成員</a></h2>
-                    </li>
+<body style="background-color: #f4fff8;">
+    <img src="images/mob_top.png" alt="go_top" id="mob_top" class="mob_btn_anim" title="回去頂部囉">
+    <section class="mob_header">
+        <label for="mob_menu" class="mob_menu_control" id="mob_menu_control">
+            <svg width="50" height="40" class="svg1" id="svg1">
+                <line x1="10" y1="10" x2="40" y2="10" stroke="black" stroke-width="4"> </line>
+                <line x1="10" y1="20" x2="40" y2="20" stroke="black" stroke-width="4"> </line>
+                <line x1="10" y1="30" x2="40" y2="30" stroke="black" stroke-width="4"> </line>
+            </svg>
+            <svg width="50" height="40" class="svg2" id="svg2">
+                <line x1="10" y1="30" x2="40" y2="10" stroke="black" stroke-width="4"> </line>
+                <line x1="10" y1="10" x2="40" y2="30" stroke="black" stroke-width="4"> </line>
+            </svg>
+        </label>
+        <input type="checkbox" name="" id="mob_menu">
+        <div class="mob_menu" id="mob_menu_div">
+            <ul>
+                <li><a href="index.html">首頁</a></li>
+                <li><a href="vtuber.html">速覽VTuber</a></li>
+                <li class="mob_menu3">
+                    <a href="#" class="menu3_control">介紹成員&nbsp;<img src="images/chevron-down.svg" class="nav_down"></a>
+                    <ul class="menu3">
+                        <li><a href="pekora.html">兔田佩克拉</a></li>
+                        <li><a href="miko.html">櫻巫女</a></li>
+                        <li><a href="rushia.html">潤羽露西婭</a></li>
+                        <li><a href="korone.html">戌神沁音</a></li>
+                    </ul>
                 </li>
                 <li><a href="recommendYoutube.html">推薦的YouTube中文翻譯頻道</a></li>
             </ul>
-        </nav>
-    
-        <hr class="mob_hr">
-    
-        <header>
-            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                </ol>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <a href="https://www.pixiv.net/artworks/81489548" title="去pixiv上!" target="new"><img src="images/81489548_header.jpg" class="d-block w-100" alt="繪師twitter : @magowasabi"></a>
-                    </div>
-                    <div class="carousel-item">
-                        <a href="https://www.pixiv.net/artworks/81489548" title="去pixiv上!" target="new"><img src="images/81489548_header_1.jpg" class="d-block w-100" alt="繪師pixiv : ケビンの汐雨桜"></a>
-                    </div>
-                    <div class="carousel-item">
-                        <a href="https://www.pixiv.net/artworks/85978281" title="去pixiv上!" target="new"><img src="images/85978281_header.jpg" class="d-block w-100" alt="twitter : @toshizou_0714"></a>
-                    </div>
-                </div>
-                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
+        </div>
+    </section>
+    <header>
+        <div class="slideshow_img">
+            <input type="radio" name="control_header_img" id="control_header_img1" checked>
+            <input type="radio" name="control_header_img" id="control_header_img2">
+            <input type="radio" name="control_header_img" id="control_header_img3">
+            <input type="radio" name="control_header_img" id="control_header_img4">
+            <div class="header_label_div">
+                <label for="control_header_img1" class="header_label"></label>
+                <label for="control_header_img2" class="header_label"></label>
+                <label for="control_header_img3" class="header_label"></label>
+                <label for="control_header_img4" class="header_label"></label>
             </div>
-        </header>
-    
-        <hr class="mob_hr">
-        
-        <section class="title" style="margin-bottom: 2%;">
-            <ul class="nav justify-content-center title">
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html">首頁</a>
+            <div class="img0"><a href="https://www.pixiv.net/artworks/81489548" target="new"><img src="images/81489548_rushia_header.jpg" alt="rushia_pixiv81489548"></a></div>
+            <div class="img1"><a href="https://www.pixiv.net/artworks/81489548" target="new"><img src="images/81489548_rushia_header.jpg" alt="rushia_pixiv81489548"></a></div>
+            <div class="img2"><a href="https://www.pixiv.net/artworks/81489548" target="new"><img src="images/81489548_rushia_header_1.jpg" alt="rushia_pixiv81489548"></a></div>
+            <div class="img3"><a href="https://www.pixiv.net/artworks/85978281" target="new"><img src="images/85978281_rushia_header.jpg" alt="rushia_pixiv85978281"></a></div>
+            <div class="img4"><a href="https://www.pixiv.net/artworks/89695133" target="new"><img src="images/89695133_rushia_header.jpg" alt="rushia_pixiv85978281"></a></div>
+        </div>
+    </header>
+    <nav>
+        <div class="nav_menu">
+            <ul>
+                <li><a href="index.html">首頁</a></li>
+                <li><a href="vtuber.html">速覽VTuber</a></li>
+                <li class="nav_menu3">
+                    <a href="#">介紹成員&nbsp;<img src="images/chevron-down.svg" class="nav_down"></a>
+                    <ul>
+                        <li><a href="pekora.html">兔田佩克拉</a></li>
+                        <li><a href="miko.html">櫻巫女</a></li>
+                        <li><a href="rushia.html">潤羽露西婭</a></li>
+                        <li><a href="korone.html">戌神沁音</a></li>
+                    </ul>
                 </li>
-    
-                <li class="nav-item">
-                    <a class="nav-link" href="vtuber.html">快速了解VTuber</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">介紹成員</a>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="pekora.html">兎田ぺこら(兔田佩克拉)</a>
-                        <a class="dropdown-item" href="miko.html">桜巫女(櫻巫女)</a>
-                        <a class="dropdown-item" href="#">潤羽るしあ(潤羽露西婭)</a>
-                        <div class="dropdown-divider"></div>
-                        <a href="https://www.hololive.tv/member" class="dropdown-item" target="new">hololive全成員</a>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link " href="recommendYoutube.html" tabindex="-1" aria-disabled="true">推薦的YouTube中文翻譯頻道</a>
-                </li>
+                <li><a href="recommendYoutube.html">推薦的YouTube中文翻譯頻道</a></li>
             </ul>
-        </section>
-        <div class="aidoru_img">
-            <a href="images/76193394_rushia.jpg" data-fancybox data-caption="睡夢中的露西婭 | 圖片取自於pixiv : 76193394 繪師 : @naive_to" ><img src="images/76193394_rushia_title.jpg" alt="露西婭" title="睡夢中的露西婭"></a>
         </div>
-    
-    
-        <article class="content_aidoru_01">
-            <hr>
-                <h2>人物簡介</h2>
-                <h4 style="color: red;">中文名稱 : 潤羽露西婭</h4>  <h4 style="color: red;">日文名稱 : 潤羽るしあ&nbsp;|&nbsp;>うるはるしあ</span></h4>
-                <span title="來源 : hololive官網">是一名就讀魔法學校的死靈法師，不擅長在公開場合出現，不喜歡孤獨一人因此會與死靈跟屍體聊天。<br>身高143公分、年齡16歲，生日1月22日。</span>
-                <br>
-                <a href="https://twitter.com/uruharushia" target="new">推特頻道</a> <br> <a href="https://www.youtube.com/channel/UCl_gCybOJRIgOXw6Qb4qJzQ" target="new">YouTube頻道</a>
-            <hr>  
-        </article>
-    
-    
-        <div class="content_aidoru">
-    
-            <div class="card" style="width: 18rem;">
-                <a href="images/Osakilo_rushia.jpg" data-fancybox data-caption="圖片取自於巴哈Osakilo [繪圖] 插圖回顧 - 潤羽露西婭初號機篇" ><img src="images/Osakilo_card.jpg" class="card-img-top" alt="初號機露西婭" title="初號機露西婭"></a>
-                <div class="card-body">
-                    <h4 class="card-title">初號機稱呼</h4>
-                    <p class="card-text">初號機為新世紀福音戰士登場的角色，因露西婭直播時經常突然暴吼與暴走的初號機樣子非常相似，因此有<a href="https://youtu.be/xb64No_JSCU" target="new" title="初號機由來影片-中文版">露西婭初號機</a>的稱呼。</p>
-                </div>
-            </div>
-            <hr>
-            <div class="card" style="width: 18rem;">
-                <a href="images/hololive_rushia.png" data-fancybox data-caption="圖片取自於hololvie官網 人物設定" ><img src="images/hololive_card_rushia.jpg" class="card-img-top" alt="露西婭" title="平胸露西婭"></a>
-                <div class="card-body">
-                    <h4 class="card-title">牆壁的外號</h4>
-                    <p class="card-text">hololive官方將一週年紀念的露西婭的滑鼠墊造型設計為平面。<br><span title="只要你在露西婭影片留下平、貧相關字眼，馬上就會有一群信徒為你上香" style="color: red;">至此開始的外號逐漸傳出名氣...。</span> </p>
-                </div>
-            </div>
-            <hr>
-            <div class="card" style="width: 18rem;">
-                <a href="images/destroy_card.jpg" data-fancybox data-caption="圖片取自於hololive 3D動畫 【アニメ】弱肉強食 影片截圖" ><img src="images/destroy_card_1.jpg" class="card-img-top" alt="戰鬥力過高的露西婭" title="戰鬥力破表露西婭"></a>
-                <div class="card-body">
-                    <h4 class="card-title"><span style="color: red;" title="耳膜破壞力">戰鬥力破表</span></h4>
-                    <p class="card-text">與初號機由來相似，直播時經常發出比平常還要大上數倍音量的聲音，hololive <a href="https://youtu.be/y0yB6bXuf1E" target="new">3D動畫</a>中也可看見官方給予露西婭驚人的<span title="一拳將白堊紀時代終結" style="color: red;">破壞力</span>設定。</p>
-                </div>
-            </div>
-    
-    
-    
-    
-        </div>
-    
-        <hr>
-        <footer> 
-            <a>在露西婭面前 </a> <br><a><a href="#" class="go_top">
-            <img src="images/top.png" title="回去頂部囉">
-            </a>&nbsp;&nbsp;千萬不要提到<span title="除非你想死">牆壁、平</span>相關字眼。&nbsp;&nbsp;</a>
-            <a href="#" class="go_top"><img src="images/top.png" title="回去頂部囉"></a>
-            <br>
-            <a><span title="幫你上香">\|/ __ (ಠ_ಠ) __ \|/</span></a>
-        </footer>
-    </main>
-    <!-- 彩蛋 網站作者單推露西婭 <div class="rushia"><a href="images/rushia_surprise.jpg" data-fancybox data-caption="圖片取自於露西婭twitter 新裝發表"><img src="images/rushia_surprise.jpg" alt="" title="病嬌的露西婭"></a></div> -->
+    </nav>
 
+
+    <div class="vt_main">
+        <section class="vt_content1 vt_content">
+            <article id="c1_1">
+                <input type="radio" name="control_c1" id="control_c1_img1" checked>
+                <input type="radio" name="control_c1" id="control_c1_img2">
+                <div class="c1_label_div">
+                    <label for="control_c1_img1" class="c1_label"></label>
+                    <label for="control_c1_img2" class="c1_label"></label>
+                </div>
+                <div class="c1_title1">
+                    <h2>睡夢中的露西婭</h2>
+                    <div>
+                        <div><a href="images/76193394_rushia_content.jpg" data-fancybox="vt_c1" data-caption="睡夢中的露西婭 | 圖片取自於pixiv : 76193394 繪師 : @naive_to"><img src="images/76193394_rushia_title.jpg" alt="露西婭" title="睡夢中的露西婭"></a></div>
+                    </div>
+                </div>
+                <div class="c1_title2">
+                    <h2>黑暗露西婭</h2>
+                    <div>
+                        <div><a href="images/1273069461403131904_rushia_title.png" data-fancybox="vt_c1" data-caption="黑暗露西婭 | 圖片取自於twitter推文1273069461403131904 繪師 : @shirubetokiwa"><img src="images/1273069461403131904_rushia_title.jpg" alt="露西婭" title="黑暗露西婭"></a></div>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <section class="vt_content2 vt_content">
+            <div class="content_pos"><h1 id="c2_h1">人物介紹</h1></div>
+            <article id="c2_1">
+                <div class="content_text">
+                    <h3>中文名稱 : 潤羽露西婭</h3>
+                    <h3>日文名稱 : 潤羽るしあ | うるはるしあ</h3>
+                    <p>是一名就讀魔法學校的死靈法師，不擅長在公開場合出現，不喜歡孤獨一人因此會與死靈跟屍體聊天。
+                        <br>身高143公分、年齡16歲，生日1月22日。</p>
+                    <a href="https://twitter.com/uruharushia" target="new"><img src="images/twitter.svg" class="ytb_icon icon">推特頻道</a>
+                    <a href="https://www.youtube.com/channel/UCl_gCybOJRIgOXw6Qb4qJzQ" target="new"><img src="images/youtube.svg" class="ytb_icon icon">YouTube頻道</a>
+                </div>
+            </article>
+        </section>
+        <section class="vt_content3 vt_content">
+            <div class="content_pos"><h1 id="c3_h1">VTuber事蹟</h1></div> 
+            <article id="c3_1">
+                <a href="images/Osakilo_rushia.jpg" data-fancybox="vt_c3" data-caption="圖片取自於巴哈Osakilo [繪圖] 插圖回顧 - 潤羽露西婭初號機篇" ><img src="images/Osakilo_card.jpg" alt="露西婭" title="初號機露西婭"></a>
+                <div class="content_text">
+                    <h3>初號機稱呼</h3>
+                    <p>初號機為新世紀福音戰士登場的角色，因露西婭直播時經常突然暴吼與暴走的初號機樣子非常相似，因此有<a href="https://youtu.be/xb64No_JSCU">露西婭初號機</a>的稱呼。</p>
+                </div>
+            </article>
+            <article id="c3_2">
+                <a href="images/hololive_rushia.png" data-fancybox="vt_c3" data-caption="圖片取自於hololive官網 人物設定" ><img src="images/hololive_card_rushia.jpg" alt="露西婭" title="平胸露西婭"></a>
+                <div class="content_text">
+                    <h3>牆壁的外號</h3>
+                    <p>hololive官方將一週年紀念的露西婭的滑鼠墊造型設計為平面。<span title="只要你在露西婭影片留下平、貧相關字眼，馬上就會有一群信徒為你上香">至此開始的外號逐漸傳出名氣...。</span>平時<span title="露西婭粉絲的稱呼">粉屍</span>會在直播中嘲諷露西婭平胸。</p>
+                </div>
+            </article>
+            <article id="c3_3">
+                <a href="images/destroy_card.jpg" data-fancybox="vt_c3" data-caption="圖片取自於hololive 3D動畫 【アニメ】弱肉強食 影片截圖" ><img src="images/destroy_card_1.jpg"  alt="露西婭" title="戰鬥力破表的露西婭"></a>
+                <div class="content_text">
+                    <h3>戰鬥力破表</h3>
+                    <p>與初號機由來相似，直播時經常發出比平常還要大上數倍音量的聲音，hololive<a href="https://youtu.be/y0yB6bXuf1E">3D動畫</a>中也可看見官方給予露西婭驚人的<span title="一拳將白堊紀時代終結">破壞力</span>設定。</p>
+                </div>
+            </article>
+        </section>
+
+        <section class="vt_content4">
+            <div class="vt_video_div" id="vt_video_div">
+                <h1>露西婭洗腦YO~YO~YO~</h1>
+                <video muted src="video/rushia_c4.mp4" controls loop></video>
+            </div>
+            <div id="vt_audio_title"><h2>露西婭經典音檔<br>以下部分音檔播放時注意耳膜</h2></div>
+            <section class="vt_audio_div" id="vt_audio_div">
+                <div>
+                    <div id="audio1">
+                        <h4>Rushia Boing Boing</h4>
+                        <audio src="audio/rushia01.mp3" controls></audio>
+                    </div>
+                    <div id="audio2">
+                        <h4>初號機之吼</h4>
+                        <audio src="audio/rushia02.mp3" controls></audio>
+                    </div>
+                </div>
+                <div>
+                    <div id="audio3">
+                        <h4>垃圾遊戲</h4>
+                        <audio src="audio/rushia03.mp3" controls></audio>
+                    </div>
+                    <div id="audio4">
+                        <h4>何で???</h4>
+                        <audio src="audio/rushia04.mp3" controls></audio>
+                    </div>
+                </div>
+                <div>
+                    <div id="audio5">
+                        <h4>露西婭的鑽石</h4>
+                        <audio src="audio/rushia05.mp3" controls></audio>
+                    </div>
+                    <div id="audio6">
+                        <h4>yabai!!!</h4>
+                        <audio src="audio/rushia06.mp3" controls></audio>
+                    </div>
+                </div>
+                <div>
+                    <div id="audio7">
+                        <h4>好痛</h4>
+                        <audio src="audio/rushia07.mp3" controls></audio>
+                    </div>
+                    <div id="audio8">
+                        <h4>空~露西婭~~~~</h4>
+                        <audio src="audio/rushia08.mp3" controls></audio>
+                    </div>
+                </div>
+                <div>
+                    <div id="audio9">
+                        <h4>hi honey</h4>
+                        <audio src="audio/rushia09.mp3" controls></audio>
+                    </div>
+                    <div id="audio10">
+                        <h4 title="取於hololive3D動畫 弱肉強食">為什麼露西婭要受這種苦?</h4>
+                        <audio src="audio/rushia10.mp3" controls></audio>
+                    </div>
+                </div>
+            </section>
+            <div id="rushia_audio_img"></div>
+        </section>
+    </div>
+
+    <footer>
+        <!-- Copyright &copy;  -->
+        <p>在露西婭相關影片下方留言平、壁等字眼</p>
+        <div class="footer_top_text"><a href="#" class="go_top go_top1"><img src="images/top.png" title="回去頂部囉"></a>就算你是邊緣人也會有一堆信徒幫你上香<a href="#" class="go_top go_top2"><img src="images/top.png" title="回去頂部囉"></a></div>
+        <p title="上香">\|/ __ (ಠ_ಠ) __ \|/</p>
+        <!-- <p>為確保效能消耗最低，本網頁有異常顯示請重新整理頁面。</p> -->
+        <p class="footer_pc">本網站使用flex佈局，請使用firefox或chrome瀏覽器等主流瀏覽器獲得最佳體驗</p>
+
+    </footer>
+
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/layout.js"></script>
+    <script src="js/vt_rushia.js"></script>
+    <script src="js/rushia_audio.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>   
 
 </body>
-
-
 </html>
