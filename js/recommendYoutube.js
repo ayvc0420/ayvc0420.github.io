@@ -73,7 +73,9 @@ window.addEventListener('load',function(){
         //     c1_title.classList.remove('yt_title_ani')
         // }
         if(yt_control_c1_table === true){
-            c1_table.classList.add('yt_content_ani')
+            setTimeout(() => {
+                c1_table.classList.add('yt_content_ani')
+            }, 250);
         }
         // else{
         //     c1_table.classList.remove('yt_content_ani')
@@ -85,7 +87,9 @@ window.addEventListener('load',function(){
         //     c2_title.classList.remove('yt_content_ani')
         // }
         if(yt_control_c2_table === true){
-            c2_table.classList.add('yt_content_ani')
+            setTimeout(() => {
+                c2_table.classList.add('yt_content_ani')
+            }, 250);
         }
         // else{
         //     c2_table.classList.remove('yt_content_ani')
