@@ -104,12 +104,15 @@ header .slideshow_img div:nth-of-type(5){
 } */
 .header_label_div{
     position: absolute;
-    left: 0;
-    right: 0;
+    /* left: 0; */
+    /* right: 0; */
+    /* margin: auto; */
     bottom: -40px;
-    width: 110px;
-    margin: auto;
+    width: 100%;
     z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 label{
     cursor: pointer;
@@ -136,7 +139,7 @@ label{
     opacity: 1;
 }
 #control_header_img1:checked ~ .header_label_div label:nth-of-type(1){
-    background: rgb(255, 106, 143);
+    background: rgb(255, 87, 129);
 }
 #control_header_img1:checked ~ .img2 , .img3 , .img4{
     /* 左邊轉場動畫 */
@@ -146,7 +149,7 @@ label{
     opacity: 0;
 }
 #control_header_img2:checked ~ .header_label_div label:nth-of-type(2){
-    background: rgb(255, 106, 143);
+    background: rgb(255, 87, 129);
 }
 #control_header_img2:checked ~ .img2{
     transition: opacity 0.7s;
@@ -168,7 +171,7 @@ label{
     opacity: 1;
 }
 #control_header_img3:checked ~ .header_label_div label:nth-of-type(3){
-    background: rgb(255, 106, 143);
+    background: rgb(255, 87, 129);
 }
 #control_header_img3:checked ~ .img1 , .img2 , .img4{
     /* 左邊轉場動畫 */
@@ -184,7 +187,7 @@ label{
     opacity: 1;
 }
 #control_header_img4:checked ~ .header_label_div label:nth-of-type(4){
-    background: rgb(255, 106, 143);
+    background: rgb(255, 87, 129);
 }
 #control_header_img4:checked ~ .img1 , .img2 , .img3{
     /* 左邊轉場動畫 */

@@ -60,6 +60,11 @@ window.addEventListener('load',function(){
         }else{
             mob_top.style.display = 'block';
         }
+        if(height <= now_height){
+            mob_top.style.transform = `translateX(0%)`
+        }else{
+            mob_top.style.transform = `translateX(1000%)`
+        }
         
         if(yt_control_c1_title === true){
             c1_title.classList.add('yt_title_ani')
