@@ -42,8 +42,7 @@ body{
     display: none;
 }
 .mob_menu{
-    transform: translateX(-100%);
-    position: absolute;
+    display: none;
 }
 #mob_top{
     position: fixed;
@@ -433,6 +432,7 @@ footer .footer_top_text{
         background: rgb(185, 229, 250);
         transition: transform 0.5s;
         z-index: 999;
+        display: block;
     }
     .mob_menu a{
         text-decoration: none;
@@ -481,11 +481,6 @@ footer .footer_top_text{
         z-index: 3;
         cursor: pointer;
     }
-    #mob_menu:checked ~ .mob_menu{
-        display: block;
-        transform: translateX(0%);
-    }
-
 
 
     /*手機選單結束*/
