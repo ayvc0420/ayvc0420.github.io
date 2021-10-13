@@ -43,6 +43,14 @@
         .vt_audio_div::before{
             opacity: 0;
         }
+        @keyframes rushia_img {
+            0%{
+                transform: rotate(0deg);
+            }
+            100%{
+                transform: rotate(380deg);
+            }
+        }
         #rushia_audio_img{
             width: 100px;
             height: 100px;
@@ -52,6 +60,9 @@
             border-radius: 50%;
             opacity: 0;
             transform: translateY(50%);
+        }
+        #rushia_audio_img:hover{
+            animation: rushia_img 2s ease infinite alternate
         }
     </style>
 
