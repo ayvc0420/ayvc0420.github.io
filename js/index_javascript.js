@@ -57,7 +57,7 @@ window.addEventListener('load',function(){
             }
             setTimeout(() => {
                 c4()
-            }, 700);
+            }, 300);
         }
         if(control5 === true){
             content5.classList.add('content_ani')
