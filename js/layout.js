@@ -21,54 +21,6 @@ mob_menu_control.addEventListener('click',function(){
     }
 })
 
-//輪播圖
-const control_header_img1 = document.getElementById('control_header_img1')
-const control_header_img2 = document.getElementById('control_header_img2')
-const control_header_img3 = document.getElementById('control_header_img3')
-const control_header_img4 = document.getElementById('control_header_img4')
-const header_div1 = document.querySelector('.img1')
-const header_div2 = document.querySelector('.img2')
-const header_div3 = document.querySelector('.img3')
-const header_div4 = document.querySelector('.img4')
-//輪播圖切換固定順序圖片
-function header1(){
-    control_header_img1.checked = true
-}
-function header2(){
-    control_header_img2.checked = true
-}
-function header3(){
-    control_header_img3.checked = true
-}
-function header4(){
-    control_header_img4.checked = true
-}
-
-setTimeout(() => {
-    header2()
-}, 4000);
-setTimeout(() => {
-    header3()
-}, 8000);
-setTimeout(() => {
-    header4()
-}, 12000);
-setInterval(() => {
-    setTimeout(() => {
-        header1()
-    }, 0);
-    setTimeout(() => {
-        header2()
-    }, 4000);
-    setTimeout(() => {
-        header3()
-    }, 8000);
-    setTimeout(() => {
-        header4()
-    }, 12000);
-}, 16000);
-
-
 //top_btn按鈕效果
 $('.go_top img,#mob_top').on("click",function(){
     $('html').animate({scrollTop: 0,},1000);

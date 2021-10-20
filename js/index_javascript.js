@@ -13,8 +13,8 @@ window.addEventListener('load',function(){
 
 
     window.addEventListener('scroll',function(){
-        const body_height = document.body.scrollHeight;
-        mob_menu_div.style.height = `${body_height}px`;
+        // const body_height = document.body.scrollHeight;
+        // mob_menu_div.style.height = `${body_height}px`;
         const content2_top = content2.offsetTop;
         const content3_top = content3.offsetTop;
         const content4_top = content4.offsetTop;

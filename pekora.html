@@ -18,11 +18,18 @@
             position:relative;
             left: 5%;
         }
+        header .header_btn input{
+            border: 1px solid cornflowerblue;
+        }
+        header .header_btn>button{
+            color: cornflowerblue ;
+            border: 1px solid cornflowerblue;
+        }
         .vt_main>section:nth-of-type(odd){
-            background: rgb(223, 255, 255);
+            background: rgb(195, 238, 255);
         }
         .vt_main>section:nth-of-type(even){
-            background: rgb(255, 251, 251);
+            background: rgb(182, 202, 255);
         }
         .vt_audio_div{
             opacity: 0;
@@ -76,25 +83,19 @@
             </ul>
         </div>
     </section>
-    <header>
-        <div class="slideshow_img">
-            <input type="radio" name="control_header_img" id="control_header_img1" checked>
-            <input type="radio" name="control_header_img" id="control_header_img2">
-            <input type="radio" name="control_header_img" id="control_header_img3">
-            <input type="radio" name="control_header_img" id="control_header_img4">
-            <div class="header_label_div">
-                <label for="control_header_img1" class="header_label"></label>
-                <label for="control_header_img2" class="header_label"></label>
-                <label for="control_header_img3" class="header_label"></label>
-                <label for="control_header_img4" class="header_label"></label>
+    <header id="header"> 
+        <section class="slideshow_img">
+            <div v-for="(imgSrc,index) in img" :class="{header_switch_img: index===key}"><a :href="img[key].imgPixivSrc" target="new"><img  :src="img[key].imgSrc" :alt="img[key].alt" v-show="index === key"></a></div>
+            <div class="header_btn">
+                <button class="next" @click="imgSwitch(key-1)"><</button>
+                <div>
+                    <input type="button" v-for="(item,index) in img" @click="imgSwitch(index)" :class="{header_switch_img_btn:index===key}">
+                </div>
+                <button class="previous" @click="imgSwitch(key+1)">></button>
             </div>
-            <div class="img0"><a href="https://www.pixiv.net/artworks/87000012" target="new"><img src="images/87000012_pekora_header.jpg" alt="pekora_pixiv87000012" ></a></div>
-            <div class="img1"><a href="https://www.pixiv.net/artworks/87000012" target="new"><img src="images/87000012_pekora_header.jpg" alt="pekora_pixiv87000012"></a></div>
-            <div class="img2"><a href="https://www.pixiv.net/artworks/78720872" target="new"><img src="images/78720872_pekora_header.jpg" alt="pekora_pixiv78720872"></a></div>
-            <div class="img3"><a href="https://www.pixiv.net/artworks/84438656" target="new"><img src="images/84438656_pekora_header.jpg" alt="pekora_pixiv84438656"></a></div>
-            <div class="img4"><a href="https://www.pixiv.net/artworks/86614544" target="new"><img src="images/86614544_pekora_header.jpg" alt="pekora_pixiv84438656"></a></div>
-        </div>
+        </section>
     </header>
+
     <nav>
         <div class="nav_menu">
             <ul>
@@ -199,6 +200,8 @@
 
 
     <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/vue.js"></script>
+    <script src="js/vt1_headerImg.js"></script>
     <script src="js/layout.js"></script>
     <script src="js/vt_javascript.js"></script>
     <script src="js/jquery.fancybox.min.js"></script>   

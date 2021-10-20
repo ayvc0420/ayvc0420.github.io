@@ -19,11 +19,18 @@
             position:relative;
             left: 5%;
         }
+        header .header_btn input{
+            border: 1px solid chartreuse
+        }
+        header .header_btn>button{
+            color: chartreuse ;
+            border: 1px solid chartreuse
+        }
         .vt_main>section:nth-of-type(odd){
             background: rgb(225, 255, 224);
         }
         .vt_main>section:nth-of-type(even){
-            background: rgba(253, 234, 255, 0.7);
+            background: rgb(136, 255, 142);
         }
         #vt_audio_title{
             text-align: center;
@@ -100,25 +107,19 @@
             </ul>
         </div>
     </section>
-    <header>
-        <div class="slideshow_img">
-            <input type="radio" name="control_header_img" id="control_header_img1" checked>
-            <input type="radio" name="control_header_img" id="control_header_img2">
-            <input type="radio" name="control_header_img" id="control_header_img3">
-            <input type="radio" name="control_header_img" id="control_header_img4">
-            <div class="header_label_div">
-                <label for="control_header_img1" class="header_label"></label>
-                <label for="control_header_img2" class="header_label"></label>
-                <label for="control_header_img3" class="header_label"></label>
-                <label for="control_header_img4" class="header_label"></label>
+    <header id="header"> 
+        <section class="slideshow_img">
+            <div v-for="(imgSrc,index) in img" :class="{header_switch_img: index===key}"><a :href="img[key].imgPixivSrc" target="new"><img  :src="img[key].imgSrc" :alt="img[key].alt" v-show="index === key"></a></div>
+            <div class="header_btn">
+                <button class="next" @click="imgSwitch(key-1)"><</button>
+                <div>
+                    <input type="button" v-for="(item,index) in img" @click="imgSwitch(index)" :class="{header_switch_img_btn:index===key}">
+                </div>
+                <button class="previous" @click="imgSwitch(key+1)">></button>
             </div>
-            <div class="img0"><a href="https://www.pixiv.net/artworks/81489548" target="new"><img src="images/81489548_rushia_header.jpg" alt="rushia_pixiv81489548"></a></div>
-            <div class="img1"><a href="https://www.pixiv.net/artworks/81489548" target="new"><img src="images/81489548_rushia_header.jpg" alt="rushia_pixiv81489548"></a></div>
-            <div class="img2"><a href="https://www.pixiv.net/artworks/81489548" target="new"><img src="images/81489548_rushia_header_1.jpg" alt="rushia_pixiv81489548"></a></div>
-            <div class="img3"><a href="https://www.pixiv.net/artworks/85978281" target="new"><img src="images/85978281_rushia_header.jpg" alt="rushia_pixiv85978281"></a></div>
-            <div class="img4"><a href="https://www.pixiv.net/artworks/89695133" target="new"><img src="images/89695133_rushia_header.jpg" alt="rushia_pixiv85978281"></a></div>
-        </div>
+        </section>
     </header>
+    
     <nav>
         <div class="nav_menu">
             <ul>
@@ -275,6 +276,8 @@
 
 
     <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/vue.js"></script>
+    <script src="js/vt3_headerImg.js"></script>
     <script src="js/layout.js"></script>
     <script src="js/vt_rushia.js"></script>
     <script src="js/rushia_audio.js"></script>
