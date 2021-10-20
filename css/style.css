@@ -145,7 +145,7 @@ nav{
     background: rgba(225, 161, 255, 0.2);
     transition: background 0.8s;
 }
-.nav_menu>ul>li:hover a{
+.nav_menu>ul>li:hover>a{
     transform: translateY(-5px);
 }
 .nav_menu>ul>li>a::before{
