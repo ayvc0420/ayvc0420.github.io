@@ -87,11 +87,11 @@
     </section>
     <header id="header"> 
         <section class="slideshow_img">
-            <div v-for="(imgSrc,index) in img" :class="{header_switch_img: index===key}"><a :href="img[key].imgPixivSrc" target="new"><img  :src="img[key].imgSrc" :alt="img[key].alt" v-show="index === key"></a></div>
+            <div v-for="(imgSrc,index) in img" :class="{header_switch_img: index===key}"><a :href="img[key].imgPixivSrc" target="new"><img  :src="img[key].imgSrc" :alt="img[key].alt" v-show="index == key"></a></div>
             <div class="header_btn">
                 <button class="next" @click="imgSwitch(key-1)"><</button>
                 <div>
-                    <input type="button" v-for="(item,index) in img" @click="imgSwitch(index)" :class="{header_switch_img_btn:index===key}">
+                    <input type="button" v-for="(item,index) in img" @click="imgSwitch(index)" :class="{header_switch_img_btn:index==key}">
                 </div>
                 <button class="previous" @click="imgSwitch(key+1)">></button>
             </div>
