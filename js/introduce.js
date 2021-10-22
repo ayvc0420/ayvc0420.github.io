@@ -1,23 +1,9 @@
 
 window.addEventListener('load',function(){
 
-    //以下動畫不可用迴圈 消耗效能過大
     const vt_player_all = document.querySelectorAll('.vt_player')
     // const vt_player_alla = Array.from(document.querySelectorAll('.vt_player'))
-    const mob_menu_div = document.getElementById('mob_menu_div')
 
-    
-    // 以下建構子函式效能比原來消耗更大
-    // class Player_ani{
-        //     add_ani(event){
-            //         event.classList.add('vt_player_ani')
-            //     }
-            //     remove_ani(event){
-                //         event.classList.remove('vt_player_ani')
-                //     }
-                // }
-                
-                
     window.addEventListener('scroll',function(){
         //確保使用者拉縮畫面導致取頂距離不準確 不重整畫面顯示異常因此將取頂放入scroll監控內 
 
