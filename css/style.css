@@ -102,21 +102,27 @@ label{
 }
 @keyframes header_img {
     0%{
-        transform: translateX(10%);
+        transform: rotateY(180deg);
         opacity: 0;
     }
-    40%{
-        transform: translateX(-5%);
-    }
     100%{
-        transform: translateX(0%);
+        transform: rotateY(0deg);
         opacity: 1;
     }
 }
 .header_switch_img{
     animation: header_img 0.5s;
 }
-
+.slideshow_img a img{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.position_left{
+    width: 100% !important; 
+    transform: translateX(-999%) !important; 
+    opacity: 0 !important;
+}
 
 /* pc跟mob header結束 */
 
