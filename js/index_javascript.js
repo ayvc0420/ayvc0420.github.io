@@ -2,7 +2,6 @@
 window.addEventListener('load',function(){
 
     /* 首頁 */
-    const mob_menu_div = document.getElementById('mob_menu_div')
     const content2 = document.querySelector('.content2 article')
     const content3 = document.querySelector('.content3 article')
     const content4 = document.querySelector('.content4 article')

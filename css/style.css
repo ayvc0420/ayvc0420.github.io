@@ -114,7 +114,7 @@ label{
     }
 }
 .header_switch_img{
-    animation: header_img 0.5s
+    animation: header_img 0.5s;
 }
 
 

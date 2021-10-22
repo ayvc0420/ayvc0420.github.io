@@ -1,5 +1,5 @@
 
-
+// 迴圈製作參考introduce.js
 const audio1 = document.getElementById('audio1')
 const audio2 = document.getElementById('audio2')
 const audio3 = document.getElementById('audio3')
