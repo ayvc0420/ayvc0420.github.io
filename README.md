@@ -5,6 +5,6 @@ WebDesign|網頁設計
 
 網址連結 : https://ayvc0420.github.io/ (部分採用Vue jQuery 2021/10/11製作)
 
-舊網址連結https://ayvc0420.github.io/old/ (採用bootstrap 2021/8/13製作)
+舊網址連結https://ayvc0420.github.io/old/ (採用bootstrap4 2021/8/13製作)
 
 網頁內資料及圖片等資源取自於維基百科、pixiv、twitter
