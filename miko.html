@@ -50,6 +50,41 @@
 
     </style>
 
+    <script src="js/vue.min.js"></script>
+    <script>
+        
+    window.addEventListener('load',function(){
+
+        let headerData = {
+        key:0,
+        img:[
+            {imgPixivSrc:'https://www.pixiv.net/artworks/90697958', imgSrc:'./images/miko_header.jpg',alt:'pixiv90697958'},
+            {imgPixivSrc:'https://www.pixiv.net/artworks/89707884', imgSrc:'./images/miko_header_1.jpg',alt:'pixiv89707884'},
+            {imgPixivSrc:'https://twitter.com/sakuramiko35/status/1388738206443610117/photo/1', imgSrc:'./images/miko_header_2.jpg',alt:'twitter1388738206443610117'},
+            {imgPixivSrc:'https://www.pixiv.net/artworks/86239985', imgSrc:'./images/miko_header_3.jpg',alt:'pixiv86239985'},
+        ]}
+    
+        new Vue({
+            el:'#header',
+            data:headerData,
+            methods: {
+                imgSwitch(index){
+                    this.key = (index + this.img.length) % this.img.length;
+                },
+            },
+            mounted: function(){
+                setInterval(()=>{
+                    if(this.key < this.img.length -1){
+                        this.key +=1;
+                    }else{
+                        this.key = 0;
+                    }
+                },8000)
+            },
+        })
+    })
+    </script>
+
 </head>
 <body style="background-color: #d7f6ff;">
     <img src="images/mob_top.png" alt="go_top" id="mob_top" class="mob_btn_anim" title="回去頂部囉">
@@ -87,7 +122,7 @@
     <header id="header"> 
         <section class="slideshow_img">
             <div>
-                <img src="images/miko_header.jpg" class="position_left">
+                <!-- <img src="images/miko_header.jpg" class="position_left"> -->
                 <a :href="img[key].imgPixivSrc" target="new"><img v-for="(imgSrc,index) in img" :class="{header_switch_img: index===key}" :src="img[key].imgSrc" :alt="img[key].alt" v-show="index == key"></a>
             </div>
             <div class="header_btn">
@@ -215,8 +250,6 @@
 
 
     <script src="js/jquery-3.6.0.min.js"></script>
-    <script src="js/vue.min.js"></script>
-    <script src="js/vt2_headerImg.js"></script>
     <script src="js/layout.js"></script>
     <script src="js/vt_javascript.js"></script>
     <script src="js/jquery.fancybox.min.js"></script>   
