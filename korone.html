@@ -125,7 +125,7 @@
     <header id="header"> 
         <section class="slideshow_img">
             <div>
-                <!-- <img src="images/miko_header.jpg" class="position_left"> -->
+                <img src="images/miko_header.jpg" class="position_left">
                 <a :href="img[key].imgPixivSrc" target="new"><img v-for="(imgSrc,index) in img" :class="{header_switch_img: index===key}" :src="img[key].imgSrc" :alt="img[key].alt" v-show="index == key" ></a>
             </div>
             <div class="header_btn">
