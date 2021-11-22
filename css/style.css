@@ -113,11 +113,11 @@ label{
 .header_switch_img{
     animation: header_img 0.5s;
 }
-.slideshow_img a img{
+/* .slideshow_img a img{
     position: absolute;
     left: 0;
     top: 0;
-}
+} */
 .position_left{
     width: 100% !important; 
     transform: translateX(-999%) !important; 
