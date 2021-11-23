@@ -1,16 +1,4 @@
 
-    // const url = '../data/vtuber.json'
-    // let vtData = async function(){
-    //     let data;
-    //     try{
-    //         data = await axios(url)
-    //     }catch{
-    //         alert('資料獲取失敗，請稍後再試。')
-    //     }
-    //     return data
-    // }
-    // let data = vtData()
-    // console.log('v',data)
 
 window.addEventListener('load',async function(){
     
@@ -81,7 +69,5 @@ window.addEventListener('load',async function(){
         }
     })
 
-    // document.getElementById('areaChange').addEventListener('change',v.fetchVtuber)
-    // window.addEventListener('scroll',v.vtAnimation)
     
 })

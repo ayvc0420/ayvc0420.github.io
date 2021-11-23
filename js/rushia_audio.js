@@ -1,7 +1,7 @@
 
 ;(function(){
 
-    // 迴圈製作參考introduce.js
+    // 迴圈製作參考introduceVue.js
     const audio1 = document.getElementById('audio1')
     const audio2 = document.getElementById('audio2')
     const audio3 = document.getElementById('audio3')
