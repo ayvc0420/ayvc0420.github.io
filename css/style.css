@@ -49,7 +49,8 @@ header{
     padding: 20px 0;
 }
 header .slideshow_img{
-    max-width: 95%;
+    max-width: 100%;
+    margin: 0 auto;
     /* margin: 20px 0; */
     position: relative;
 }
@@ -71,9 +72,9 @@ header .header_btn>div{
 }
 
 header .header_btn input{
-    border: 1px solid black;
+    border: 2px solid black;
     width: 30px;
-    height: 7px;
+    height: 10px;
     border-radius: 25%;
     background-color: transparent;
     vertical-align: top;
@@ -85,7 +86,7 @@ header .header_btn>button{
     font-size: 20px;
     background-color: transparent;
     vertical-align: middle;
-    border: 1px solid black;
+    border: 2px solid black;
     cursor: pointer;
     border-radius: 4px;
     font-weight: 900;
@@ -312,7 +313,13 @@ footer {
     color: white;
     line-height: 2rem;
 }
-
+footer a{
+    color: yellow;
+    transition: all .5s;
+}
+footer a:hover{
+    color: rgb(255, 179, 129);
+}
 footer .footer_top_text{
     position: relative;
     display: inline-block;

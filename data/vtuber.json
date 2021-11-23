@@ -1,0 +1,508 @@
+{
+    "vtuber":[
+        {
+            "name":"hololive | ホロライブ",
+            "content":"虛擬YouTuber經紀公司",
+            "href":"https://www.youtube.com/channel/UCJFZiqLMntJufDCHc6bQixg",
+            "img":"images/vt_01.jpg",
+            "area":"日本",
+            "id":1
+        },
+        {
+            "name":"彩虹社 | にじさんじ",
+            "content":"虛擬YouTuber經紀公司",
+            "href":"https://www.youtube.com/channel/UCX7YkU9nEeaoZbkVLVajcMg",
+            "img":"images/vt_02.jpg",
+            "area":"日本",
+            "id":2
+        },
+        {
+            "name":"Rushia Ch. 潤羽るしあ",
+            "content":"日本VTuber<br>實況/影片類型:遊戲、音樂、雜談、ASMR",
+            "href":"https://www.youtube.com/channel/UCl_gCybOJRIgOXw6Qb4qJzQ",
+            "img":"images/vt_03.jpg",
+            "area":"日本",
+            "id":3
+        },
+        {
+            "name":"Marine Ch. 宝鐘マリン",
+            "content":"日本VTuber<br>實況/影片類型:遊戲、音樂、雜談",
+            "href":"https://www.youtube.com/channel/UCCzUftO8KOVkV4wQG1vkUvg",
+            "img":"images/vt_04.jpg",
+            "area":"日本",
+            "id":4
+        },
+        {
+            "name":"Matsuri Channel 夏色まつり",
+            "content":"日本VTuber<br>實況/影片類型:遊戲、音樂",
+            "href":"https://www.youtube.com/channel/UCQ0UDLQCjY0rmuxCDE38FGg",
+            "img":"images/vt_05.jpg",
+            "area":"日本",
+            "id":5
+        },
+        {
+            "name":"Komame ch.茸茸鼠",
+            "content":"日本VTuber<br>實況/影片類型:遊戲、音樂、台灣迷因",
+            "href":"https://www.youtube.com/channel/UCBLqkkSpOi6a95Lf4BsTh7Q",
+            "img":"images/vt_06.jpg",
+            "area":"日本",
+            "id":6
+        },
+        {
+            "name":"Pekora Ch. 兎田ぺこら",
+            "content":"日本VTuber<br>實況/影片類型:遊戲、音樂、雜談",
+            "href":"https://www.youtube.com/channel/UC1DCedRgGHBdm81E1llLhOQ",
+            "img":"images/vt_07.jpg",
+            "area":"日本",
+            "id":7
+        },
+        {
+            "name":"音時エラー / Ototoki Error",
+            "content":"石油系台灣VTuber<br>實況/影片類型:遊戲、音樂、雜談",
+            "href":"https://www.youtube.com/channel/UCaV2RmU3drZBtPuOkXZri3w",
+            "img":"images/vt_08.jpg",
+            "area":"台灣",
+            "id":8
+        },
+        {
+            "name":"Korone Ch. 戌神ころね",
+            "content":"日本VTuber<br>實況/影片類型:遊戲、音樂、雜談",
+            "href":"https://www.youtube.com/channel/UChAnqc_AY5_I3Px5dig3X1Q",
+            "img":"images/vt_09.jpg",
+            "area":"日本",
+            "id":9
+        },
+        {
+            "name":"Miko Ch. さくらみこ",
+            "content":"日本VTuber<br>實況/影片類型:遊戲、音樂、雜談",
+            "href":"https://www.youtube.com/channel/UC-hM6YJuNYVAmUWxeIr9FeA",
+            "img":"images/vt_10.jpg",
+            "area":"日本",
+            "id":10
+        },
+        {
+            "name":"Kanata Ch. 天音かなた",
+            "content":"日本VTuber<br>實況/影片類型:遊戲、音樂、雜談",
+            "href":"https://www.youtube.com/channel/UCZlDXzGoo7d44bwdNObFacg",
+            "img":"images/vt_11.jpg",
+            "area":"日本",
+            "id":11
+        },
+        {
+            "name":"Aqua Ch. 湊あくあ",
+            "content":"日本VTuber<br>實況/影片類型:遊戲、音樂、雜談",
+            "href":"https://www.youtube.com/channel/UC1opHUrw8rvnsadT-iGp7Cg",
+            "img":"images/vt_12.jpg",
+            "area":"日本",
+            "id":12
+        },
+        {
+            "name":"Kuzuha Channel",
+            "content":"日本VTuber<br>實況/影片類型:遊戲、音樂、雜談",
+            "href":"https://www.youtube.com/channel/UCSFCh5NL4qXrAy9u-u2lX3g",
+            "img":"images/vt_13.jpg",
+            "area":"日本",
+            "id":13
+        },
+        {
+            "name":"Noel Ch. 白銀ノエル",
+            "content":"日本VTuber<br>實況/影片類型:ASMR、遊戲、音樂、雜談",
+            "href":"https://www.youtube.com/channel/UCdyqAaZDKHXg4Ahi7VENThQ",
+            "img":"images/vt_14.jpg",
+            "area":"日本",
+            "id":14
+        },
+        {
+            "name":"Okayu Ch. 猫又おかゆ",
+            "content":"日本VTuber<br>實況/影片類型:遊戲、音樂、雜談",
+            "href":"https://www.youtube.com/channel/UCvaTdHTWBGv3MKj3KVqJVCw",
+            "img":"images/vt_15.jpg",
+            "area":"日本",
+            "id":15
+        },
+        {
+            "name":"Siro Channel",
+            "content":"日本VTuber<br>實況/影片類型:遊戲、雜談",
+            "href":"https://www.youtube.com/channel/UCLhUvJ_wO9hOvv_yYENu4fQ",
+            "img":"images/vt_16.jpg",
+            "area":"日本",
+            "id":16
+        },
+        {
+            "name":"社築",
+            "content":"日本VTuber<br>實況/影片類型:遊戲、雜談",
+            "href":"https://www.youtube.com/channel/UCKMYISTJAQ8xTplUPHiABlA",
+            "img":"images/vt_17.jpg",
+            "area":"日本",
+            "id":17
+        },
+        {
+            "name":"Lamy Ch. 雪花ラミィ",
+            "content":"日本VTuber<br>實況/影片類型:遊戲、音樂、雜談",
+            "href":"https://www.youtube.com/channel/UCFKOVgVbGmX65RxO3EtH3iw",
+            "img":"images/vt_18.jpg",
+            "area":"日本",
+            "id":18
+        },
+        {
+            "name":"Watame Ch. 角巻わため",
+            "content":"日本VTuber<br>實況/影片類型:遊戲、音樂",
+            "href":"https://www.youtube.com/channel/UCqm3BQLlJfvkTsX_hvm0UmA",
+            "img":"images/vt_19.jpg",
+            "area":"日本",
+            "id":19
+        },
+        {
+            "name":"Subaru Ch. 大空スバル",
+            "content":"日本VTuber<br>實況/影片類型:遊戲、雜談",
+            "href":"https://www.youtube.com/channel/UCvzGlP9oQwU--Y0r9id_jnA",
+            "img":"images/vt_20.jpg",
+            "area":"日本",
+            "id":20
+        },
+        {
+            "name":"櫻野露 RURU Ch.",
+            "content":"台灣VTuber<br>實況/影片類型:遊戲、漫畫創作、音樂",
+            "href":"https://www.youtube.com/c/%E6%AB%BB%E9%87%8E%E9%9C%B2",
+            "img":"images/vt_21.jpg",
+            "area":"21",
+            "id":21
+        },
+        {
+            "name":"フブキCh. 白上フブキ",
+            "content":"日本VTuber<br>實況/影片類型:遊戲、音樂",
+            "href":"https://www.youtube.com/channel/UCdn5BQ06XqgXoAxIhbqw5Rg",
+            "img":"images/vt_22.jpg",
+            "area":"日本",
+            "id":22
+        },
+        {
+            "name":"Moona Hoshinova hololive-ID",
+            "content":"日本VTuber-ID組<br>實況/影片類型:遊戲、音樂",
+            "href":"https://www.youtube.com/channel/UCP0BspO_AMEe3aQqqpo89Dg",
+            "img":"images/vt_23.jpg",
+            "area":"印尼",
+            "id":23
+        },
+        {
+            "name":"Takanashi Kiara Ch. hololive-EN",
+            "content":"日本VTuber-EN組<br>實況/影片類型:遊戲、冷笑話",
+            "href":"https://www.youtube.com/channel/UCHsx4Hqa-1ORjQTh9TYDhww",
+            "img":"images/vt_24.jpg",
+            "area":"EN",
+            "id":24
+        },
+        {
+            "name":"AiYU ch. 夜見愛夢",
+            "content":"台灣VTuber<br>實況/影片類型:遊戲、音樂、雜談",
+            "href":"https://www.youtube.com/channel/UCgYobGgRQSOS2NMbNAGKtuw",
+            "img":"images/vt_25.jpg",
+            "area":"台灣",
+            "id":25
+        },
+        {
+            "name":"Aoi Hinamori Ch.",
+            "content":"台灣VTuber<br>實況/影片類型:遊戲、雜談、彈奏舒眠",
+            "href":"https://www.youtube.com/channel/UCJSBNjYCB1pu_t0FajsY17g",
+            "img":"images/vt_26.jpg",
+            "area":"台灣",
+            "id":26
+        },
+        {
+            "name":"Ayunda Risu Ch. hololive-ID",
+            "content":"日本VTuber-ID組<br>實況/影片類型:遊戲、音樂",
+            "href":"https://www.youtube.com/channel/UCOyYb1c43VlX9rc_lT6NKQw",
+            "img":"images/vt_27.jpg",
+            "area":"印尼",
+            "id":27
+        },
+        {
+            "name":"Gawr Gura Ch. hololive-EN",
+            "content":"日本VTuber-EN組<br>實況/影片類型:遊戲、音樂、雜談",
+            "href":"https://www.youtube.com/channel/UCoSrY_IQQVpmIRZ9Xf-y93g",
+            "img":"images/vt_28.jpg",
+            "area":"EN",
+            "id":28
+        },
+        {
+            "name":"Suisei Channel",
+            "content":"日本VTuber<br>實況/影片類型:遊戲、音樂、雜談",
+            "href":"https://www.youtube.com/channel/UC5CwaMl1eIgY8h02uZw7u8A",
+            "img":"images/vt_29.jpg",
+            "area":"日本",
+            "id":29
+        },
+        {
+            "name":"Flare Ch. 不知火フレア",
+            "content":"日本VTuber<br>實況/影片類型:遊戲、音樂、雜談",
+            "href":"https://www.youtube.com/channel/UCvInZx9h3jC2JzsIzoOebWg",
+            "img":"images/vt_30.jpg",
+            "area":"日本",
+            "id":30
+        },
+        {
+            "name":"Luna Ch. 姫森ルーナ",
+            "content":"日本VTuber<br>實況/影片類型:音樂、遊戲、雜談",
+            "href":"https://www.youtube.com/channel/UCa9Y57gfeY0Zro_noHRVrnw",
+            "img":"images/vt_31.jpg",
+            "area":"日本",
+            "id":31
+        },
+        {
+            "name":"Botan Ch.獅白ぼたん",
+            "content":"日本VTuber<br>實況/影片類型:遊戲、唱歌、雜談",
+            "href":"https://www.youtube.com/channel/UCUKD-uaobj9jiqB-VXt71mA",
+            "img":"images/vt_32.jpg",
+            "area":"日本",
+            "id":32
+        },
+        {
+            "name":"Choco Ch. 癒月ちょこ",
+            "content":"日本VTuber<br>實況/影片類型:遊戲、音樂、雜談",
+            "href":"https://www.youtube.com/channel/UC1suqwovbL1kzsoaZgFZLKg",
+            "img":"images/vt_33.jpg",
+            "area":"日本",
+            "id":33
+        },
+        {
+            "name":"SoraCh. ときのそらチャンネル",
+            "content":"日本VTuber<br>實況/影片類型:遊戲、音樂、音樂影片",
+            "href":"https://www.youtube.com/channel/UCp6993wxpyDPHUpavwDFqgg",
+            "img":"images/vt_34.jpg",
+            "area":"日本",
+            "id":34
+        },
+        {
+            "name":"Oga Ch.荒咬オウガ",
+            "content":"日本VTuber<br>實況/影片類型:遊戲、音樂、雜談、ASMR",
+            "href":"https://www.youtube.com/channel/UCwL7dgTxKo8Y4RFIKWaf8gA",
+            "img":"images/vt_35.jpg",
+            "area":"日本",
+            "id":35
+        },
+        {
+            "name":"Roberu Ch. 夕刻ロベル",
+            "content":"日本VTuber<br>實況/影片類型:遊戲、音樂、聯動合作",
+            "href":"https://www.youtube.com/channel/UCANDOlYTJT7N5jlRC3zfzVA",
+            "img":"images/vt_36.jpg",
+            "area":"日本",
+            "id":36
+        },
+        {
+            "name":"Watson Amelia Ch. hololive-EN",
+            "content":"日本VTuber-EN組<br>實況/影片類型:遊戲、音樂、ASMR",
+            "href":"https://www.youtube.com/channel/UCyl1z3jo3XHR1riLFKG5UAg",
+            "img":"images/vt_37.jpg",
+            "area":"EN",
+            "id":37
+        },
+        {
+            "name":"Mori Calliope Ch. hololive-EN",
+            "content":"日本VTuber-EN組<br>實況/影片類型:遊戲、音樂",
+            "href":"https://www.youtube.com/channel/UCL_qhgtOy0dy1Agp8vkySQg",
+            "img":"images/vt_38.jpg",
+            "area":"EN",
+            "id":38
+        },
+        {
+            "name":"Pavolia Reine Ch. hololive-ID",
+            "content":"日本VTuber-ID組<br>實況/影片類型:遊戲、音樂、聯動教學",
+            "href":"https://www.youtube.com/channel/UChgTyjG-pdNvxxhdsXfHQ5Q",
+            "img":"images/vt_39.jpg",
+            "area":"印尼",
+            "id":39
+        },
+        {
+            "name":"Ninomae Ina'nis Ch. hololive-EN",
+            "content":"日本VTuber-EN組<br>實況/影片類型:遊戲、音樂、畫圖",
+            "href":"https://www.youtube.com/channel/UCMwGHR0BTZuLsmjY_NT5Pwg",
+            "img":"images/vt_40.jpg",
+            "area":"EN",
+            "id":40
+        },
+        {
+            "name":"kson ONAIR",
+            "content":"組長系日本VTuber<br>實況/影片類型:英語教學、遊戲、音樂",
+            "href":"https://www.youtube.com/c/ksonONAIR/featured",
+            "img":"images/vt_41.jpg",
+            "area":"日本",
+            "id":41
+        },
+        {
+            "name":"璐洛洛 Ruroro【人造人Vtuber】",
+            "content":"台灣VTuber<br>實況/影片類型:遊戲、遊戲、還是遊戲",
+            "href":"https://www.youtube.com/channel/UCRf7OJA3azS4RsGd_G96FUw",
+            "img":"images/vt_42.jpg",
+            "area":"台灣",
+            "id":42
+        },
+        {
+            "name":"李李鈴蘭 / Linglan Lily",
+            "content":"台灣VTuber<br>實況/影片類型:音樂、翻唱、雜談、遊戲",
+            "href":"https://www.youtube.com/channel/UCxWAL-c1psONO_DfG-cq2iA",
+            "img":"images/vt_43.jpg",
+            "area":"台灣",
+            "id":43
+        },
+        {
+            "name":"八重「雲」Yae Ch.",
+            "content":"空氣系台灣VTuber<br>實況/影片類型:遊戲、雜談",
+            "href":"https://www.youtube.com/channel/UCgOFPDmRWGQsebwAAro7bYA",
+            "img":"images/vt_44.jpg",
+            "area":"台灣",
+            "id":44
+        },
+        {
+            "name":"No.Fifteen Ch. 十五號",
+            "content":"台灣VTuber<br>實況/影片類型:遊戲、雜談、音樂",
+            "href":"https://www.youtube.com/channel/UC_UqaRNrLcaL4fp2IAPV0OQ",
+            "img":"images/vt_45.jpg",
+            "area":"台灣",
+            "id":45
+        },
+        {
+            "name":"Lutralutra Ch. 露恰露恰",
+            "content":"台灣VTuber<br>實況/影片類型:深夜談、遊戲、雜談、音樂",
+            "href":"https://www.youtube.com/channel/UCmyc8eVR3G9A7hjaHsLR6NQ",
+            "img":"images/vt_46.jpg",
+            "area":"台灣",
+            "id":46
+        },
+        {
+            "name":"LanCee Ch. 蘭希",
+            "content":"創作系台灣VTuber<br>實況/影片類型:原創音樂",
+            "href":"https://www.youtube.com/channel/UCYLYzg2BRjpDIf-damyjJRw",
+            "img":"images/vt_47.jpg",
+            "area":"台灣",
+            "id":47
+        },
+        {
+            "name":"Hoshinokawa Neo Ch.星ノ川涅緒",
+            "content":"台灣VTuber<br>實況/影片類型:遊戲、雜談、翻唱音樂",
+            "href":"https://www.youtube.com/channel/UCkTQ6gRCQPR_FbLXWakP6OA",
+            "img":"images/vt_48.jpg",
+            "area":"台灣",
+            "id":48
+        },
+        {
+            "name":"超究極黑醬油Joyu ch.",
+            "content":"台灣VTuber<br>實況/影片類型:幹話、遊戲",
+            "href":"https://www.youtube.com/channel/UCy5l7iZCTy-alDJ9rL5kuXQ",
+            "img":"images/vt_49.jpg",
+            "area":"台灣",
+            "id":49
+        },
+        {
+            "name":"名雪薇薇·ヴィヴィch.",
+            "content":"台灣VTuber<br>實況/影片類型:音樂、遊戲",
+            "href":"https://www.youtube.com/channel/UCdesGlD7t5JV-z28p5GqVIw",
+            "img":"images/vt_50.jpg",
+            "area":"台灣",
+            "id":50
+        },
+        {
+            "name":"Nana Ch. 神火娜娜",
+            "content":"台灣VTuber<br>實況/影片類型:ASMR、遊戲",
+            "href":"https://www.youtube.com/channel/UCUFifamRdDTxihQ1tmJcR-g",
+            "img":"images/vt_51.jpg",
+            "area":"台灣",
+            "id":51
+        },
+        {
+            "name":"海晞 みき【Stu. Huayu】",
+            "content":"蛞蝓系台灣VTuber<br>實況/影片類型:遊戲",
+            "href":"https://www.youtube.com/channel/UCeaXqqFnCiWw11Gy6yLaHGg",
+            "img":"images/vt_52.jpg",
+            "area":"台灣",
+            "id":52
+        },
+        {
+            "name":"天櫻咲樂 さくら ch.",
+            "content":"台灣VTuber<br>實況/影片類型:雜談、遊戲、音樂",
+            "href":"https://www.youtube.com/channel/UCK-H5yv8OpCce5xmUrbOP8A",
+            "img":"images/vt_53.jpg",
+            "area":"台灣",
+            "id":53
+        },
+        {
+            "name":"RiRA Ch. 梨菈",
+            "content":"台灣VTuber<br>實況/影片類型:雜談、遊戲、音樂",
+            "href":"https://www.youtube.com/channel/UCGJxABIB4vdwTpEgmY3e_wQ",
+            "img":"images/vt_54.jpg",
+            "area":"台灣",
+            "id":54
+        },
+        {
+            "name":"Tabasuko Ch. 塔芭絲可",
+            "content":"台灣VTuber<br>實況/影片類型:遊戲、雜談、音樂",
+            "href":"https://www.youtube.com/channel/UCXe8hqIk_Yap31y7EOCMdzg",
+            "img":"images/vt_55.jpg",
+            "area":"台灣",
+            "id":55
+        },
+        {
+            "name":"Rita Ch. 洛特斯莉塔",
+            "content":"狼系台灣VTuber<br>實況/影片類型:遊戲、雜談、音樂",
+            "href":"https://www.youtube.com/channel/UC45JQZfmklSB9ipib4vQEhw",
+            "img":"images/vt_56.jpg",
+            "area":"台灣",
+            "id":56
+        },
+        {
+            "name":"其那_Kina Ch.",
+            "content":"狼系台灣VTuber<br>實況/影片類型:遊戲、雜談、音樂",
+            "href":"https://www.youtube.com/channel/UCbYJ6alwTIBoyHi8tLiPVqw",
+            "img":"images/vt_57.jpg",
+            "area":"台灣",
+            "id":57
+        },
+        {
+            "name":"須多夜花·ヨルカ ch.",
+            "content":"台灣VTuber<br>實況/影片類型:遊戲、音樂",
+            "href":"https://www.youtube.com/channel/UCuy-kZJ7HWwUU-eKv0zUZFQ",
+            "img":"images/vt_58.jpg",
+            "area":"台灣",
+            "id":58
+        },
+        {
+            "name":"Neru Ch. 闇音ネル",
+            "content":"台灣VTuber<br>實況/影片類型:音樂",
+            "href":"https://www.youtube.com/channel/UCymOeVRWRzjBrN_wfL7_xsg",
+            "img":"images/vt_59.jpg",
+            "area":"台灣",
+            "id":59
+        },
+        {
+            "name":"Sara Ch. 紗羅",
+            "content":"朗讀系台灣VTuber<br>實況/影片類型:遊戲、雜談、聯動合作",
+            "href":"https://www.youtube.com/channel/UCZuQvHMvbkuPOT8MpDVgh_Q",
+            "img":"images/vt_60.jpg",
+            "area":"台灣",
+            "id":60
+        },
+        {
+            "name":"夢寐愛姆·エムch.",
+            "content":"御姐系台灣VTuber<br>實況/影片類型:遊戲、雜談、聯動合作",
+            "href":"https://www.youtube.com/channel/UCvUTCi2Ms1eP-bFnh0lfGHA",
+            "img":"images/vt_61.jpg",
+            "area":"台灣",
+            "id":61
+        },
+        {
+            "name":"Kureiji Ollie Ch. hololive-ID",
+            "content":"日本VTuber-ID組<br>實況/影片類型:遊戲、音樂",
+            "href":"https://www.youtube.com/channel/UCYz_5n-uDuChHtLo7My1HnQ",
+            "img":"images/vt_62.jpg",
+            "area":"印尼",
+            "id":62
+        },
+        {
+            "name":"友人A",
+            "content":"hololive-Group<br>實況/影片類型:hololive官方各項發表、雜談",
+            "href":"https://www.youtube.com/channel/UCJFZiqLMntJufDCHc6bQixg",
+            "img":"images/vt_63.jpg",
+            "area":"日本",
+            "id":63
+        }
+    ]
+}

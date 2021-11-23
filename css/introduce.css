@@ -1,13 +1,14 @@
 .main{
-    max-width: 1200px;
+    max-width: 800px;
     margin:50px auto;
-}
-.main>div{
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    /* justify-content: left; */
 }
+
 .main .vt_player{
+    width: 400px;
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -36,6 +37,37 @@
     transition: opacity 0.5s,transform 0.5s !important; */
     animation: vt_player 0.5s forwards;
 }
+.main_header{
+    width: 100%;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+    font-weight: 500;
+    padding: 0 30px;
+    box-sizing: border-box;
+}
+.main_header img{
+    max-width: 90%;
+    margin: 30px auto;
+    border-radius: 8px;
+}
+.main .choose{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+.choose select{
+    font-size: 20px;
+    margin-right: 2px;
+}
 .main .vt_player0{
     display: flex;
     flex-direction: column;
@@ -57,6 +89,7 @@
     line-height: 2;
     letter-spacing: 1.2;
     color: peru;
+    transition: all .2s;
 }
 .main .vt_player p:hover,.main .vt_player0 p:hover{
     color: rgb(255, 125, 0);
@@ -67,7 +100,7 @@
 .main .vt_player a img,.main .vt_player0 a img{
     width: 20px;
     padding: 0 3px;
-    vertical-align:bottom
+    vertical-align:bottom;
 }
 .main .player_href{
     display: inline-block;
@@ -81,6 +114,12 @@
 .main .player_href:hover{
     filter: brightness(105%);
     color: rgb(255, 0, 85);
-    transition: all 0.3s;
+    transition: all 0.4s;
 }
 
+@media screen and (max-width:799px) {
+    .main .vt_player{
+        margin: 0 auto;
+    }
+    
+}
