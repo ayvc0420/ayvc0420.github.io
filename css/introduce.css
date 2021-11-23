@@ -46,16 +46,32 @@
     align-items: center;
     text-align: center;
     margin-bottom: 30px;
-    color: #333;
-    font-weight: 500;
+    color: rgb(0, 163, 39);
+    font-weight: 700;
     padding: 0 30px;
     box-sizing: border-box;
+    overflow: hidden;
+}
+@keyframes rushia_ani {
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(2deg);
+    }
+    100%{
+        transform: rotate(-2deg);
+    }
+}
+.rushia_ani{
+    animation: rushia_ani 1s ease-in-out infinite alternate;
 }
 .main_header img{
-    max-width: 90%;
+    width: 400px;
     margin: 30px auto;
     border-radius: 8px;
 }
+
 .main .choose{
     display: flex;
     justify-content: center;
@@ -106,7 +122,7 @@
     display: inline-block;
     border: 1px solid rgb(255, 209, 123);
     background: rgb(255, 235, 219);
-    color: rgba(255, 0, 85, 0.5);
+    color: rgba(255, 0, 85,0.8);
     border-radius: 15px;
     margin-top: 10px;
     padding: 10px;

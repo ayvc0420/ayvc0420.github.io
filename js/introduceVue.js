@@ -8,7 +8,7 @@ window.addEventListener('load',async function(){
             vtuberData:[],
             area:['全部','日本','台灣','印尼','EN'],
             areaOption:'全部',
-            vtNumber:63,
+            vtNumber:0,
         },
         methods: {
             async fetchVtuber(){
@@ -21,6 +21,7 @@ window.addEventListener('load',async function(){
                     alert('資料獲取失敗，請稍後再試。')
                 }
                 data.json().then((res)=>{
+                    this.vtNumber = res.vtuber.length
                     res.vtuber.forEach(item=>{
                         if(this.areaOption === this.area[0]){
                             this.vtuberData.push(item)
@@ -38,7 +39,7 @@ window.addEventListener('load',async function(){
                 const height = document.documentElement.clientHeight;
                 vtPlayerAll.forEach(item =>{
                     const distanceTop = item.offsetTop;
-                    const Control = distanceTop - height <= nowHeight-50;
+                    const Control = distanceTop - height <= nowHeight-70;
                     if(Control){
                         item.classList.add('vt_player_ani');
                     }else{
@@ -57,17 +58,18 @@ window.addEventListener('load',async function(){
                         }
                     })
                     this.vtNumber = n;
-                }, 5);
+                }, 10);
             },
             
         },
-        async mounted(){
-            await this.fetchVtuber()
-            await window.addEventListener('scroll',this.vtAnimation)
-            await document.getElementById('areaChange').addEventListener('change',this.vtN)
-            
+        mounted(){
+            this.fetchVtuber()
+            window.addEventListener('scroll',this.vtAnimation)
+            document.getElementById('areaChange').addEventListener('change',this.vtN)
+            setTimeout(()=>{
+                document.querySelector('.main_header img').classList.add('rushia_ani')
+            },2000)
         }
     })
 
-    
 })

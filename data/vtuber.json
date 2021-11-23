@@ -25,11 +25,11 @@
             "id":3
         },
         {
-            "name":"Marine Ch. 宝鐘マリン",
-            "content":"日本VTuber<br>實況/影片類型:遊戲、音樂、雜談",
-            "href":"https://www.youtube.com/channel/UCCzUftO8KOVkV4wQG1vkUvg",
+            "name":"音時エラー / Ototoki Error",
+            "content":"石油系台灣VTuber<br>實況/影片類型:遊戲、音樂、雜談",
+            "href":"https://www.youtube.com/channel/UCaV2RmU3drZBtPuOkXZri3w",
             "img":"images/vt_04.jpg",
-            "area":"日本",
+            "area":"台灣",
             "id":4
         },
         {
@@ -57,11 +57,11 @@
             "id":7
         },
         {
-            "name":"音時エラー / Ototoki Error",
-            "content":"石油系台灣VTuber<br>實況/影片類型:遊戲、音樂、雜談",
-            "href":"https://www.youtube.com/channel/UCaV2RmU3drZBtPuOkXZri3w",
+            "name":"Marine Ch. 宝鐘マリン",
+            "content":"日本VTuber<br>實況/影片類型:遊戲、音樂、雜談",
+            "href":"https://www.youtube.com/channel/UCCzUftO8KOVkV4wQG1vkUvg",
             "img":"images/vt_08.jpg",
-            "area":"台灣",
+            "area":"日本",
             "id":8
         },
         {

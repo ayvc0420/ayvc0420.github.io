@@ -166,7 +166,7 @@ nav{
     border-bottom: 1px solid white;
 }
 .nav_menu>ul>li:not(.nav_menu3)>a:hover::before{
-    transition: all 0.5s;
+    transition: all 0.5s 0.4s;
     width: calc(100% - 60px);
 }
 .nav_menu3{
