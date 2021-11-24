@@ -48,9 +48,6 @@
     margin-bottom: 30px;
     color: rgb(0, 163, 39);
     font-weight: 700;
-    padding: 0 30px;
-    box-sizing: border-box;
-    overflow: hidden;
 }
 @keyframes rushia_ani {
     0%{
@@ -66,12 +63,15 @@
 .rushia_ani{
     animation: rushia_ani 1s ease-in-out infinite alternate;
 }
-.main_header img{
-    width: 400px;
+.main_header a{
+    max-width: 400px;
     margin: 30px auto;
-    border-radius: 8px;
+    display: inline-block;
 }
-
+.main_header img{
+    border-radius: 8px;
+    width: 100%;
+}
 .main .choose{
     display: flex;
     justify-content: center;
@@ -133,9 +133,16 @@
     transition: all 0.4s;
 }
 
+@media screen and (max-width:1023px) {
+    .main_header a{
+        max-width: 50%;
+        min-width: 300px;
+        margin: 30px auto;
+        border-radius: 8px;
+    }
+}
 @media screen and (max-width:799px) {
     .main .vt_player{
         margin: 0 auto;
     }
-    
 }
