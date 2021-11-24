@@ -164,7 +164,7 @@ window.addEventListener('load',function(){
                     document.querySelector('#rushia_audio_clock>h2').style.color = 'red'
                     clearInterval(rushiaReciprocalLoop)
                     rushia_reciprocal.textContent = '時間到了!!!'
-                    rushiaStop.textContent = '停止'
+                    rushiaStop.textContent = '停止!!我起來了'
                     rushia_btn.appendChild(rushiaStop)
                     music.volume = n1
                     music.play()

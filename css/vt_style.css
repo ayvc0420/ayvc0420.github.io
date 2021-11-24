@@ -329,7 +329,7 @@
 #rushia_btn>button:hover{
     color: yellow;
     transition: color .4s .3s;
-    filter: brightness(108%);
+    filter: brightness(118%);
 
 }
 .rushiaStop{
