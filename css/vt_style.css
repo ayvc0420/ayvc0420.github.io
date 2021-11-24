@@ -2,9 +2,6 @@
 .icon{
     width: 30px;
 }
-.header_label_div{
-    /* width: 100px; */
-}
 .vt_content1,.vt_content2{
     line-height: 2;
     text-align: center;
@@ -271,6 +268,90 @@
     margin: 0 5px;
 }
 
+
+
+@keyframes rushia_img {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(380deg);
+    }
+}
+#rushia_audio_clock{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    opacity: 0;
+    transform: translateY(30%);
+}
+#rushia_audio_clock img{
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    border-radius: 50%;
+}
+#rushia_audio_clock img:hover{
+    animation: rushia_img 2s ease infinite alternate
+}
+#rushia_audio_clock>h2{
+    font-weight: 900;
+    margin: 10px 0;
+    font-size: 30px;
+}
+
+#rushia_audio_clock input{
+    margin: 5px 0;
+    padding: 3px 0;
+}
+
+.rushia_reciprocal{
+    font-size: 30px;
+    font-weight: 900;
+    color: rgb(255, 0, 0);
+    margin: 9px 0;
+}
+#rushia_btn>button{
+    margin: 7px 0;
+    padding: 12px 10px;
+    display: inline-block;
+    border: none;
+    background-color: rgb(34, 118, 214);
+    color: white;
+    border-radius: 3px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: filter .4s;
+}
+#rushia_btn>button:hover{
+    color: yellow;
+    transition: color .4s .3s;
+    filter: brightness(108%);
+
+}
+.rushiaStop{
+    display: none;
+}
+.rushia_err{
+    border: 1px solid red;
+    padding: 5px 5px 20px 5px;
+    position: relative;
+    box-sizing: border-box;
+    margin: 5px 0;
+}
+.rushia_err::before{
+    content: '輸入正確數字';
+    position: absolute;
+    font-weight: 700;
+    left: 107px;
+    bottom: 5px;
+    margin: auto;
+    color: red;
+    font-size: 15px;
+}
 
 /* @media */
 @media screen and (min-width:810px) {

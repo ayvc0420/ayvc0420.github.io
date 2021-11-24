@@ -20,7 +20,7 @@ window.addEventListener('load',function(){
     const vt_video_div = document.getElementById('vt_video_div')
     const vt_audio_title = document.getElementById('vt_audio_title')
     /* 最底頭像圖貼 */
-    const rushia_audio_img = document.getElementById('rushia_audio_img')
+    const rushia_audio_clock = document.getElementById('rushia_audio_clock')
 
     
     
@@ -37,8 +37,7 @@ window.addEventListener('load',function(){
         const vt_content3_c3_top = vt_content3_c3.offsetTop;
         const vt_video_div_top = vt_video_div.offsetTop;
         const vt_audio_title_top = vt_audio_title.offsetTop;
-        const rushia_audio_img_top = rushia_audio_img.offsetTop;
-
+        const rushia_audio_clock_top = rushia_audio_clock.offsetTop;
         const body_height = document.body.scrollHeight;
         const mob_menu_div = document.getElementById('mob_menu_div')
         mob_menu_div.style.height = `${body_height}px`; 
@@ -72,7 +71,7 @@ window.addEventListener('load',function(){
         const vt_control3_c3 = vt_content3_c3_top - height <= now_height-30;
         const vt_control_video_div = vt_video_div_top - height <= now_height-100;
         const vt_control_vt_audio_title = vt_audio_title_top - height <= now_height-100;
-        const vt_control_rushia_audio_img = rushia_audio_img_top - height <= now_height-100;
+        const vt_control_rushia_audio_clock = rushia_audio_clock_top - height <= now_height-150;
 
         if(vt_control1 === true){
             vt_content1.classList.add('vt_content_ani')
@@ -111,9 +110,80 @@ window.addEventListener('load',function(){
         if(vt_control_vt_audio_title === true){
             vt_audio_title.classList.add('content_ani')
         }
-        if(vt_control_rushia_audio_img === true){
-            rushia_audio_img.classList.add('content_ani')
+        if(vt_control_rushia_audio_clock === true){
+            rushia_audio_clock.classList.add('content_ani')
         }
         
     })
+
+    const rushiaReciprocal = this.document.getElementById('rushiaReciprocal')
+    rushiaReciprocal.addEventListener('click',rushiaClock)
+    const rushiaVolume = document.getElementById('rushiaVolume')
+    const rushiaSecond = document.getElementById('rushiaSecond')
+    rushiaVolume.addEventListener('keypress',function(e){
+        if(e.key === 'Enter'){
+            rushiaClock()
+        }
+    })
+    rushiaSecond.addEventListener('keypress',function(e){
+        if(e.key === 'Enter'){
+            rushiaClock()
+        }
+    })
+    const rushia1 = document.getElementById('rushia1')
+    const rushia2 = document.getElementById('rushia2')
+    // const rushiaStop = document.getElementById('rushiaStop')
+    function rushiaClock(){
+        const n1 = parseFloat(rushiaVolume.value,10)
+        let t = rushiaVolume.value <= 1
+        let n2 = parseInt(rushiaSecond.value,10)
+        if(isNaN(n1) || !t){
+            rushia1.classList.add('rushia_err')
+        }else{
+            rushia1.classList.remove('rushia_err')
+        }
+        if(isNaN(n2)){
+            rushia2.classList.add('rushia_err')
+        }else{
+            rushia2.classList.remove('rushia_err')
+        }
+        let rushiaStop = document.createElement('button');
+        let rushiaReciprocalLoop
+        const rushia_reciprocal = document.querySelector('.rushia_reciprocal')
+        if(!isNaN(n1) && !isNaN(n2) && t){
+            const music = document.getElementById('music')
+            const rushia_btn = document.getElementById('rushia_btn')
+            rushiaVolume.value = '';
+            rushiaSecond.value = '';
+            rushiaReciprocal.style.display = 'none'
+            rushiaStop.textContent = '我後悔了'
+            rushia_btn.appendChild(rushiaStop)
+            let e = function(){
+                rushia_reciprocal.textContent = n2
+                n2--
+                if(n2 === -2){
+                    document.querySelector('#rushia_audio_clock>h2').style.color = 'red'
+                    clearInterval(rushiaReciprocalLoop)
+                    rushia_reciprocal.textContent = '時間到了!!!'
+                    rushiaStop.textContent = '停止'
+                    rushia_btn.appendChild(rushiaStop)
+                    music.volume = n1
+                    music.play()
+                }
+                return e;
+            }
+            rushiaReciprocalLoop = setInterval(e(),1000);
+        }
+        rushiaStop.addEventListener('click',function(){
+            music.pause()
+            music.currentTime = 0
+            document.querySelector('#rushia_audio_clock>h2').style.color = 'black'
+            clearInterval(rushiaReciprocalLoop)
+            rushia_reciprocal.textContent = ''
+            rushiaReciprocal.style.display = 'block'
+            rushiaStop.style.display = 'none'
+            n2 = -1
+        })
+    }
+
 })

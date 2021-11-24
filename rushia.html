@@ -50,27 +50,7 @@
         .vt_audio_div::before{
             opacity: 0;
         }
-        @keyframes rushia_img {
-            0%{
-                transform: rotate(0deg);
-            }
-            100%{
-                transform: rotate(380deg);
-            }
-        }
-        #rushia_audio_img{
-            width: 100px;
-            height: 100px;
-            margin: 30px auto 0;
-            background-image: url(images/rushia_audio.jpg);
-            background-size: cover;
-            border-radius: 50%;
-            opacity: 0;
-            transform: translateY(50%);
-        }
-        #rushia_audio_img:hover{
-            animation: rushia_img 2s ease infinite alternate
-        }
+
     </style>
 
     <script src="js/vue.min.js"></script>
@@ -299,7 +279,18 @@
                     </div>
                 </div>
             </section>
-            <div id="rushia_audio_img"></div>
+            <div id="rushia_audio_clock">
+                <img src="images/rushia_audio.jpg" alt="露西婭做鬼臉">
+                <h2>露西婭牌鬧鐘</h2>
+                <span id="rushia1">設定音量大小-<input type="number" id="rushiaVolume" placeholder="0最小1最大 例如0.87" step="0.1"></span>
+                <span id="rushia2">設定倒數秒數-<input type="number" id="rushiaSecond" placeholder="僅限輸入數字"></span>
+                <span class="rushia_reciprocal"></span>
+                <span id="rushia_btn">
+                    <button class="rushiaReciprocal" id="rushiaReciprocal">開始倒數!</button>
+                    <!-- <button class="rushiaStop" id="rushiaStop">停止</button> -->
+                    <audio src="audio/rushiaClock.mp3" id="music" loop></audio>
+                </span>
+            </div>
         </section>
     </div>
 
