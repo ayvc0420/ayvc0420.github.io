@@ -545,20 +545,28 @@
             "id":68
         },
         {
-            "name":"夢寐愛姆·エムch.",
-            "content":"御姐系台灣VTuber<br>實況/影片類型:遊戲、雜談、聯動合作",
-            "href":"https://www.youtube.com/channel/UCvUTCi2Ms1eP-bFnh0lfGHA",
+            "name":"朵璃安 Dorian Vtuber Ch.",
+            "content":"台灣VTuber<br>實況/影片類型:音樂、遊戲、雜談",
+            "href":"https://www.youtube.com/channel/UCnu3PBNLZZFbnCWHOqySV9Q",
             "img":"images/vt_69.jpg",
             "area":"台灣",
             "id":69
         },
         {
+            "name":"夢寐愛姆·エムch.",
+            "content":"御姐系台灣VTuber<br>實況/影片類型:遊戲、雜談、聯動合作",
+            "href":"https://www.youtube.com/channel/UCvUTCi2Ms1eP-bFnh0lfGHA",
+            "img":"images/vt_70.jpg",
+            "area":"台灣",
+            "id":70
+        },
+        {
             "name":"友人A",
             "content":"hololive-Group<br>實況/影片類型:hololive官方各項發表、雜談",
             "href":"https://www.youtube.com/channel/UCJFZiqLMntJufDCHc6bQixg",
-            "img":"images/vt_70.jpg",
+            "img":"images/vt_71.jpg",
             "area":"日本",
-            "id":70
+            "id":71
         }
     ]
 }
