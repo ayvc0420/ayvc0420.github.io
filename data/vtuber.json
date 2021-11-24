@@ -481,9 +481,9 @@
             "id":60
         },
         {
-            "name":"夢寐愛姆·エムch.",
-            "content":"御姐系台灣VTuber<br>實況/影片類型:遊戲、雜談、聯動合作",
-            "href":"https://www.youtube.com/channel/UCvUTCi2Ms1eP-bFnh0lfGHA",
+            "name":"Obear Ch. 歐貝爾",
+            "content":"台灣VTuber<br>實況/影片類型:遊戲、雜談、音樂",
+            "href":"https://www.youtube.com/channel/UCW5O-tjdwofBwfispeMSPfw",
             "img":"images/vt_61.jpg",
             "area":"台灣",
             "id":61
@@ -497,12 +497,68 @@
             "id":62
         },
         {
+            "name":"Padko Ch. 平平子",
+            "content":"台灣VTuber<br>實況/影片類型:遊戲、音樂、雜談",
+            "href":"https://www.youtube.com/c/PadkoCh%E5%B9%B3%E5%B9%B3%E5%AD%90",
+            "img":"images/vt_63.jpg",
+            "area":"台灣",
+            "id":63
+        },
+        {
+            "name":"祈菈‧貝希毛絲 ch.Narrator / STORIA",
+            "content":"台灣VTuber<br>實況/影片類型:特別訪談、遊戲情報、遊戲、音樂",
+            "href":"https://www.youtube.com/c/STORIANarrator%E9%81%8A%E6%88%B2%E5%B7%A5%E4%BD%9C%E5%AE%A4",
+            "img":"images/vt_64.jpg",
+            "area":"台灣",
+            "id":64
+        },
+        {
+            "name":"ASMR Healing Ch.希靈",
+            "content":"台灣VTuber<br>實況/影片類型:ASMR、塔羅占卜、遊戲、雜談",
+            "href":"https://www.youtube.com/c/HealingCh%E5%B8%8C%E9%9D%88",
+            "img":"images/vt_65.jpg",
+            "area":"台灣",
+            "id":65
+        },
+        {
+            "name":"Silverbell Ch.銀鈴",
+            "content":"成人系台灣VTuber<br>實況/影片類型:雜談、遊戲",
+            "href":"https://www.youtube.com/channel/UCwO7OC8he-XAkrDNvGe5kXA",
+            "img":"images/vt_66.jpg",
+            "area":"台灣",
+            "id":66
+        },
+        {
+            "name":"浠Mizuki Channel",
+            "content":"台灣VTuber<br>實況/影片類型:雜談、音樂、遊戲、聯動合作",
+            "href":"https://www.youtube.com/c/%E6%B5%A0MizukiChannel",
+            "img":"images/vt_67.jpg",
+            "area":"台灣",
+            "id":67
+        },
+        {
+            "name":"Rumi ch. 懶貓子",
+            "content":"日文系台灣VTuber<br>實況/影片類型:音樂、遊戲、中文學習?",
+            "href":"https://www.youtube.com/c/Lanmewko",
+            "img":"images/vt_68.jpg",
+            "area":"台灣",
+            "id":68
+        },
+        {
+            "name":"夢寐愛姆·エムch.",
+            "content":"御姐系台灣VTuber<br>實況/影片類型:遊戲、雜談、聯動合作",
+            "href":"https://www.youtube.com/channel/UCvUTCi2Ms1eP-bFnh0lfGHA",
+            "img":"images/vt_69.jpg",
+            "area":"台灣",
+            "id":69
+        },
+        {
             "name":"友人A",
             "content":"hololive-Group<br>實況/影片類型:hololive官方各項發表、雜談",
             "href":"https://www.youtube.com/channel/UCJFZiqLMntJufDCHc6bQixg",
-            "img":"images/vt_63.jpg",
+            "img":"images/vt_70.jpg",
             "area":"日本",
-            "id":63
+            "id":70
         }
     ]
 }

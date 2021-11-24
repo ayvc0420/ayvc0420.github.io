@@ -58,7 +58,7 @@ window.addEventListener('load',async function(){
                         }
                     })
                     this.vtNumber = n;
-                }, 10);
+                }, 30);
             },
             
         },
