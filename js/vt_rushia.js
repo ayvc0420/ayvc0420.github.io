@@ -132,10 +132,9 @@ window.addEventListener('load',function(){
     })
     const rushia1 = document.getElementById('rushia1')
     const rushia2 = document.getElementById('rushia2')
-    // const rushiaStop = document.getElementById('rushiaStop')
     function rushiaClock(){
         const n1 = parseFloat(rushiaVolume.value,10)
-        let t = rushiaVolume.value <= 1
+        let t = rushiaVolume.value <= 1 && rushiaVolume.value != '0' && rushiaVolume.value >= 0
         let n2 = parseInt(rushiaSecond.value,10)
         if(isNaN(n1) || !t){
             rushia1.classList.add('rushia_err')
