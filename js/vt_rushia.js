@@ -160,7 +160,7 @@ window.addEventListener('load',function(){
             let e = function(){
                 rushia_reciprocal.textContent = n2
                 n2--
-                if(n2 === -2){
+                if(n2 === -2 || n2 <= -2){
                     document.querySelector('#rushia_audio_clock>h2').style.color = 'red'
                     clearInterval(rushiaReciprocalLoop)
                     rushia_reciprocal.textContent = '時間到了!!!'
