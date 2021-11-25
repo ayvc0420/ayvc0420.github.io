@@ -51,25 +51,30 @@
 }
 @keyframes rushia_ani {
     0%{
-        transform: rotate(0deg);
+        transform: rotate(0deg) scale(1);
     }
     50%{
-        transform: rotate(2deg);
+        transform: rotate(3deg) scale(1.11);
     }
     100%{
-        transform: rotate(-2deg);
+        transform: rotate(-3deg) scale(1.11);
     }
+}
+.main_img{
+    max-width: 400px;
+    margin: 30px auto;
+    overflow: hidden;
+    border-radius: 7px;
 }
 .rushia_ani{
     animation: rushia_ani 1s ease-in-out infinite alternate;
 }
 .main_header a{
-    max-width: 400px;
-    margin: 30px auto;
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .main_header img{
-    border-radius: 8px;
     width: 100%;
 }
 .main .choose{
@@ -99,6 +104,10 @@
 @keyframes vt_player_img_ani {
     0%{
         transform: translateY(0%);
+        filter: brightness(100%);
+    }
+    50%{
+        filter: brightness(106%);
     }
     100%{
         transform: translateY(-5%);

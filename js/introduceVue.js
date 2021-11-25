@@ -67,7 +67,7 @@ window.addEventListener('load',async function(){
             window.addEventListener('scroll',this.vtAnimation)
             document.getElementById('areaChange').addEventListener('change',this.vtN)
             setTimeout(()=>{
-                document.querySelector('.main_header img').classList.add('rushia_ani')
+                document.querySelector('.main_header a').classList.add('rushia_ani')
             },2000)
         }
     })

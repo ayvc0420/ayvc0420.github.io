@@ -370,7 +370,7 @@
         },
         {
             "name":"LanCee Ch. 蘭希",
-            "content":"創作系台灣VTuber<br>實況/影片類型:原創音樂",
+            "content":"創作系台灣VTuber<br>實況/影片類型:原創音樂；遊戲",
             "href":"https://www.youtube.com/channel/UCYLYzg2BRjpDIf-damyjJRw",
             "img":"images/vt_47.jpg",
             "area":"台灣",
@@ -569,20 +569,36 @@
             "id":71
         },
         {
-            "name":"夢寐愛姆·エムch.",
-            "content":"御姐系台灣VTuber<br>實況/影片類型:遊戲、雜談、聯動合作",
-            "href":"https://www.youtube.com/channel/UCvUTCi2Ms1eP-bFnh0lfGHA",
+            "name":"UmineMiKe Ch. 海貓米克",
+            "content":"貓系台灣VTuber<br>實況/影片類型:遊戲",
+            "href":"https://www.youtube.com/channel/UC6z1yYcK34TUKsmlR9Ev-Wg",
             "img":"images/vt_72.jpg",
             "area":"台灣",
             "id":72
         },
         {
+            "name":"暖杏🎀Ch.nuanxing 【Vtuber】",
+            "content":"台灣VTuber<br>實況/影片類型:訪談、遊戲、雜談",
+            "href":"https://www.youtube.com/channel/UCm2vXWmv429pqvbLTmA6azg",
+            "img":"images/vt_73.jpg",
+            "area":"台灣",
+            "id":73
+        },
+        {
+            "name":"夢寐愛姆·エムch.",
+            "content":"御姐系台灣VTuber<br>實況/影片類型:遊戲、雜談、聯動合作",
+            "href":"https://www.youtube.com/channel/UCvUTCi2Ms1eP-bFnh0lfGHA",
+            "img":"images/vt_74.jpg",
+            "area":"台灣",
+            "id":74
+        },
+        {
             "name":"友人A",
             "content":"hololive-Group<br>實況/影片類型:hololive官方各項發表、雜談",
             "href":"https://www.youtube.com/channel/UCJFZiqLMntJufDCHc6bQixg",
-            "img":"images/vt_73.jpg",
+            "img":"images/vt_75.jpg",
             "area":"日本",
-            "id":73
+            "id":75
         }
     ]
 }
