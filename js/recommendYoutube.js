@@ -62,7 +62,6 @@ window.addEventListener('load',function(){
             long.style.top = '2px';
             long.style.left = '1px';
         }
-        console.log(timeS)
         if(timeS === '01'){
             short.style.transition = 'none';
         }else{
