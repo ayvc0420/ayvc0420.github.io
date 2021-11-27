@@ -49,8 +49,9 @@ window.addEventListener('load',function(){
         middle.style.transform = `rotate(${timeMin * rotateMin - 90}deg)`
         short.style.transform = `rotate(${timeS * rotateS - 90}deg)`
 
-        if(timeHr >= 1 && timeHr <= 3){
-            long.style.top = '0px';
+        if(timeHr >= 0 && timeHr <= 3){
+            long.style.top = '2px'
+            long.style.left = '-2px'
         }else if(timeHr >= 4 && timeHr <= 8){
             long.style.top = '3px';
             long.style.left = '3px';
