@@ -174,13 +174,15 @@ nav{
 }
 .nav_menu3 ul{
     position: absolute;
-    display: none;
+    transform: scale(0) translateY(-400px);
     width: 200px;
     border: 1px solid rgb(212, 212, 212);
     box-shadow: 2px 5px 10px rgba(119, 119, 119,0.5);
+    transition: transform .5s;
 }
 .nav_menu3:hover ul{
-    display: block;
+    /* display: block; */
+    transform: scale(1) translateY(0);
     z-index: 10;
 }
 .nav_menu3 ul a{

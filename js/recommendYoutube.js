@@ -2,6 +2,13 @@
 window.addEventListener('load',function(){
 
     const now_year = document.getElementById('now_year');
+    const time = document.querySelector('.time');
+    const short = document.getElementById('short');
+    const middle = document.getElementById('middle');
+    const long = document.getElementById('long');
+    const rotateHr = 30;
+    const rotateMin = 6;
+    const rotateS = 6;
     function year(){
         // let now = new Date();
         // let new_year = new Date(2021,12,31);
@@ -10,20 +17,59 @@ window.addEventListener('load',function(){
         // let time = new Date(end);
         // now_year.innerHTML = `${time.getMonth()-1}個月${time.getDate()}天${time.getHours()}小時${time.getMinutes()}分${time.getSeconds()}秒`
         
-        let now_time = new Date();
-        let new_year = new Date('2022/01/01');
-        let difference = new_year - now_time;
-        var d=Math.floor(difference/1000/60/60/24);
-        var h=Math.floor(difference/1000/60/60%24);
-        var m=Math.floor(difference/1000/60%60);
-        var s=Math.floor(difference/1000%60);
-        now_year.innerHTML = `${d}天${h}小時${m}分${s}秒`
+        let nowTime = new Date();
+        let newYear = new Date('2022/01/01');
+        let difference = newYear - nowTime;
+        let d = Math.floor(difference/1000/60/60/24);
+        let h = Math.floor(difference/1000/60/60%24);
+        let m = Math.floor(difference/1000/60%60);
+        let s = Math.floor(difference/1000%60);
+        now_year.textContent = `${d}天${h}小時${m}分${s}秒`
 
+
+
+        let nowHr = nowTime.getHours()
+        let nowMin = nowTime.getMinutes()
+        let nowS = 60-s;
+        if(nowMin <= 9){
+            nowMin = '0'+nowMin;
+        }
+        if(nowS <= 9 ){
+            nowS = '0'+nowS;
+        }
+        let timeHr = nowTime.getHours()
+        const timeMin =nowTime.getMinutes()
+        const timeS = nowS;
+        if(timeHr > 12){
+            timeHr -= 12;
+        }
+        
+        time.textContent = `現在時間:${nowHr}:${nowMin}:${nowS}`
+        long.style.transform = `rotate(${(timeHr * rotateHr - 90) + (timeMin * 0.5)}deg)`
+        middle.style.transform = `rotate(${timeMin * rotateMin - 90}deg)`
+        short.style.transform = `rotate(${timeS * rotateS - 90}deg)`
+
+        if(timeHr >= 1 && timeHr <= 3){
+            long.style.top = '0px';
+        }else if(timeHr >= 4 && timeHr <= 8){
+            long.style.top = '3px';
+            long.style.left = '3px';
+        }else if(timeHr >= 9 && timeHr <= 11){
+            long.style.top = '5px';
+            long.style.left = '0px';
+        }else if(timeHr <= 12 && timeHr >= 14){
+            long.style.top = '2px';
+            long.style.left = '1px';
+        }
+        console.log(timeS)
+        if(timeS === '01'){
+            short.style.transition = 'none';
+        }else{
+            short.style.transition = 'all .9s';
+        }
+        return year;
     }
-    year()
-    setInterval(() => {
-        year()
-    }, 1000);
+    setInterval(year(),1000);
 
     const c1_table = document.getElementById('c1_table')
     const c1_title = document.getElementById('c1_title')
