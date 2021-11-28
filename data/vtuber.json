@@ -593,12 +593,52 @@
             "id":74
         },
         {
-            "name":"友人A",
-            "content":"hololive-Group<br>實況/影片類型:hololive官方各項發表、雜談",
-            "href":"https://www.youtube.com/channel/UCJFZiqLMntJufDCHc6bQixg",
+            "name":"Lui ch. 鷹嶺ルイ - holoX -",
+            "content":"日本VTuber<br>實況/影片類型:雜談、音樂",
+            "href":"https://www.youtube.com/channel/UCs9_O1tRPMQTHQ-N_L6FU2g",
             "img":"images/vt_75.jpg",
             "area":"日本",
             "id":75
+        },
+        {
+            "name":"Laplus ch. ラプラス・ダークネス - holoX -",
+            "content":"日本VTuber<br>實況/影片類型:雜談",
+            "href":"https://www.youtube.com/channel/UCENwRMx5Yh42zWpzURebzTw",
+            "img":"images/vt_76.jpg",
+            "area":"日本",
+            "id":76
+        },
+        {
+            "name":"Koyori ch. 博衣こより - holoX -",
+            "content":"日本VTuber<br>實況/影片類型:雜談",
+            "href":"https://www.youtube.com/channel/UC6eWCld0KwmyHFbAqK3V-Rw",
+            "img":"images/vt_77.jpg",
+            "area":"日本",
+            "id":77
+        },
+        {
+            "name":"Chloe ch. 沙花叉クロヱ - holoX -",
+            "content":"日本VTuber<br>實況/影片類型:尚未發布任何影片-11/28",
+            "href":"https://www.youtube.com/channel/UCIBY1ollUsauvVi4hW4cumw",
+            "img":"images/vt_78.jpg",
+            "area":"日本",
+            "id":78
+        },
+        {
+            "name":"Iroha ch. 風真いろは - holoX -",
+            "content":"日本VTuber<br>實況/影片類型:尚未發布任何影片-11/28",
+            "href":"https://www.youtube.com/channel/UC_vMYWcDjmfdpH6r4TTn1MQ",
+            "img":"images/vt_79.jpg",
+            "area":"日本",
+            "id":79
+        },
+        {
+            "name":"友人A",
+            "content":"hololive-Group<br>實況/影片類型:hololive官方各項發表、雜談",
+            "href":"https://www.youtube.com/channel/UCJFZiqLMntJufDCHc6bQixg",
+            "img":"images/vt_yujinA.jpg",
+            "area":"日本",
+            "id":80
         }
     ]
 }
