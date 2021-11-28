@@ -6,9 +6,6 @@ window.addEventListener('load',function(){
     const short = document.getElementById('short');
     const middle = document.getElementById('middle');
     const long = document.getElementById('long');
-    const rotateHr = 30;
-    const rotateMin = 6;
-    const rotateS = 6;
     function year(){
         // let now = new Date();
         // let new_year = new Date(2021,12,31);
@@ -43,11 +40,19 @@ window.addEventListener('load',function(){
         if(timeHr > 12){
             timeHr -= 12;
         }
-        
+        const longDeg = timeHr*30+timeMin*30/60
+        const middleDeg = timeMin*6+timeS*6/60
+        const shortDeg = timeS*6
+
+        if(nowS === 60){
+            nowS = '00';
+            nowMin += 1;
+        }
+
         time.textContent = `現在時間:${nowHr}:${nowMin}:${nowS}`
-        long.style.transform = `rotate(${(timeHr * rotateHr - 90) + (timeMin * 0.5)}deg)`
-        middle.style.transform = `rotate(${timeMin * rotateMin - 90}deg)`
-        short.style.transform = `rotate(${timeS * rotateS - 90}deg)`
+        long.style.transform = `rotate(${longDeg - 90}deg)`
+        middle.style.transform = `rotate(${ middleDeg - 90}deg)`
+        short.style.transform = `rotate(${shortDeg - 90}deg)`
 
         if(timeHr >= 0 && timeHr <= 3){
             long.style.top = '2px'
@@ -65,7 +70,7 @@ window.addEventListener('load',function(){
         if(timeS === '01'){
             short.style.transition = 'none';
         }else{
-            short.style.transition = 'all .9s';
+            short.style.transition = 'all .2s';
         }
         return year;
     }
