@@ -301,7 +301,10 @@
     margin: 10px 0;
     font-size: 30px;
 }
-
+#rushia_audio_clock>span{
+    display: flex;
+    align-items: center;
+}
 #rushia_audio_clock input{
     margin: 5px 0;
     padding: 3px 0;

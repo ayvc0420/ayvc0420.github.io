@@ -115,11 +115,15 @@ window.addEventListener('load',function(){
         }
         
     })
-
+    const rushiaVolumeNumber = document.getElementById('rushiaVolumeNumber')
     const rushiaReciprocal = this.document.getElementById('rushiaReciprocal')
     rushiaReciprocal.addEventListener('click',rushiaClock)
     const rushiaVolume = document.getElementById('rushiaVolume')
     const rushiaSecond = document.getElementById('rushiaSecond')
+    rushiaVolumeNumber.textContent = rushiaVolume.value
+    rushiaVolume.addEventListener('change',function(){
+        rushiaVolumeNumber.textContent = rushiaVolume.value
+    })
     rushiaVolume.addEventListener('keypress',function(e){
         if(e.key === 'Enter'){
             rushiaClock()
@@ -147,16 +151,17 @@ window.addEventListener('load',function(){
             rushia2.classList.remove('rushia_err')
         }
         let rushiaStop = document.createElement('button');
-        let rushiaReciprocalLoop
-        const rushia_reciprocal = document.querySelector('.rushia_reciprocal')
+        let rushiaReciprocalLoop;
+        const rushia_reciprocal = document.querySelector('.rushia_reciprocal');
         if(!isNaN(n1) && !isNaN(n2) && t){
             const music = document.getElementById('music')
             const rushia_btn = document.getElementById('rushia_btn')
             rushiaVolume.value = '';
             rushiaSecond.value = '';
-            rushiaReciprocal.style.display = 'none'
-            rushiaStop.textContent = '我後悔了'
-            rushia_btn.appendChild(rushiaStop)
+            rushiaVolumeNumber.textContent = rushiaVolume.value;
+            rushiaReciprocal.style.display = 'none';
+            rushiaStop.textContent = '我後悔了';
+            rushia_btn.appendChild(rushiaStop);
             let e = function(){
                 rushia_reciprocal.textContent = n2
                 n2--
