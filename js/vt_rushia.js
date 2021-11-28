@@ -124,6 +124,10 @@ window.addEventListener('load',function(){
     rushiaVolume.addEventListener('change',function(){
         rushiaVolumeNumber.textContent = rushiaVolume.value
     })
+    rushiaVolume.addEventListener('mousemove',function(){
+        rushiaVolumeNumber.textContent = rushiaVolume.value
+    })
+
     rushiaVolume.addEventListener('keypress',function(e){
         if(e.key === 'Enter'){
             rushiaClock()
