@@ -50,6 +50,13 @@
     padding: 0 20px;
     box-sizing: border-box;
 }
+.main .content1_table a{
+    text-decoration: none;
+    color: blue;
+}
+.main .content1_table a:hover{
+    color: rgb(199, 169, 0);
+}
 .main .content1_table table{
     width: 100%;
     font-size: 22px;
