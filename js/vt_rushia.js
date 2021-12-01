@@ -160,7 +160,7 @@ window.addEventListener('load',function(){
         if(!isNaN(n1) && !isNaN(n2) && t){
             const music = document.getElementById('music')
             const rushia_btn = document.getElementById('rushia_btn')
-            rushiaVolume.value = '';
+            rushiaVolume.value = 1.0;
             rushiaSecond.value = '';
             rushiaVolumeNumber.textContent = rushiaVolume.value;
             rushiaReciprocal.style.display = 'none';
@@ -173,6 +173,7 @@ window.addEventListener('load',function(){
                     document.querySelector('#rushia_audio_clock>h2').style.color = 'red'
                     clearInterval(rushiaReciprocalLoop)
                     rushia_reciprocal.textContent = '時間到了!!!'
+                    rushia_reciprocal.classList.add('rushia_reciprocal_stop')
                     rushiaStop.textContent = '停止!!我起來了'
                     rushia_btn.appendChild(rushiaStop)
                     music.volume = n1
@@ -188,6 +189,7 @@ window.addEventListener('load',function(){
             document.querySelector('#rushia_audio_clock>h2').style.color = 'black'
             clearInterval(rushiaReciprocalLoop)
             rushia_reciprocal.textContent = ''
+            rushia_reciprocal.classList.remove('rushia_reciprocal_stop')
             rushiaReciprocal.style.display = 'block'
             rushiaStop.style.display = 'none'
             n2 = -1

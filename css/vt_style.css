@@ -309,12 +309,31 @@
     margin: 5px 0;
     padding: 3px 0;
 }
-
+@keyframes rushia_reciprocal_ani{
+    0%{
+        transform: translateY(0%);
+    }
+    40%{
+        transform: translateX(-5%);
+    }
+    50%{
+        transform: translateY(-10%);
+    }
+    60%{
+        transform: translateX(5%);
+    }
+    100%{
+        transform: translateY(-5%);
+    }
+}
 .rushia_reciprocal{
     font-size: 30px;
     font-weight: 900;
     color: rgb(255, 0, 0);
     margin: 9px 0;
+}
+.rushia_reciprocal_stop{
+    animation: rushia_reciprocal_ani .3s infinite alternate
 }
 #rushia_btn>button{
     margin: 7px 0;
