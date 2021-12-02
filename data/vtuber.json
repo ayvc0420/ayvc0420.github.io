@@ -50,7 +50,7 @@
         },
         {
             "name":"Pekora Ch. 兎田ぺこら",
-            "content":"日本VTuber<br>實況/影片類型:遊戲、音樂、雜談..等",
+            "content":"日本VTuber<br>實況/影片類型:遊戲、音樂、整人、雜談..等",
             "href":"https://www.youtube.com/channel/UC1DCedRgGHBdm81E1llLhOQ",
             "img":"images/vt_07.webp",
             "area":"日本",
@@ -370,7 +370,7 @@
         },
         {
             "name":"LanCee Ch. 蘭希",
-            "content":"創作系台灣VTuber<br>實況/影片類型:原創音樂；遊戲",
+            "content":"創作系台灣VTuber<br>實況/影片類型:原創音樂、遊戲",
             "href":"https://www.youtube.com/channel/UCYLYzg2BRjpDIf-damyjJRw",
             "img":"images/vt_47.jpg",
             "area":"台灣",
@@ -641,12 +641,60 @@
             "id":80
         },
         {
+            "name":"IRyS Ch. hololive-EN",
+            "content":"日本VTuber-EN組<br>實況/影片類型:音樂、聯動合作、遊戲",
+            "href":"https://www.youtube.com/channel/UC8rcEBzJSleTkf_-agPM20g",
+            "img":"images/vt_81.webp",
+            "area":"EN",
+            "id":81
+        },
+        {
+            "name":"Tsukumo Sana Ch. hololive-EN",
+            "content":"日本VTuber-EN組<br>實況/影片類型:遊戲、聯動合作",
+            "href":"https://www.youtube.com/channel/UCsUj0dszADCGbF3gNrQEuSQ",
+            "img":"images/vt_82.webp",
+            "area":"EN",
+            "id":82
+        },
+        {
+            "name":"Ceres Fauna Ch. hololive-EN",
+            "content":"日本VTuber-EN組<br>實況/影片類型:ASMR、遊戲",
+            "href":"https://www.youtube.com/channel/UCO_aKKYxn4tvrqPjcTzZ6EQ",
+            "img":"images/vt_83.webp",
+            "area":"EN",
+            "id":83
+        },
+        {
+            "name":"Ouro Kronii Ch. hololive-EN",
+            "content":"日本VTuber-EN組<br>實況/影片類型:遊戲、聯動合作、音樂",
+            "href":"https://www.youtube.com/channel/UCmbs8T6MWqUHP1tIQvSgKrg",
+            "img":"images/vt_84.webp",
+            "area":"EN",
+            "id":84
+        },
+        {
+            "name":"Nanashi Mumei Ch. hololive-EN",
+            "content":"貓頭鷹系日本VTuber-EN組<br>實況/影片類型:音樂、遊戲",
+            "href":"https://www.youtube.com/channel/UC3n5uGu18FoCy23ggWWp8tA",
+            "img":"images/vt_85.webp",
+            "area":"EN",
+            "id":85
+        },
+        {
+            "name":"Hakos Baelz Ch. hololive-EN ",
+            "content":"鼠系日本VTuber-EN組<br>實況/影片類型:遊戲、音樂、整人",
+            "href":"https://www.youtube.com/channel/UCgmPnx-EEeOrZSg5Tiw7ZRQ",
+            "img":"images/vt_86.webp",
+            "area":"EN",
+            "id":86
+        },
+        {
             "name":"友人A",
             "content":"hololive-Group<br>實況/影片類型:hololive官方各項發表、雜談",
             "href":"https://www.youtube.com/channel/UCJFZiqLMntJufDCHc6bQixg",
             "img":"images/vt_yujinA.jpg",
             "area":"日本",
-            "id":81
+            "id":87
         }
     ]
 }
