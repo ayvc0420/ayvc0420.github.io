@@ -689,12 +689,28 @@
             "id":86
         },
         {
+            "name":"蕾兒 Rayer - ACGlive",
+            "content":"<del>事故系</del>台灣VTuber<br>實況/影片類型:遊戲、官方短片、會限直播",
+            "href":"https://www.youtube.com/channel/UCDb47NT3QzoCiorDtK9C_qg",
+            "img":"images/vt_87.webp",
+            "area":"台灣",
+            "id":87
+        },
+        {
+            "name":"邱可 Choco - ACGlive",
+            "content":"台灣VTuber<br>實況/影片類型:音樂、料理、遊戲",
+            "href":"https://www.youtube.com/channel/UCZVkCI9NKz7q9JVW9oiTQJA",
+            "img":"images/vt_88.webp",
+            "area":"台灣",
+            "id":88
+        },
+        {
             "name":"友人A",
             "content":"hololive-Group<br>實況/影片類型:hololive官方各項發表、雜談",
             "href":"https://www.youtube.com/channel/UCJFZiqLMntJufDCHc6bQixg",
             "img":"images/vt_yujinA.jpg",
             "area":"日本",
-            "id":87
+            "id":89
         }
     ]
 }
