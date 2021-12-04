@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <link rel="shortcut icon" href="images/logo.png"></link>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name=”description” content="沙花叉克蘿耶|沙花叉クロヱ 在秘密結社holoX擔任掃除屋職位"/>
+    <meta name="Keywords" content="沙花叉克蘿耶,沙花叉クロヱ"/>
+    <title>hololive成員|沙花叉克蘿耶-沙花叉クロヱ</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/vt_style.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <style>
+        #mob_menu_div::before{
+            content: url(images/mob_chloe.webp);
+            position:relative;
+            left: 5%;
+        }
+        header .header_btn input{
+            border: 2px solid rgb(155, 155, 155) !important;
+        }
+        header .header_btn>button{
+            color: rgb(155, 155, 155) !important;
+            border: 2px solid rgb(155, 155, 155) !important;
+        }
+        .vt_main>section:nth-of-type(odd){
+            background: rgb(222, 222, 222);
+        }
+        .vt_main>section:nth-of-type(even){
+            background: rgb(231, 187, 194);
+        }
+        .vt_audio_div{
+            opacity: 0;
+            transform: translateY(60%);
+        }
+        .vt_audio_div::after{
+            content: '沙花叉克蘿耶-遜砲擔當音檔';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            color: red;
+            padding-bottom: 60px;
+            width: 50vw;
+            border-bottom: 1px solid rgba(114, 114, 114, 0.2); 
+        }
+
+    </style>
+
+    <script src="js/vue.min.js"></script>
+    <script>
+        
+    window.addEventListener('load',function(){
+
+        let headerData = {
+        key:0,
+        img:[
+            {imgPixivSrc:'https://www.pixiv.net/artworks/94491069', imgSrc:'./images/chloe_header.webp',alt:'圖片pixiv94491069'},
+            {imgPixivSrc:'https://www.pixiv.net/artworks/94544074', imgSrc:'./images/chloe_header_1.webp',alt:'圖片pixiv94544074'},
+            {imgPixivSrc:'https://www.pixiv.net/artworks/94544074', imgSrc:'./images/chloe_header_2.webp',alt:'圖片pixiv94544074'},
+            {imgPixivSrc:'https://www.pixiv.net/artworks/94465622', imgSrc:'./images/chloe_header_3.webp',alt:'圖片pixiv89707884'},
+        ]}
+
+        new Vue({
+            el:'#header',
+            data:headerData,
+            methods: {
+                imgSwitch(index){
+                    this.key = (index + this.img.length) % this.img.length;
+                },
+            },
+            mounted: function(){
+                setInterval(()=>{
+                    if(this.key < this.img.length -1){
+                        this.key +=1;
+                    }else{
+                        this.key = 0;
+                    }
+                },15000)
+            },
+        })
+    })
+    </script>
+
+</head>
+<body style="background-color: #fff7f7;">
+    <img src="images/mob_top.png" alt="go_top" id="mob_top" class="mob_btn_anim" title="回去頂部囉">
+    <section class="mob_header">
+        <label for="mob_menu" class="mob_menu_control" id="mob_menu_control">
+            <svg width="50" height="40" class="svg1" id="svg1">
+                <line x1="10" y1="10" x2="40" y2="10" stroke="black" stroke-width="4"> </line>
+                <line x1="10" y1="20" x2="40" y2="20" stroke="black" stroke-width="4"> </line>
+                <line x1="10" y1="30" x2="40" y2="30" stroke="black" stroke-width="4"> </line>
+            </svg>
+            <svg width="50" height="40" class="svg2" id="svg2">
+                <line x1="10" y1="30" x2="40" y2="10" stroke="black" stroke-width="4"> </line>
+                <line x1="10" y1="10" x2="40" y2="30" stroke="black" stroke-width="4"> </line>
+            </svg>
+        </label>
+        <input type="checkbox" name="" id="mob_menu">
+        <div class="mob_menu" id="mob_menu_div">
+            <ul>
+                <li><a href="index.html">首頁</a></li>
+                <li><a href="vtuber.html">速覽VTuber</a></li>
+                <li class="mob_menu3">
+                    <a href="#" class="menu3_control">介紹成員&nbsp;<img src="images/chevron-down.svg" class="nav_down"></a>
+                    <ul class="menu3">
+                        <li><a href="pekora.html">兔田佩克拉</a></li>
+                        <li><a href="miko.html">櫻巫女</a></li>
+                        <li><a href="rushia.html">潤羽露西婭</a></li>
+                        <li><a href="korone.html">戌神沁音</a></li>
+                        <li><a href="chloe.html">沙花叉克蘿耶</a></li>
+                        <li><a href="https://www.hololive.tv/member" target="new">hololive官網-全成員</a></li>
+                    </ul>
+                </li>
+                <li><a href="recommendYoutube.html">介紹術語及YouTube頻道翻譯</a></li>
+            </ul>
+        </div>
+    </section>
+    <header id="header"> 
+        <section class="slideshow_img">
+            <div>
+                <!-- <img src="images/miko_header.jpg" class="position_left"> -->
+                <a v-for="(item,index) in img" :href="item.imgPixivSrc" target="new" v-show="index === key" title="去pixiv看圖!"><img :class="{header_switch_img: index===key}" :src="item.imgSrc" :alt="item.alt"></a>
+            </div>
+            <div class="header_btn">
+                <button class="next" @click="imgSwitch(key-1)"><</button>
+                <div>
+                    <input type="button" v-for="(item,index) in img" @click="imgSwitch(index)" :class="{header_switch_img_btn:index==key}">
+                </div>
+                <button class="previous" @click="imgSwitch(key+1)">></button>
+            </div>
+        </section>
+    </header>
+    
+    <nav>
+        <div class="nav_menu">
+            <ul>
+                <li><a href="index.html">首頁</a></li>
+                <li><a href="vtuber.html">速覽VTuber</a></li>
+                <li class="nav_menu3">
+                    <a href="#">介紹成員&nbsp;<img src="images/chevron-down.svg" class="nav_down"></a>
+                    <ul>
+                        <li><a href="pekora.html">兔田佩克拉</a></li>
+                        <li><a href="miko.html">櫻巫女</a></li>
+                        <li><a href="rushia.html">潤羽露西婭</a></li>
+                        <li><a href="korone.html">戌神沁音</a></li>
+                        <li><a href="chloe.html">沙花叉克蘿耶</a></li>
+                        <li><a href="https://www.hololive.tv/member" target="new">hololive官網-全成員</a></li>
+                    </ul>
+                </li>
+                <li><a href="recommendYoutube.html">介紹術語及YouTube頻道翻譯</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <div class="vt_main">
+        <section class="vt_content1 vt_content">
+            <article id="c1_1">
+                <input type="radio" name="control_c1" id="control_c1_img1" checked>
+                <input type="radio" name="control_c1" id="control_c1_img2">
+                <div class="c1_label_div">
+                    <label for="control_c1_img1" class="c1_label"></label>
+                    <label for="control_c1_img2" class="c1_label"></label>
+                </div>
+                <div class="c1_title1">
+                    <h2>冷酷的克蘿耶</h2>
+                    <div>
+                        <div><a href="images/chloe.webp" data-fancybox="vt_c1" data-caption="hololive-六期生 祕密結社 掃除屋沙花叉克蘿耶 圖片取自於pixiv 94524978 繪師 : @sansuouo"><img src="images/chloe_title.webp" alt="hololive沙花叉克蘿耶" title="冷酷的沙花叉克蘿耶"></a></div>
+                    </div>
+                </div>
+                <div class="c1_title2">
+                    <h2>可愛的克蘿耶</h2>
+                    <div>
+                        <div><a href="images/chloe_1.webp" data-fancybox="vt_c1" data-caption="拿下面具可愛的沙花叉克蘿耶 圖片取自於pixiv 94491762 繪師 : @eufrik"><img src="images/chloe_title_1.webp" alt="hololive沙花叉克蘿耶" title="可愛的沙花叉克蘿耶"></a></div>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <section class="vt_content2 vt_content">
+            <div class="content_pos"><h1>人物介紹</h1></div>
+            <article id="c2_1">
+                <div class="content_text">
+                    <h3>中文名稱 : 沙花叉克蘿耶</h3>
+                    <h3>日文名稱 : 沙花叉クロヱ | さかまたくろゑ</h3>
+                    <p title="譯於hololive官網人物說明">在祕密結社擔任掃除屋同時也是holoX的實習生，會冷靜沉著執行著組織發佈的任務，喜歡聽音樂，雖然本人否認但在旁人看來她就是一名傲嬌。
+                        <br>身高148公分、年齡不詳，生日5月18日。</p>
+                    <a href="https://twitter.com/sakamatachloe" target="new"><img src="images/twitter.svg" class="icon">推特頻道</a>
+                    <a href="https://www.youtube.com/channel/UCIBY1ollUsauvVi4hW4cumw" target="new"><img src="images/youtube.svg" class="icon">YouTube頻道</a>
+                </div>
+            </article>
+        </section>
+        <section class="vt_content3 vt_content">
+            <div class="content_pos"><h1>VTuber事蹟</h1></div> 
+            <article id="c3_1">
+                <a href="images/sakamatachloe_card_1.webp" data-fancybox="vt_c3" data-caption="在水族館中的克蘿耶 圖片取自於pixiv 94553358 繪師 : @MOeRu110" ><img src="images/sakamatachloe_card_01.webp"alt="沙花叉克蘿耶" title="水族館中的沙花叉克蘿耶"></a>
+                <div class="content_text">
+                    <h3>虎鯨殺手</h3>
+                    <p>克蘿耶初配信中與觀眾<a href="https://www.youtube.com/watch?v=Fb2IwaOWm8E&t=3425s" target="new">介紹自己(虎鯨)家</a>，而虎鯨又稱殺人鯨，根據研究指出，部分虎鯨族群非常愛吃鯊魚的肝，由此可以期待日後種族是虎鯨的克蘿耶與<span title="hololive-EN組成員">Gura(鯊魚)</span>及<span title="hololive production五期生">ねね(海豹)</span>碰撞時會產生有趣的畫面。</p>
+                </div>
+            </article>
+            <article id="c3_2">
+                <a href="images/sakamatachloe_card_2.webp" data-fancybox="vt_c3" data-caption="被家人吐槽太遜的克蘿耶 圖片取自 【雑談】ねぇ、はなそ？【沙花叉クロヱ】 影片截圖" ><img src="images/sakamatachloe_card_02.webp" alt="沙花叉克蘿耶" title="遜砲擔當沙花叉克蘿耶"></a>
+                <div class="content_text">
+                    <h3>holoX遜砲擔當</h3>
+                    <p>克蘿耶結束初配信後的第一場雜談直播前提到克蘿耶被<a href="https://www.youtube.com/watch?v=tyNvojO4dAo&t=300s" target="new">家人吐槽直播演出非常遜</a>-<a href="https://www.youtube.com/watch?v=QkglH_NYHW4" target="new">(中譯版本)</a>，初配信<a href="https://www.youtube.com/watch?v=Fb2IwaOWm8E&t=1422s" target="new">切換場景</a>時頻頻失誤被觀眾接連吐槽，至此開始沙花叉克蘿耶被認定為六期生最遜砲的角色。</a></p>
+                </div>
+            </article>
+            <article id="c3_3">
+                <a href="images/sakamatachloe_card_3.webp" data-fancybox="vt_c3" data-caption="拿下面具的克蘿耶 圖片取自於pixiv 94484530 繪師 : @uruha824" ><img src="images/sakamatachloe_card_03.webp"  alt="沙花叉克蘿耶" title="拿下面具的沙花叉克蘿耶"></a>
+                <div class="content_text">
+                    <h3>反差萌克蘿耶</h3>
+                    <p>克蘿耶初配信中向觀眾詢問是否想看面具底下的克蘿耶，在觀眾的強烈希望下<a href="https://www.youtube.com/watch?v=Fb2IwaOWm8E&t=3037s" target="new">克蘿耶害羞的將面具拿下</a>後獲得一致好評同時立即引發一群<span title="詳細查看介紹術語及YouTube頻道翻譯頁面">DD</span>集體跳槽，而後續的直播也會因場景的變化戴上或拿下面具。</p>
+                </div>
+            </article>
+            <!-- <article id="c3_3">
+                資料建立出道一周內 後續建議更新內容
+                <a href="" data-fancybox="vt_c3" data-caption="圖片取自於pixiv  繪師 :" ><img src=""  alt="" title=""></a>
+                <div class="content_text">
+                    <h3>字跡潦草克蘿耶</h3>
+                    <p>克蘿耶初配信中提到<a href="recommendYoutube.html">媽媽</a>的部分時被觀眾瘋狂<a href="https://www.youtube.com/watch?v=Fb2IwaOWm8E&t=2460s">吐槽字跡非常潦草</a>，</p>
+                </div>
+            </article> -->
+        </section>
+
+        <section class="vt_content4">
+            <div class="vt_video_div" id="vt_video_div">
+                <h1>克蘿耶初配信-虎鯨登場</h1>
+                <video muted src="video/chloe_c4.mp4" controls loop></video>
+            </div>
+            <section class="vt_audio_div" id="vt_audio_div">
+                <div>
+                    <h4>尖叫的克蘿耶1</h4>
+                    <audio src="audio/chloe01.mp3" controls></audio>
+                    <h4>尖叫的克蘿耶2</h4>
+                    <audio src="audio/chloe02.mp3" controls></audio>
+                </div>
+                <div>
+                    <h4>還沒找到有趣的音檔</h4>
+                    <audio src="audio/chloe03.mp3" controls></audio>
+                    <h4>還沒找到有趣的音檔</h4>
+                    <audio src="audio/chloe04.mp3" controls></audio>
+                </div>
+            </section>
+        </section>
+    </div>
+
+    <footer>
+        <!-- Copyright &copy;  -->
+        <p>克蘿耶充滿著遜砲屬性</p>
+        <div class="footer_top_text"><a href="#" class="go_top go_top1"><img src="images/top.png" title="回去頂部囉"></a>你也被圈粉了嗎?還不馬上追隨訂閱!<a href="#" class="go_top go_top2"><img src="images/top.png" title="回去頂部囉"></a></div>
+        <p title="還不快加入">٩(◦`꒳´◦)۶</p>
+        <p class="footer_pc">本網站使用JavaScript ES6技術，不支援IE瀏覽器</p>
+
+    </footer>
+
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/layout.js"></script>
+    <script src="js/vt_javascript.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>   
+    <script>
+    $('[data-fancybox="vt_c1"]').fancybox({
+        loop : true
+    })
+    </script>
+</body>
+</html>

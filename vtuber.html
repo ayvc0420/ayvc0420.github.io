@@ -55,7 +55,7 @@
                                 }else{
                                     this.key = 0;
                                 }
-                            },8000)
+                            },15000)
                         },
                     })
         })
@@ -89,10 +89,11 @@
                         <li><a href="miko.html">櫻巫女</a></li>
                         <li><a href="rushia.html">潤羽露西婭</a></li>
                         <li><a href="korone.html">戌神沁音</a></li>
+                        <li><a href="chloe.html">沙花叉克蘿耶</a></li>
                         <li><a href="https://www.hololive.tv/member" target="new">hololive官網-全成員</a></li>
                     </ul>
                 </li>
-                <li><a href="recommendYoutube.html">推薦的YouTube中文翻譯頻道</a></li>
+                <li><a href="recommendYoutube.html">介紹術語及YouTube頻道翻譯</a></li>
             </ul>
         </div>
     </section>
@@ -125,10 +126,11 @@
                         <li><a href="miko.html">櫻巫女</a></li>
                         <li><a href="rushia.html">潤羽露西婭</a></li>
                         <li><a href="korone.html">戌神沁音</a></li>
+                        <li><a href="chloe.html">沙花叉克蘿耶</a></li>
                         <li><a href="https://www.hololive.tv/member" target="new">hololive官網-全成員</a></li>
                     </ul>
                 </li>
-                <li><a href="recommendYoutube.html">推薦的YouTube中文翻譯頻道</a></li>
+                <li><a href="recommendYoutube.html">介紹術語及YouTube頻道翻譯</a></li>
             </ul>
         </div>
     </nav>
@@ -153,6 +155,7 @@
             <span>一共有 {{vtNumber}} 位</span>
         </div>
 
+        <!-- <article v-for="item in vtuberData0" class="vt_player">computed的-->
         <article v-for="item in vtuberData" class="vt_player" v-show="item.area === areaOption || areaOption === '全部'">
             <div>
                 <img :src="item.img" :alt="item.name" :title="item.name+'圖片'">

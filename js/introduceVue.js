@@ -10,6 +10,21 @@ window.addEventListener('load',async function(){
             areaOption:'全部',
             vtNumber:0,
         },
+        // 這邊先不做 用v-show處理顯示
+        // computed:{
+        //     vtuberData0(){
+        //         let obj = []
+        //         this.vtuberData.forEach(item =>{
+        //             if(this.areaOption === '全部'){
+        //                 obj.push(item)
+        //             }else if(item.area === this.areaOption){
+        //                 obj.push(item) 
+        //             }
+        //         })
+        //         console.log(obj)
+        //         return obj
+        //     }
+        // },
         methods: {
             async fetchVtuber(){
                 this.vtuberData = [];
