@@ -1,10 +1,14 @@
 
 /*字體*/
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,300&family=Ubuntu:wght@400;700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,300&family=Ubuntu:wght@400;700&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200,400,600,800,900&display=swap');
 
-h1,h2,h3,span,p {font-family: 'Lato', sans-serif;
-    font-family: 'Ubuntu', sans-serif;}
-
+/* h1,h2,h3,span,p {font-family: 'Lato', sans-serif;
+    font-family: 'Ubuntu', sans-serif;} */
+h1,h2,h3,h4,h5,h6,span,p,div,a{
+    font-family: 'Roboto Slab', serif;
+    font-weight: 400;
+}
 @keyframes body {
     0%{
         /* transform: translateY(-100%); */

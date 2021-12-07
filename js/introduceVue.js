@@ -2,6 +2,8 @@
 
 window.addEventListener('load',async function(){
     
+
+
     let v = new Vue({
         el:'#main',
         data:{
@@ -54,12 +56,8 @@ window.addEventListener('load',async function(){
                 const height = document.documentElement.clientHeight;
                 vtPlayerAll.forEach(item =>{
                     const distanceTop = item.offsetTop;
-                    const Control = distanceTop - height <= nowHeight-70;
-                    if(Control){
-                        item.classList.add('vt_player_ani');
-                    }else{
-                        item.classList.remove('vt_player_ani');
-                    }
+                    const control = distanceTop - height <= nowHeight-70;
+                    control ? item.classList.add('vt_player_ani') : item.classList.remove('vt_player_ani')
                 })
             },
             vtN(){
