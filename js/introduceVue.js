@@ -71,7 +71,7 @@ window.addEventListener('load',async function(){
                         }
                     })
                     this.vtNumber = n;
-                }, 30);
+                }, 50);
             },
             
         },
