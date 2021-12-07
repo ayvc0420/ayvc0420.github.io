@@ -713,12 +713,20 @@
             "id":89
         },
         {
+            "name":"Annin Miru Channel",
+            "content":"台灣VTuber<br>實況/影片類型:遊戲、翻唱、日文實況",
+            "href":"https://www.youtube.com/channel/UCFahBR2wixu0xOex84bXFvg",
+            "img":"images/vt_90.webp",
+            "area":"台灣",
+            "id":90
+        },
+        {
             "name":"友人A",
             "content":"hololive-Group<br>實況/影片類型:hololive官方各項發表、雜談",
             "href":"https://www.youtube.com/channel/UCJFZiqLMntJufDCHc6bQixg",
             "img":"images/vt_yujinA.jpg",
             "area":"日本",
-            "id":90
+            "id":91
         }
     ]
 }
