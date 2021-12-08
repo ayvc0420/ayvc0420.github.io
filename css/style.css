@@ -179,7 +179,7 @@ nav{
 .nav_menu3 ul{
     position: absolute;
     transform: scale(0) translateY(-400px);
-    width: 200px;
+    width: 220px;
     border: 1px solid rgb(212, 212, 212);
     box-shadow: 2px 5px 10px rgba(119, 119, 119,0.5);
     transition: transform .5s;
