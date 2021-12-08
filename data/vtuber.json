@@ -338,7 +338,7 @@
         },
         {
             "name":"李李鈴蘭 / Linglan Lily",
-            "content":"台灣VTuber<br>實況/影片類型:音樂、翻唱、雜談、遊戲",
+            "content":"唱歌系台灣VTuber<br>實況/影片類型:音樂、翻唱、雜談、遊戲",
             "href":"https://www.youtube.com/channel/UCxWAL-c1psONO_DfG-cq2iA",
             "img":"images/vt_43.jpg",
             "area":"台灣",
@@ -729,12 +729,28 @@
             "id":91
         },
         {
+            "name":"瑪格麗特．溫特斯 / Margaret．Winters 【CloudHorizon所屬】",
+            "content":"台灣VTuber<br>實況/影片類型:料理、夜間哄睡、遊戲、音樂",
+            "href":"https://www.youtube.com/channel/UCJ4VZaUiVC2vpN7TXG85M5g",
+            "img":"images/vt_92.webp",
+            "area":"台灣",
+            "id":92
+        },
+        {
+            "name":"瀰婭ミア MiaMya",
+            "content":"台灣VTuber<br>實況/影片類型:遊戲、音樂、聯動合作",
+            "href":"https://www.youtube.com/c/MiaMya",
+            "img":"images/vt_93.webp",
+            "area":"台灣",
+            "id":93
+        },
+        {
             "name":"友人A",
             "content":"hololive-Group<br>實況/影片類型:hololive官方各項發表、雜談",
             "href":"https://www.youtube.com/channel/UCJFZiqLMntJufDCHc6bQixg",
             "img":"images/vt_yujinA.jpg",
             "area":"日本",
-            "id":92
+            "id":94
         }
     ]
 }
