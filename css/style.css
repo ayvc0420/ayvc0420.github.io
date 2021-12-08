@@ -252,10 +252,25 @@ main .content2{
     width: 45%;
     margin: auto;
 }
+@keyframes content_ani {
+    0% {
+        opacity: 0;
+        transform: translateX(-2000px);
+        }
+    50% {
+        opacity: 1;
+        transform: translateX(40px);
+        }
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+        }
+}
 .content_ani{
-    transform: translateX(0%) !important;
+    animation: content_ani 1.3s forwards;
+    /* transform: translateX(0%) !important;
     opacity: 1 !important;
-    transition: all 0.8s;
+    transition: all 0.8s; */
 }
 .content_ani_h1{
     transform: translateY(0%) !important;
@@ -469,7 +484,7 @@ footer .footer_top_text{
         position: absolute;
     }
     main>section{
-        padding: 40px;
+        padding: 40px 25px;
     }
     .content article{
         max-width: 100%;
