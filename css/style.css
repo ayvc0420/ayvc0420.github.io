@@ -331,7 +331,7 @@ main section:nth-of-type(even) div:nth-of-type(1){
 
 
 footer {
-    padding: 20px 0;
+    padding: 20px;
     background-color: black;
     text-align: center;
     color: white;
