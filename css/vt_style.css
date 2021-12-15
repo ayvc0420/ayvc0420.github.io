@@ -34,6 +34,7 @@
 .vt_content1 h2{
     font-size: 48px;
     color: red;
+    padding: 0 20px;
 }
 .vt_content1 h3{
     font-size: 24px;
@@ -412,6 +413,12 @@
     .vt_content1 img{
         max-width: 80%;
         margin: auto;
+    }
+    .vt_content h1{
+        font-size: 40px;
+    }
+    .vt_content1 h2{
+        font-size: 40px;
     }
     .vt_content1 h3{
         margin-top: 20px;
