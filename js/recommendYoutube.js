@@ -6,6 +6,10 @@ window.addEventListener('load',function(){
     const short = document.getElementById('short');
     const middle = document.getElementById('middle');
     const long = document.getElementById('long');
+    const mobTopBtn = document.getElementById('mob_top')
+
+    // 減少當前可視距離100 讓DOM觸發動畫條件變困難
+    const aniN = 100
     function year(){
         // let now = new Date();
         // let new_year = new Date(2021,12,31);
@@ -15,14 +19,13 @@ window.addEventListener('load',function(){
         // now_year.innerHTML = `${time.getMonth()-1}個月${time.getDate()}天${time.getHours()}小時${time.getMinutes()}分${time.getSeconds()}秒`
         
         let nowTime = new Date();
-        let newYear = new Date('2022/01/01');
+        let newYear = new Date(nowTime.getFullYear()+1+'/01/01');
         let difference = newYear - nowTime;
         let d = Math.floor(difference/1000/60/60/24);
         let h = Math.floor(difference/1000/60/60%24);
         let m = Math.floor(difference/1000/60%60);
         let s = Math.floor(difference/1000%60);
         now_year.textContent = `${d}天${h}小時${m}分${s}秒`
-
 
 
         let nowHr = nowTime.getHours()
@@ -67,11 +70,7 @@ window.addEventListener('load',function(){
             long.style.top = '2px';
             long.style.left = '1px';
         }
-        if(timeS === '01'){
-            short.style.transition = 'none';
-        }else{
-            short.style.transition = 'all .2s';
-        }
+        timeS === '01' ? short.style.transition = 'none' : short.style.transition = 'all .2s';
         return year;
     }
     setInterval(year(),1000);
@@ -82,73 +81,32 @@ window.addEventListener('load',function(){
     const c2_table = document.getElementById('c2_table');
     const content3_time = document.getElementById('content3_time')
 
-    window.addEventListener('scroll',function(){
-        
+    window.addEventListener('scroll',tableHandler)
+    tableHandler()
+    function tableHandler (){
         const now_height = document.documentElement.scrollTop;
         const now_width = document.documentElement.scrollWidth;
         const height = document.documentElement.clientHeight;
-        
-        
 
-        //元素離頂
-        const c1_title_top = c1_title.offsetTop;
-        const c1_table_top = c1_table.offsetTop;
-        const c2_title_top = c2_title.offsetTop;
-        const c2_table_top = c2_table.offsetTop;
-        const content3_time_top = content3_time.offsetTop;
+        const yt_control_c1_title = c1_title.offsetTop - height <= now_height-aniN;
+        const yt_control_c1_table = c1_table.offsetTop - height <= now_height-aniN;
+        const yt_control_c2_title = c2_title.offsetTop - height <= now_height-aniN;
+        const yt_control_c2_table = c2_table.offsetTop - height <= now_height-aniN;
+        const yt_control_content3_time = content3_time.offsetTop - height <= now_height-aniN;
 
-        const yt_control_c1_title = c1_title_top - height <= now_height-100;
-        const yt_control_c1_table = c1_table_top - height <= now_height-100;
-        const yt_control_c2_title = c2_title_top - height <= now_height-100;
-        const yt_control_c2_table = c2_table_top - height <= now_height-100;
-        const yt_control_content3_time = content3_time_top - height <= now_height-100;
-        
+        now_width >= 1024 ? mobTopBtn.style.display = 'none' : mobTopBtn.style.display = 'block'
+        height <= now_height ? mobTopBtn.style.transform = `translateX(0%)` : mobTopBtn.style.transform = `translateX(1000%)`
 
+        yt_control_c1_title ? c1_title.classList.add('yt_title_ani') : ''
+        yt_control_c1_table ? setTimeout(()=>{c1_table.classList.add('yt_title_ani')}) : ''
+        yt_control_c2_title ? c2_title.classList.add('yt_title_ani') : ''
+        yt_control_c2_table ? setTimeout(()=>{c2_table.classList.add('yt_title_ani')}) : ''
+        yt_control_content3_time ? content3_time.classList.add('yt_title_ani') : ''
 
 
-        if(now_width >= 1024){
-            mob_top.style.display = 'none';
-        }else{
-            mob_top.style.display = 'block';
-        }
-        if(height <= now_height){
-            mob_top.style.transform = `translateX(0%)`
-        }else{
-            mob_top.style.transform = `translateX(1000%)`
-        }
-        
-        if(yt_control_c1_title === true){
-            c1_title.classList.add('yt_title_ani')
-        }
-        // else{
-        //     c1_title.classList.remove('yt_title_ani')
-        // }
-        if(yt_control_c1_table === true){
-            setTimeout(() => {
-                c1_table.classList.add('yt_content_ani')
-            }, 250);
-        }
-        // else{
-        //     c1_table.classList.remove('yt_content_ani')
-        // }
-        if(yt_control_c2_title === true){
-            c2_title.classList.add('yt_content_ani')
-        }
-        // else{
-        //     c2_title.classList.remove('yt_content_ani')
-        // }
-        if(yt_control_c2_table === true){
-            setTimeout(() => {
-                c2_table.classList.add('yt_content_ani')
-            }, 250);
-        }
-        // else{
-        //     c2_table.classList.remove('yt_content_ani')
-        // }
-        if(yt_control_content3_time === true){
-            content3_time.classList.add('yt_content_ani')
-        }
-    })
+ 
+    }
+
 })
 
 
