@@ -46,16 +46,17 @@
             color: coral;
         }
     </style>
-
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-7GGHVD11L0"></script>
     <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
 
-    gtag('config', 'G-7GGHVD11L0');
+        gtag('config', 'G-7GGHVD11L0');
     </script>
+
+
 </head>
 <body style="background-color: #d7f6ff;">
     <img src="images/mob_top.png" alt="go_top" id="mob_top" class="mob_btn_anim" title="回去頂部囉">
@@ -186,6 +187,42 @@
     </footer>
 
     <!-- <script src="js/axios.js"></script> -->
+        <script src="js/vue.min.js"></script>
+    <script>
+        window.addEventListener('load',function(){
+
+            let headerData = {
+            key:0,
+            img:[
+                {imgPixivSrc:'https://www.pixiv.net/artworks/81489548', imgSrc:'./images/81489548_rushia_header.webp',alt:'pixiv81489548'},
+                {imgPixivSrc:'https://www.pixiv.net/artworks/81489548', imgSrc:'./images/81489548_rushia_header_1.webp',alt:'pixiv81489548'},
+                {imgPixivSrc:'https://www.pixiv.net/artworks/85978281', imgSrc:'./images/85978281_rushia_header.webp',alt:'pixiv85978281'},
+                {imgPixivSrc:'https://www.pixiv.net/artworks/89695133', imgSrc:'./images/89695133_rushia_header.webp',alt:'pixiv85978281'},
+                {imgPixivSrc:'https://www.pixiv.net/artworks/94561637', imgSrc:'./images/94561637_rushia_header.webp',alt:'pixiv94561637'},
+                {imgPixivSrc:'https://www.pixiv.net/artworks/94561637', imgSrc:'./images/94561637_rushia_header_1.webp',alt:'pixiv94561637'},
+            ]}
+        
+            new Vue({
+                el:'#header',
+                data:headerData,
+                methods: {
+                    imgSwitch(index){
+                        this.key = (index + this.img.length) % this.img.length;
+                    },
+                },
+                mounted: function(){
+                    setInterval(()=>{
+                        if(this.key < this.img.length -1){
+                            this.key +=1;
+                        }else{
+                            this.key = 0;
+                        }
+                    },15000)
+                },
+            })
+        })
+
+    </script>
     <script src="js/vue.min.js"></script>
     <script>
         window.addEventListener('load',function(){
