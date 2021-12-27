@@ -1,6 +1,6 @@
 # ayvc0420.github.io
 
-標題 : 帶你快速了解hololive|現今最紅的VTuberW
+標題 : 帶你快速了解hololive|現今最紅的VTuber
 
 網址連結 : https://ayvc0420.github.io/ (部分採用Vue jQuery 2021/10/11製作)
 
