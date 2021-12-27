@@ -71,42 +71,16 @@
 
     </style>
 
-    <script src="js/vue.min.js"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7GGHVD11L0"></script>
     <script>
-        
-    window.addEventListener('load',function(){
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-        let headerData = {
-        key:0,
-        img:[
-            {imgPixivSrc:'https://www.pixiv.net/artworks/90697958', imgSrc:'./images/miko_header.webp',alt:'pixiv90697958'},
-            {imgPixivSrc:'https://www.pixiv.net/artworks/89707884', imgSrc:'./images/miko_header_1.webp',alt:'pixiv89707884'},
-            {imgPixivSrc:'https://twitter.com/sakuramiko35/status/1388738206443610117/photo/1', imgSrc:'./images/miko_header_2.webp',alt:'twitter1388738206443610117'},
-            {imgPixivSrc:'https://www.pixiv.net/artworks/86239985', imgSrc:'./images/miko_header_3.webp',alt:'pixiv86239985'},
-            {imgPixivSrc:'https://www.pixiv.net/artworks/90375174', imgSrc:'./images/miko_header_4.webp',alt:'pixiv90375174'},
-        ]}
-    
-        new Vue({
-            el:'#header',
-            data:headerData,
-            methods: {
-                imgSwitch(index){
-                    this.key = (index + this.img.length) % this.img.length;
-                },
-            },
-            mounted: function(){
-                setInterval(()=>{
-                    if(this.key < this.img.length -1){
-                        this.key +=1;
-                    }else{
-                        this.key = 0;
-                    }
-                },15000)
-            },
-        })
-    })
+    gtag('config', 'G-7GGHVD11L0');
     </script>
-
 </head>
 <body style="background-color: #fff7f7;">
     <img src="images/mob_top.png" alt="go_top" id="mob_top" class="mob_btn_anim" title="回去頂部囉">
@@ -274,7 +248,41 @@
 
     </footer>
 
+    <script src="js/vue.min.js"></script>
+    <script>
+        
+    window.addEventListener('load',function(){
 
+        let headerData = {
+        key:0,
+        img:[
+            {imgPixivSrc:'https://www.pixiv.net/artworks/90697958', imgSrc:'./images/miko_header.webp',alt:'pixiv90697958'},
+            {imgPixivSrc:'https://www.pixiv.net/artworks/89707884', imgSrc:'./images/miko_header_1.webp',alt:'pixiv89707884'},
+            {imgPixivSrc:'https://twitter.com/sakuramiko35/status/1388738206443610117/photo/1', imgSrc:'./images/miko_header_2.webp',alt:'twitter1388738206443610117'},
+            {imgPixivSrc:'https://www.pixiv.net/artworks/86239985', imgSrc:'./images/miko_header_3.webp',alt:'pixiv86239985'},
+            {imgPixivSrc:'https://www.pixiv.net/artworks/90375174', imgSrc:'./images/miko_header_4.webp',alt:'pixiv90375174'},
+        ]}
+    
+        new Vue({
+            el:'#header',
+            data:headerData,
+            methods: {
+                imgSwitch(index){
+                    this.key = (index + this.img.length) % this.img.length;
+                },
+            },
+            mounted: function(){
+                setInterval(()=>{
+                    if(this.key < this.img.length -1){
+                        this.key +=1;
+                    }else{
+                        this.key = 0;
+                    }
+                },15000)
+            },
+        })
+    })
+    </script>
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/layout.js"></script>
     <script src="js/vt_javascript.js"></script>

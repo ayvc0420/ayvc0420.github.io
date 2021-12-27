@@ -46,42 +46,16 @@
             color: coral;
         }
     </style>
-    <script src="js/vue.min.js"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7GGHVD11L0"></script>
     <script>
-        window.addEventListener('load',function(){
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-            
-                    let headerData = {
-                    key:0,
-                    img:[
-                        {imgPixivSrc:'https://www.pixiv.net/artworks/90195061', imgSrc:'./images/rushia_header.webp',alt:'pixiv90195061'},
-                        {imgPixivSrc:'https://www.pixiv.net/artworks/91479662', imgSrc:'./images/usadapekora_header.webp',alt:'pixiv91479662'},
-                        {imgPixivSrc:'https://www.pixiv.net/artworks/88300974', imgSrc:'./images/sakuramiko_header.webp',alt:'pixiv88300974'},
-                        {imgPixivSrc:'https://www.pixiv.net/artworks/92148396', imgSrc:'./images/korone_header.webp',alt:'pixiv92148396'},
-                    ]}
-            
-                    new Vue({
-                        el:'#header',
-                        data:headerData,
-                        methods: {
-                            imgSwitch(index){
-                                this.key = (index + this.img.length) % this.img.length;
-                            },
-                        },
-                        mounted: function(){
-                            setInterval(()=>{
-                                if(this.key < this.img.length -1){
-                                    this.key +=1;
-                                }else{
-                                    this.key = 0;
-                                }
-                            },15000)
-                        },
-                    })
-        })
-
+    gtag('config', 'G-7GGHVD11L0');
     </script>
-
 </head>
 <body style="background-color: #d7f6ff;">
     <img src="images/mob_top.png" alt="go_top" id="mob_top" class="mob_btn_anim" title="回去頂部囉">
@@ -212,6 +186,41 @@
     </footer>
 
     <!-- <script src="js/axios.js"></script> -->
+    <script src="js/vue.min.js"></script>
+    <script>
+        window.addEventListener('load',function(){
+
+            
+                    let headerData = {
+                    key:0,
+                    img:[
+                        {imgPixivSrc:'https://www.pixiv.net/artworks/90195061', imgSrc:'./images/rushia_header.webp',alt:'pixiv90195061'},
+                        {imgPixivSrc:'https://www.pixiv.net/artworks/91479662', imgSrc:'./images/usadapekora_header.webp',alt:'pixiv91479662'},
+                        {imgPixivSrc:'https://www.pixiv.net/artworks/88300974', imgSrc:'./images/sakuramiko_header.webp',alt:'pixiv88300974'},
+                        {imgPixivSrc:'https://www.pixiv.net/artworks/92148396', imgSrc:'./images/korone_header.webp',alt:'pixiv92148396'},
+                    ]}
+            
+                    new Vue({
+                        el:'#header',
+                        data:headerData,
+                        methods: {
+                            imgSwitch(index){
+                                this.key = (index + this.img.length) % this.img.length;
+                            },
+                        },
+                        mounted: function(){
+                            setInterval(()=>{
+                                if(this.key < this.img.length -1){
+                                    this.key +=1;
+                                }else{
+                                    this.key = 0;
+                                }
+                            },15000)
+                        },
+                    })
+        })
+
+    </script>
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/layout.js"></script>
     <script src="js/introduceVue.js"></script>

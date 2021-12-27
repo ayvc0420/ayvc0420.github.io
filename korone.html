@@ -33,6 +33,16 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/vt_style.css">
     <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7GGHVD11L0"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-7GGHVD11L0');
+    </script>
     <style>
 
 
@@ -73,41 +83,6 @@
 
     </style>
 
-    <!-- vue2.6.14 -->
-    <script src="js/vue.min.js"></script>
-    <script>
-    window.addEventListener('load',function(){
-
-        let headerData = {
-        key:0,
-        img:[
-            {imgPixivSrc:'https://www.pixiv.net/artworks/92686622', imgSrc:'./images/92686622_korone_header.webp',alt:'pixiv92686622'},
-            {imgPixivSrc:'https://www.pixiv.net/artworks/92838286', imgSrc:'./images/92838286_korone_header.webp',alt:'pixiv92838286'},
-            {imgPixivSrc:'https://twitter.com/fuka_hire/status/1381973482099990534/photo/1', imgSrc:'./images/1381973482099990534_korone_header.webp',alt:'twitter1381973482099990534'},
-            {imgPixivSrc:'https://www.pixiv.net/artworks/93132546', imgSrc:'./images/93132546_korone_header.webp',alt:'pixiv93132546'},
-        ]}
-    
-        new Vue({
-            el:'#header',
-            data:headerData,
-            methods: {
-                imgSwitch(index){
-                    this.key = (index + this.img.length) % this.img.length;
-                },
-            },
-            mounted: function(){
-                setInterval(()=>{
-                    if(this.key < this.img.length -1){
-                        this.key +=1;
-                    }else{
-                        this.key = 0;
-                    }
-                },15000)
-            },
-        })
-    })
-
-    </script>
 
 </head>
 <body style="background-color: #fff6d7;">
@@ -266,7 +241,41 @@
 
     </footer>
 
+    <!-- vue2.6.14 -->
+    <script src="js/vue.min.js"></script>
+    <script>
+    window.addEventListener('load',function(){
 
+        let headerData = {
+        key:0,
+        img:[
+            {imgPixivSrc:'https://www.pixiv.net/artworks/92686622', imgSrc:'./images/92686622_korone_header.webp',alt:'pixiv92686622'},
+            {imgPixivSrc:'https://www.pixiv.net/artworks/92838286', imgSrc:'./images/92838286_korone_header.webp',alt:'pixiv92838286'},
+            {imgPixivSrc:'https://twitter.com/fuka_hire/status/1381973482099990534/photo/1', imgSrc:'./images/1381973482099990534_korone_header.webp',alt:'twitter1381973482099990534'},
+            {imgPixivSrc:'https://www.pixiv.net/artworks/93132546', imgSrc:'./images/93132546_korone_header.webp',alt:'pixiv93132546'},
+        ]}
+    
+        new Vue({
+            el:'#header',
+            data:headerData,
+            methods: {
+                imgSwitch(index){
+                    this.key = (index + this.img.length) % this.img.length;
+                },
+            },
+            mounted: function(){
+                setInterval(()=>{
+                    if(this.key < this.img.length -1){
+                        this.key +=1;
+                    }else{
+                        this.key = 0;
+                    }
+                },15000)
+            },
+        })
+    })
+
+    </script>
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/layout.js"></script>
     <script src="js/vt_javascript.js"></script>
