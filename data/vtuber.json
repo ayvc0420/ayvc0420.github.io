@@ -738,11 +738,35 @@
         },
         {
             "name":"瀰婭ミア MiaMya",
-            "content":"台灣VTuber<br>實況/影片類型:遊戲、音樂、聯動合作",
+            "content":"狐狸系台灣VTuber<br>實況/影片類型:遊戲、音樂、聯動合作",
             "href":"https://www.youtube.com/c/MiaMya",
             "img":"images/vt_93.webp",
             "area":"台灣",
             "id":93
+        },
+        {
+            "name":"Olda ch. 歐妲",
+            "content":"台灣VTuber<br>實況/影片類型:遊戲、雜談、音樂",
+            "href":"https://www.youtube.com/channel/UCfZofhrZ4pxCESrcs5m5NJg",
+            "img":"images/vt_94.webp",
+            "area":"台灣",
+            "id":94
+        },
+        {
+            "name":"HaiZ ch. 海唧",
+            "content":"台灣VTuber<br>實況/影片類型:遊戲、雜談、音樂",
+            "href":"https://www.youtube.com/channel/UCI-b1GL4y_zoBoVozwmgrWQ",
+            "img":"images/vt_95.webp",
+            "area":"台灣",
+            "id":95
+        },
+        {
+            "name":"悠白Ubye",
+            "content":"台灣VTuber<br>實況/影片類型:遊戲、音樂、雜談、英文配信",
+            "href":"https://www.youtube.com/channel/UC-o-1qjKkMLq-ZFxXIzOUBQ",
+            "img":"images/vt_96.webp",
+            "area":"台灣",
+            "id":96
         },
         {
             "name":"友人A",
@@ -750,7 +774,7 @@
             "href":"https://www.youtube.com/channel/UCJFZiqLMntJufDCHc6bQixg",
             "img":"images/vt_yujinA.jpg",
             "area":"日本",
-            "id":94
+            "id":97
         }
     ]
 }
