@@ -3,7 +3,6 @@
 window.addEventListener('load',async function(){
     
 
-
     let v = new Vue({
         el:'#main',
         data:{
@@ -61,17 +60,17 @@ window.addEventListener('load',async function(){
                 })
             },
             vtN(){
-                // X 弄了我一小時才想到這方法
-                setTimeout(() => {                    
+                this.$nextTick(function(){
                     const vtPlayerAll = document.querySelectorAll('.vt_player')
                     let n=0;
                     vtPlayerAll.forEach(item =>{
                         if(window.getComputedStyle(item,null).display === 'flex'){
-                            n+=1;
+                            n++;
                         }
                     })
                     this.vtNumber = n;
-                }, 50);
+                    this.vtAnimation() 
+                })
             },
             // debounce(func, wait = 6, immediate = true) {
             //     var timeout;
