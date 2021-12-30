@@ -240,7 +240,7 @@ main section:nth-of-type(odd){
 main section:nth-of-type(even){
     background: rgba(235, 255, 240, 0.8)
 }
-main section:not(.content1) article{
+main section:not(.content1) article>div{
     transform: translateX(-200%);
     opacity: 0;
 }

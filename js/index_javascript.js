@@ -3,38 +3,46 @@ window.addEventListener('load',function(){
 
     /* 首頁 */
 
-    const content4_h1 = document.querySelector('.content4 h1')
+    const c4H1 = document.querySelector('.content4 h1')
 
-    let contentArticle = Array.from(document.querySelectorAll('.content article'))
-    contentArticle.splice(0,1)
+    let articleDiv = Array.from(document.querySelectorAll('.content article>div'))
+    articleDiv.splice(0,2)
 
     // console.log(contentArticle.splice(0,1))
     window.addEventListener('scroll',function(){
 
-        const c4H1Top = content4_h1.offsetTop
-        const now_height = document.documentElement.scrollTop;
-        const now_width = document.documentElement.scrollWidth;
+        const c4H1Top = c4H1.offsetTop
+        const nowHeight = document.documentElement.scrollTop;
+        const nowWidth = document.documentElement.scrollWidth;
         const height = document.documentElement.clientHeight;
-        contentArticle.forEach(item=>{
-            const top = item.offsetTop
-            const control = top - height <= now_height - parseInt(window.getComputedStyle(item,null).height,10)/4
-            control ? item.classList.add('content_ani') : ''
-        })
+        if(nowWidth >= 1024){
+            articleDiv.forEach(item=>{
+                const top = item.offsetTop
+                const control = top - height <= nowHeight - parseInt(window.getComputedStyle(item,null).height,10)/4
+                control ? item.classList.add('content_ani') : ''
+            })
+        }else{
+            articleDiv.forEach(item=>{
+                const top = item.offsetTop
+                const control = top - height <= nowHeight
+                control ? item.classList.add('content_ani') : ''
+            })
+        }
         
-        if(now_width >= 1024){
+        if(nowWidth >= 1024){
             mob_top.style.display = 'none';
         }else{
             mob_top.style.display = 'block';
         }
-        if(height <= now_height){
+        if(height <= nowHeight){
             mob_top.style.transform = `translateX(0%)`
         }else{
             mob_top.style.transform = `translateX(1000%)`
         }
 
 
-        const controlC4H1 = c4H1Top - height <= now_height-100
-        controlC4H1 ? content4_h1.classList.add('content_ani_h1') : ''
+        const controlC4H1 = c4H1Top - height <= nowHeight-100
+        controlC4H1 ? c4H1.classList.add('content_ani_h1') : ''
 
     })
 
