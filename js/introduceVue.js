@@ -49,11 +49,10 @@ window.addEventListener('load',async function(){
                 })
             },
             vtAnimation(){
-                const vtPlayerAll = document.querySelectorAll('.vt_player')
                 //確保使用者拉縮畫面導致取頂距離不準確 不重整畫面會顯示異常因此將取頂放入scroll監控內 
                 const nowHeight = document.documentElement.scrollTop;
                 const height = document.documentElement.clientHeight;
-                vtPlayerAll.forEach(item =>{
+                this.$refs.vtuberContent.forEach(item =>{
                     const distanceTop = item.offsetTop;
                     const control = distanceTop - height <= nowHeight-70;
                     control ? item.classList.add('vt_player_ani') : item.classList.remove('vt_player_ani')
@@ -61,9 +60,8 @@ window.addEventListener('load',async function(){
             },
             vtN(){
                 this.$nextTick(function(){
-                    const vtPlayerAll = document.querySelectorAll('.vt_player')
                     let n=0;
-                    vtPlayerAll.forEach(item =>{
+                    this.$refs.vtuberContent.forEach(item =>{
                         if(window.getComputedStyle(item,null).display === 'flex'){
                             n++;
                         }

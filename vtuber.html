@@ -150,7 +150,7 @@
         </div>
 
         <!-- <article v-for="item in vtuberData0" class="vt_player">computed的-->
-        <article v-for="item in vtuberData" class="vt_player" v-show="item.area === areaOption || areaOption === '全部'">
+        <article v-for="item in vtuberData" class="vt_player" v-show="item.area === areaOption || areaOption === '全部'" ref="vtuberContent">
             <div>
                 <img :src="item.img" :alt="item.name" :title="item.name+'圖片'">
             </div>
@@ -176,7 +176,7 @@
 
     <footer>
         <!-- Copyright &copy;  -->
-        <p>本頁面蒐集VTuber相關資訊，排序規則不固定</p>
+        <p>本頁面蒐集VTuber相關資訊，排序規則不固定，頭像皆手動紀錄不會與頻道同步</p>
         <!-- 作者1/2單推露西婭因此排第一 -->
         <div class="footer_top_text"><a href="#" class="go_top go_top1"><img src="images/top.png" title="回去頂部囉"></a>如您為頻道擁有者，資訊不想出現在此處請與我聯絡!<a href="#" class="go_top go_top2"><img src="images/top.png" title="回去頂部囉"></a></div>
         <p><a href="mailto:ayvc0420@gmail.com">ayvc0420@gmail.com</a></p>
