@@ -18,7 +18,9 @@ window.addEventListener('load',function(){
         // let time = new Date(end);
         // now_year.innerHTML = `${time.getMonth()-1}個月${time.getDate()}天${time.getHours()}小時${time.getMinutes()}分${time.getSeconds()}秒`
         
-        let nowTime = new Date();
+        // 測試時間BUG
+        // let nowTime = new Date(Date.now() - 169750000)
+        let nowTime = new Date()
         let newYear = new Date(nowTime.getFullYear()+1+'/01/01');
         let difference = newYear - nowTime;
         let d = Math.floor(difference/1000/60/60/24);
@@ -50,6 +52,10 @@ window.addEventListener('load',function(){
         if(nowS === 60){
             nowS = '00';
             nowMin += 1;
+        }
+        if(nowMin === 60){
+            nowMin = '00';
+            nowHr +=1
         }
 
         time.textContent = `現在時間:${nowHr}:${nowMin}:${nowS}`
