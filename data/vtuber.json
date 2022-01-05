@@ -769,12 +769,20 @@
             "id":96
         },
         {
-            "name":"櫻野露 RURU Ch.",
-            "content":"萬能型創作系台灣VTuber<br>實況/影片類型:漫畫創作、遊戲、雜談、翻唱<br><a href=\"./images/vt_097.webp\" data-fancybox data-caption=\"舊大頭貼 圖片取自於youtube頻道\">舊大頭貼</a>",
-            "href":"https://www.youtube.com/channel/UCgL6PS1vba90zrZW9xmiwng",
+            "name":"𝐾𝑒𝑟𝑖 𝑙𝑢 𝐶ℎ. 可莉 露",
+            "content":"台灣VTuber<br>實況/影片類型:遊戲、音樂、雜談",
+            "href":"https://www.youtube.com/channel/UC5r25R9cBLt4xJ7IczlytHw",
             "img":"images/vt_97.webp",
             "area":"台灣",
             "id":97
+        },
+        {
+            "name":"櫻野露 RURU Ch.",
+            "content":"萬能型創作系台灣VTuber<br>實況/影片類型:漫畫創作、遊戲、雜談、翻唱<br><a href=\"./images/vt_098.webp\" data-fancybox data-caption=\"舊大頭貼 圖片取自於youtube頻道\">舊大頭貼</a>",
+            "href":"https://www.youtube.com/channel/UCgL6PS1vba90zrZW9xmiwng",
+            "img":"images/vt_98.webp",
+            "area":"台灣",
+            "id":98
         },
         {
             "name":"友人A",
@@ -782,7 +790,7 @@
             "href":"https://www.youtube.com/channel/UCJFZiqLMntJufDCHc6bQixg",
             "img":"images/vt_yujinA.jpg",
             "area":"日本",
-            "id":98
+            "id":99
         }
     ]
 }
