@@ -1,6 +1,8 @@
 ;(function(){
+    var ie = document.createElement('script')
+    ie.src="../js/isIE.js"
+    document.documentElement.appendChild(ie)
 
-    
     const mob_menu_div = document.getElementById('mob_menu_div')
     // const mob_menu = document.querySelector('.mob_menu')
     const mob_top = document.getElementById('mob_top')
