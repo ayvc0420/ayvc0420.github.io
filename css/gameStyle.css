@@ -10,6 +10,7 @@
     margin: 30px auto 0;
     border: 1px solid rgb(0,0,0);
     box-sizing: border-box;
+    border-radius: 2;
 }
 .alert{
     position: absolute;
@@ -68,7 +69,7 @@
 #gamePlay{
     color: rgb(0, 26, 255);
     font-weight: 900;
-    background-color: rgb(221, 221, 221);
+    background-color: rgb(235, 235, 235);
 }
 #playerMsg{
     transition: all 1.5s;
@@ -149,6 +150,9 @@
 .game_msg>p{
     font-size: 18px;
     line-height: 1.4;
+}
+.game_msg p[title="魔王的連結"]{
+    font-weight: 900;
 }
 .game_msg .mark_msg{
     color: rgb(255, 0, 0);

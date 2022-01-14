@@ -56,13 +56,25 @@
         .game_describe{
             text-align: center;
             line-height: 1.5;
+            padding: 0 10px;
+            margin-bottom: 30px;
+            max-width: 1000px;
+            margin: auto;
+            box-sizing: border-box;
+        }
+        .game_describe>h1{
+            font-size: 30px;
+            font-weight: 900;
+            color: rgb(255, 74, 74);
         }
         .game_describe>h4{
             font-size: 24px;
             font-weight: 900;
+            color: rgb(255, 74, 74);
         }
         .game_describe>p{
             font-size: 18px;
+            margin: 6px 0;
         }
         .fb_title{
             font-size: 27px;
@@ -107,6 +119,7 @@
                     </ul>
                 </li>
                 <li><a href="recommendYoutube.html">介紹術語及YouTube頻道翻譯</a></li>
+                <li><a href="./gameblock.html">勇者鬥魔王遊戲</a></li>
             </ul>
         </div>
     </section>
@@ -142,6 +155,7 @@
                     </ul>
                 </li>
                 <li><a href="recommendYoutube.html">介紹術語及YouTube頻道翻譯</a></li>
+                <li><a href="./gameblock.html">勇者鬥魔王遊戲</a></li>
             </ul>
         </div>
     </nav>
@@ -151,10 +165,14 @@
 
         <div class="game_block">
             <article class="game_describe">
+                <h1>遊戲-勇者鬥魔王</h1>
+                <p>作者的話 : 原本想獨立放一個網站，但想想自己好像沒有什麼流量就算了，魔王的真面目一共有兩種，按照日期的偶數/奇數為切換標準因此最多兩天就可以徹底通關!</p>
                 <h4>遊戲故事:</h4>
-                <p>惡魔危害人類百年，人類勇者覺醒天賦後決定獨自一人向魔王發起進攻，揭發魔王的真面目...</p>
+                <p>魔王危害人類數百年，誕生在人類之中的勇者覺醒戰鬥天賦後決定獨自一人向魔王發起進攻，揭穿魔王的真面目...</p>
                 <h4>遊戲時間長度:</h4>
-                <p>5~10分鐘破關</p>
+                <p>5~10分鐘</p>
+                <h4>遊戲方式:</h4>
+                <p>持續戰鬥直到魔王出現後擊敗魔王</p>
             </article>
             <div class="game_outer">
 
@@ -172,7 +190,7 @@
                         <form id="playerCreate">
                             <h4>沒有角色存檔記錄，請建立新角色</h4>
                             <span>角色名稱:<input type="text" name="playerName"></span>
-                            <span><input type="submit" value="建立角色"></span>
+                            <span style="display: block;margin: 20px auto;"><input type="submit" value="建立角色"></span>
                         </form>
                         <div id="playerMsg"></div>
                     </div>
@@ -183,7 +201,7 @@
 
         <div class="content3_fb">
             <div id="facebook">
-                <h2 class="fb_title">如果你覺得本站內容有提供任何幫助請不吝留言!</h2>
+                <h2 class="fb_title">如果你覺得這是一個好遊戲請不吝留言!</h2>
                 <div class="fb-comments" data-href="https://ayvc0420.github.io/recommendYoutube.html" data-width="400" data-numposts="5"></div>
             </div>
         </div>
@@ -193,11 +211,12 @@
     <footer>
         <!-- Copyright &copy;  -->
         <p>遊戲中使用的cookie僅在本站有效，不會影響使用者其他的任何資料或追蹤數據</p>
-        <p>魔王的真面目一共兩張CG圖按照遊玩日期隨機出現</p>
+        <p>最佳瀏覽環境為1920x1080，如果遊戲出現意外畫面請與我聯絡!</p>
         <p>如您的圖片不想出現在網站上請與我聯絡!</p>
         <p>もし貴方の写真は掲載を希望されない場合は、ご連絡いただければ幸いです</p>
         <a href="mailto:ayvc0420@gmail.com">ayvc0420@gmail.com</a>
         <p title="跪謝">ｍ（__ __）ｍ</p>
+        <p>另一款遊戲-點擊標靶:<a href="https://ayvc0420.github.io/targetGame/" target="new" style="text-decoration: none;">點我前往</a></p>
     </footer>
 
 
@@ -238,7 +257,7 @@
     </script>
     <script src="./js/jquery-3.6.0.min.js"></script>
     <script src="./js/jquery.fancybox.min.js"></script>    
-    <script src="./js/gameJavascript_min.js"></script>
+    <script src="./js/game_javascript_min.js"></script>
     <script src="./js/layout.js"></script>
 </body>
 </html>
