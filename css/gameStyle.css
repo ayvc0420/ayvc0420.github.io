@@ -151,9 +151,6 @@
     font-size: 18px;
     line-height: 1.4;
 }
-.game_msg p[title="魔王的連結"]{
-    font-weight: 900;
-}
 .game_msg .mark_msg{
     color: rgb(255, 0, 0);
     font-size: 22px;
