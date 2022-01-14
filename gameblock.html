@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    
+    <link rel="shortcut icon" href="./images/hammer.svg"></link>
+
+    <meta charset="UTF-8">
+    <title>勇者討伐魔王遊戲</title>
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="title" content="勇者討伐魔王遊戲"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name=”description” content="勇者討伐魔王遊戲" />
+    <meta name="Keywords" content="勇者討伐魔王遊戲,勇者,魔王"/>
+
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://ayvc0420.github.io/gameblock.html"/>
+    <meta property="og:image" content="https://ayvc0420.github.io/images/hammer.svg"/>
+    <meta property="og:title" content="勇者討伐魔王遊戲" >
+    <meta property="og:locale" content="zh-TW"/>
+    <meta property="og:description" content="勇者討伐魔王遊戲"/>
+    <meta property="og:keywords" content="勇者討伐魔王遊戲,勇者,魔王"/>
+
+    <meta name="twitter:url" content="https://ayvc0420.github.io/gameblock.html"/>
+    <meta name="twitter:title" content="勇者討伐魔王遊戲">
+    <meta name="twitter:description" content="勇者討伐魔王遊戲"/>
+    <meta name="twitter:image" content="https://ayvc0420.github.io/images/hammer.svg">
+
+    <meta property="name" content="勇者討伐魔王遊戲"/>
+    <meta property="image" content="https://ayvc0420.github.io/images/hammer.svg"/>
+    <meta property="url" content="https://ayvc0420.github.io/gameblock.html"/>
+    <meta property="description" content="勇者討伐魔王遊戲"/>
+    <meta property="keywords" content="勇者討伐魔王遊戲,勇者,魔王"/>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/gameStyle.css">
+
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v11.0&appId=396306465225067&autoLogAppEvents=1" nonce="pELLxFUz"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7GGHVD11L0"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-7GGHVD11L0');
+    </script>
+    <style>
+        .content3_fb{
+            max-width: 400px;
+            margin: 0 auto 100px;
+        }
+        .game_describe{
+            text-align: center;
+            line-height: 1.5;
+        }
+        .game_describe>h4{
+            font-size: 24px;
+            font-weight: 900;
+        }
+        .game_describe>p{
+            font-size: 18px;
+        }
+        .fb_title{
+            font-size: 27px;
+            font-weight: 900;
+            text-align: center;
+            line-height: 1.3;
+            color: rgb(219, 134, 7);
+        }
+        .game_block{
+            margin: 150px auto;
+        }
+    </style>
+</head>
+<body style="background-color: #d7f6ff;">
+    <img src="images/mob_top.png" alt="go_top" id="mob_top" class="mob_btn_anim" title="回去頂部囉">
+    <section class="mob_header">
+        <label for="mob_menu" class="mob_menu_control" id="mob_menu_control">
+            <svg width="50" height="40" class="svg1" id="svg1">
+                <line x1="10" y1="10" x2="40" y2="10" stroke="black" stroke-width="4"> </line>
+                <line x1="10" y1="20" x2="40" y2="20" stroke="black" stroke-width="4"> </line>
+                <line x1="10" y1="30" x2="40" y2="30" stroke="black" stroke-width="4"> </line>
+            </svg>
+            <svg width="50" height="40" class="svg2" id="svg2">
+                <line x1="10" y1="30" x2="40" y2="10" stroke="black" stroke-width="4"> </line>
+                <line x1="10" y1="10" x2="40" y2="30" stroke="black" stroke-width="4"> </line>
+            </svg>
+        </label>
+        <input type="checkbox" name="" id="mob_menu">
+        <div class="mob_menu" id="mob_menu_div">
+            <ul>
+                <li><a href="index.html">首頁</a></li>
+                <li><a href="vtuber.html">速覽VTuber</a></li>
+                <li class="mob_menu3">
+                    <a href="#" class="menu3_control">介紹成員&nbsp;<img src="images/chevron-down.svg" class="nav_down"></a>
+                    <ul class="menu3">
+                        <li><a href="pekora.html">兔田佩克拉</a></li>
+                        <li><a href="miko.html">櫻巫女</a></li>
+                        <li><a href="rushia.html">潤羽露西婭</a></li>
+                        <li><a href="korone.html">戌神沁音</a></li>
+                        <li><a href="chloe.html">沙花叉克蘿耶</a></li>
+                        <li><a href="https://www.hololive.tv/member" target="new">hololive官網-全成員</a></li>
+                    </ul>
+                </li>
+                <li><a href="recommendYoutube.html">介紹術語及YouTube頻道翻譯</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <header id="header"> 
+        <section class="slideshow_img">
+            <div >
+                <a v-for="(item,index) in img" :href="item.imgPixivSrc" target="new" v-show="index === key" ><img :class="{header_switch_img: index===key}" :src="item.imgSrc" :alt="item.alt"></a>
+            <div class="header_btn">
+                <button class="next" @click="imgSwitch(key-1)"><</button>
+                <div>
+                    <input type="button" v-for="(item,index) in img" @click="imgSwitch(index)" :class="{header_switch_img_btn:index==key}">
+                </div>
+                <button class="previous" @click="imgSwitch(key+1)">></button>
+            </div>
+        </section>
+    </header>
+    
+    <nav>
+        <div class="nav_menu">
+            <ul>
+                <li><a href="index.html">首頁</a></li>
+                <li><a href="vtuber.html">速覽VTuber</a></li>
+                <li class="nav_menu3">
+                    <a href="#">介紹成員&nbsp;<img src="images/chevron-down.svg" class="nav_down"></a>
+                    <ul>
+                        <li><a href="pekora.html">兔田佩克拉</a></li>
+                        <li><a href="miko.html">櫻巫女</a></li>
+                        <li><a href="rushia.html">潤羽露西婭</a></li>
+                        <li><a href="korone.html">戌神沁音</a></li>
+                        <li><a href="chloe.html">沙花叉克蘿耶</a></li>
+                        <li><a href="https://www.hololive.tv/member" target="new">hololive官網-全成員</a></li>
+                    </ul>
+                </li>
+                <li><a href="recommendYoutube.html">介紹術語及YouTube頻道翻譯</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <main>
+
+        <div class="game_block">
+            <article class="game_describe">
+                <h4>遊戲故事:</h4>
+                <p>惡魔危害人類百年，人類勇者覺醒天賦後決定獨自一人向魔王發起進攻，揭發魔王的真面目...</p>
+                <h4>遊戲時間長度:</h4>
+                <p>5~10分鐘破關</p>
+            </article>
+            <div class="game_outer">
+
+                <section class="game" id="game">
+
+                    <div class="alert">
+                        <p style="line-height: 1.5;font-size: 24px;">進行本遊戲需要同意存取cookie作為保存紀錄使用<br>按下開始按鈕即代表同意使用cookie<br>連續超過3天未使用紀錄將會自動移除</p>
+                        <button id="gameGo">開始遊戲</button>
+                        <button id="gameDel">刪除存檔</button>
+                        <p id="saveMsg"></p>
+                    </div>
+
+
+                    <div class="create">
+                        <form id="playerCreate">
+                            <h4>沒有角色存檔記錄，請建立新角色</h4>
+                            <span>角色名稱:<input type="text" name="playerName"></span>
+                            <span><input type="submit" value="建立角色"></span>
+                        </form>
+                        <div id="playerMsg"></div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+
+        <div class="content3_fb">
+            <div id="facebook">
+                <h2 class="fb_title">如果你覺得本站內容有提供任何幫助請不吝留言!</h2>
+                <div class="fb-comments" data-href="https://ayvc0420.github.io/recommendYoutube.html" data-width="400" data-numposts="5"></div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <!-- Copyright &copy;  -->
+        <p>遊戲中使用的cookie僅在本站有效，不會影響使用者其他的任何資料或追蹤數據</p>
+        <p>魔王的真面目一共兩張CG圖按照遊玩日期隨機出現</p>
+        <p>如您的圖片不想出現在網站上請與我聯絡!</p>
+        <p>もし貴方の写真は掲載を希望されない場合は、ご連絡いただければ幸いです</p>
+        <a href="mailto:ayvc0420@gmail.com">ayvc0420@gmail.com</a>
+        <p title="跪謝">ｍ（__ __）ｍ</p>
+    </footer>
+
+
+
+    <!-- vue2.6.14 -->
+    <script src="./js/vue.min.js"></script>
+    <script>
+        window.addEventListener('load',function(){
+            let headerData = {
+            key:0,
+            img:[
+                {imgPixivSrc:'https://www.pixiv.net/artworks/90195061', imgSrc:'./images/rushia_header.webp',alt:'pixiv90195061'},
+                {imgPixivSrc:'https://www.pixiv.net/artworks/85282387', imgSrc:'./images/85282387_header.webp',alt:'pixiv85282387'},
+                {imgPixivSrc:'https://www.pixiv.net/artworks/88300974', imgSrc:'./images/sakuramiko_header.webp',alt:'pixiv88300974'},
+                {imgPixivSrc:'https://www.pixiv.net/artworks/92148396', imgSrc:'./images/korone_header.webp',alt:'pixiv92148396'},
+            ]}
+
+
+            new Vue({
+                el:'#header',
+                data:headerData,
+                methods: {
+                    imgSwitch(index){
+                        this.key = (index + this.img.length) % this.img.length;
+                    },
+                },
+                mounted: function(){
+                    setInterval(()=>{
+                        if(this.key < this.img.length -1){
+                            this.key +=1;
+                        }else{
+                            this.key = 0;
+                        }
+                    },15000)
+                },
+            })
+        })
+    </script>
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/jquery.fancybox.min.js"></script>    
+    <script src="./js/gameJavascript_min.js"></script>
+    <script src="./js/layout.js"></script>
+</body>
+</html>
