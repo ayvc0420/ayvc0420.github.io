@@ -41,6 +41,7 @@
         }
         header .header_btn input{
             border: 2px solid olivedrab !important;
+            margin-top: 5px;
         }
         header .header_btn>button{
             color: olivedrab !important;
@@ -102,7 +103,7 @@
         <div class="mob_menu" id="mob_menu_div">
             <ul>
                 <li><a href="index.html">首頁</a></li>
-                <li><a href="vtuber.html">速覽VTuber</a></li>
+                <li><a href="vtuber.html">速覽百名VTuber</a></li>
                 <li class="mob_menu3">
                     <a href="#" class="menu3_control">介紹成員&nbsp;<img src="images/chevron-down.svg" class="nav_down"></a>
                     <ul class="menu3">
@@ -139,7 +140,7 @@
         <div class="nav_menu">
             <ul>
                 <li><a href="index.html">首頁</a></li>
-                <li><a href="vtuber.html">速覽VTuber</a></li>
+                <li><a href="vtuber.html">速覽百名VTuber</a></li>
                 <li class="nav_menu3">
                     <a href="#">介紹成員&nbsp;<img src="images/chevron-down.svg" class="nav_down"></a>
                     <ul>
@@ -222,56 +223,56 @@
         <section class="vt_content4">
             <div class="vt_video_div" id="vt_video_div">
                 <h1>露西婭洗腦YO~YO~YO~</h1>
-                <video muted src="video/rushia_c4.mp4" controls loop></video>
+                <video src="video/rushia_c4.mp4" controls loop></video>
             </div>
             <div id="vt_audio_title"><h2>露西婭經典音檔<br>以下部分音檔播放時注意耳膜</h2></div>
             <section class="vt_audio_div" id="vt_audio_div">
                 <div>
-                    <div id="audio1">
+                    <div id="audio1" class="audio_ani">
                         <h4>Rushia Boing Boing</h4>
                         <audio src="audio/rushia01.mp3" controls></audio>
                     </div>
-                    <div id="audio2">
+                    <div id="audio2" class="audio_ani">
                         <h4>初號機之吼</h4>
                         <audio src="audio/rushia02.mp3" controls></audio>
                     </div>
                 </div>
                 <div>
-                    <div id="audio3">
+                    <div id="audio3" class="audio_ani">
                         <h4>垃圾遊戲</h4>
                         <audio src="audio/rushia03.mp3" controls></audio>
                     </div>
-                    <div id="audio4">
+                    <div id="audio4" class="audio_ani">
                         <h4>為什麼!!??</h4>
                         <audio src="audio/rushia04.mp3" controls></audio>
                     </div>
                 </div>
                 <div>
-                    <div id="audio5">
+                    <div id="audio5" class="audio_ani">
                         <h4>露西婭的鑽石</h4>
                         <audio src="audio/rushia05.mp3" controls></audio>
                     </div>
-                    <div id="audio6">
+                    <div id="audio6" class="audio_ani">
                         <h4>yabai!!!</h4>
                         <audio src="audio/rushia06.mp3" controls></audio>
                     </div>
                 </div>
                 <div>
-                    <div id="audio7">
+                    <div id="audio7" class="audio_ani">
                         <h4>好痛</h4>
                         <audio src="audio/rushia07.mp3" controls></audio>
                     </div>
-                    <div id="audio8">
+                    <div id="audio8" class="audio_ani">
                         <h4>空~露西婭~~~~</h4>
                         <audio src="audio/rushia08.mp3" controls></audio>
                     </div>
                 </div>
                 <div>
-                    <div id="audio9">
+                    <div id="audio9" class="audio_ani">
                         <h4>hi honey</h4>
                         <audio src="audio/rushia09.mp3" controls></audio>
                     </div>
-                    <div id="audio10">
+                    <div id="audio10" class="audio_ani">
                         <h4 title="取於hololive3D動畫 弱肉強食">為什麼露西婭要受這種苦?</h4>
                         <audio src="audio/rushia10.mp3" controls></audio>
                     </div>
@@ -308,8 +309,7 @@
 
     <script src="js/vue.min.js"></script>
     <script>
-        window.addEventListener('load',function(){
-
+        ;(function(Vue){
             let headerData = {
             key:0,
             img:[
@@ -339,7 +339,8 @@
                     },15000)
                 },
             })
-        })
+        })(Vue)
+
 
     </script>
 
@@ -348,6 +349,18 @@
     <script src="js/vt_rushia.js"></script>
     <script src="js/rushia_audio.js"></script>
     <script src="js/jquery.fancybox.min.js"></script>   
+
+    <script>
+        ;(function(){
+            $('[data-fancybox="vt_c1"]').fancybox({
+                loop: true,
+            });
+            $('[data-fancybox="vt_c3"]').fancybox({
+                loop: true,
+            });
+        })()
+    </script>
+
 
 </body>
 </html>

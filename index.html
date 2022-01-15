@@ -75,7 +75,7 @@
         <div class="mob_menu" id="mob_menu_div">
             <ul>
                 <li><a href="index.html">首頁</a></li>
-                <li><a href="vtuber.html">速覽VTuber</a></li>
+                <li><a href="vtuber.html">速覽百名VTuber</a></li>
                 <li class="mob_menu3">
                     <a href="#" class="menu3_control">介紹成員&nbsp;<img src="images/chevron-down.svg" class="nav_down"></a>
                     <ul class="menu3">
@@ -114,7 +114,7 @@
         <div class="nav_menu">
             <ul>
                 <li><a href="index.html">首頁</a></li>
-                <li><a href="vtuber.html">速覽VTuber</a></li>
+                <li><a href="vtuber.html">速覽百名VTuber</a></li>
                 <li class="nav_menu3">
                     <a href="#">介紹成員&nbsp;<img src="images/chevron-down.svg" class="nav_down"></a>
                     <ul class="menu3">
@@ -236,8 +236,7 @@
     <!-- vue2.6.14 -->
     <script src="js/vue.min.js"></script>
     <script>
-        window.addEventListener('load',function(){
-
+        ;(function(Vue){
             let headerData = {
                 key:0,
                 img:[
@@ -265,8 +264,7 @@
                     },15000)
                 },
             })
-        })
-
+        })(Vue)
     </script>
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/layout.js"></script>

@@ -41,6 +41,7 @@
         }
         header .header_btn input{
             border: 2px solid pink !important;
+            margin-top: 5px;
         }
         header .header_btn>button{
             color: pink !important;
@@ -99,7 +100,7 @@
         <div class="mob_menu" id="mob_menu_div">
             <ul>
                 <li><a href="index.html">首頁</a></li>
-                <li><a href="vtuber.html">速覽VTuber</a></li>
+                <li><a href="vtuber.html">速覽百名VTuber</a></li>
                 <li class="mob_menu3">
                     <a href="#" class="menu3_control">介紹成員&nbsp;<img src="images/chevron-down.svg" class="nav_down"></a>
                     <ul class="menu3">
@@ -136,7 +137,7 @@
         <div class="nav_menu">
             <ul>
                 <li><a href="index.html">首頁</a></li>
-                <li><a href="vtuber.html">速覽VTuber</a></li>
+                <li><a href="vtuber.html">速覽百名VTuber</a></li>
                 <li class="nav_menu3">
                     <a href="#">介紹成員&nbsp;<img src="images/chevron-down.svg" class="nav_down"></a>
                     <ul>
@@ -211,7 +212,7 @@
                 <a href="images/sakuramiko_card_3.jpg" data-fancybox="vt_c3" data-caption="圖片取自於pixiv 84720803 繪師 : @suhiyoru_isu15" ><img src="images/sakuramiko_card_03.jpg"  alt="櫻巫女與佩克拉" title="pekora&miko股民眾所期待的一天"></a>
                 <div class="content_text">
                     <h3>巫女與佩克拉股</h3>
-                    <p>出道前已和兔田佩克拉相識，直播中長期聯動，因此有<span title="Pekora and Miko的股票，意旨兩人再一起就會高漲的股票">PM股</span>的產生，櫻巫女與佩克拉在<a href="https://youtu.be/nmNewGkh6cU" target="new" title="2020年12月 3D披露會-中文字幕">3D披露會(派對)</a>上互動極其親密。</p>
+                    <p>出道前已和兔田佩克拉相識，直播中長期聯動，因此有<span title="Pekora and Miko的股票，意旨兩人再一起就會高漲的股票">PM股</span>的產生，櫻巫女與佩克拉在<a href="https://youtu.be/nmNewGkh6cU" target="new" title="2020年12月 3D披露會-中文字幕">3D披露會(派對)</a>上互動極其親密。(2022PM股已跌為壁紙)</p>
                 </div>
             </article>
         </section>
@@ -219,7 +220,7 @@
         <section class="vt_content4">
             <div class="vt_video_div" id="vt_video_div">
                 <h1>櫻巫女開場動畫</h1>
-                <video muted src="video/miko_c4.mp4" controls loop></video>
+                <video src="video/miko_c4.mp4" controls loop></video>
             </div>
             <section class="vt_audio_div" id="vt_audio_div">
                 <div>
@@ -251,38 +252,36 @@
 
     <script src="js/vue.min.js"></script>
     <script>
+        ;(function(Vue){
+            let headerData = {
+            key:0,
+            img:[
+                {imgPixivSrc:'https://www.pixiv.net/artworks/90697958', imgSrc:'./images/miko_header.webp',alt:'pixiv90697958'},
+                {imgPixivSrc:'https://www.pixiv.net/artworks/89707884', imgSrc:'./images/miko_header_1.webp',alt:'pixiv89707884'},
+                {imgPixivSrc:'https://twitter.com/sakuramiko35/status/1388738206443610117/photo/1', imgSrc:'./images/miko_header_2.webp',alt:'twitter1388738206443610117'},
+                {imgPixivSrc:'https://www.pixiv.net/artworks/86239985', imgSrc:'./images/miko_header_3.webp',alt:'pixiv86239985'},
+                {imgPixivSrc:'https://www.pixiv.net/artworks/90375174', imgSrc:'./images/miko_header_4.webp',alt:'pixiv90375174'},
+            ]}
         
-    window.addEventListener('load',function(){
-
-        let headerData = {
-        key:0,
-        img:[
-            {imgPixivSrc:'https://www.pixiv.net/artworks/90697958', imgSrc:'./images/miko_header.webp',alt:'pixiv90697958'},
-            {imgPixivSrc:'https://www.pixiv.net/artworks/89707884', imgSrc:'./images/miko_header_1.webp',alt:'pixiv89707884'},
-            {imgPixivSrc:'https://twitter.com/sakuramiko35/status/1388738206443610117/photo/1', imgSrc:'./images/miko_header_2.webp',alt:'twitter1388738206443610117'},
-            {imgPixivSrc:'https://www.pixiv.net/artworks/86239985', imgSrc:'./images/miko_header_3.webp',alt:'pixiv86239985'},
-            {imgPixivSrc:'https://www.pixiv.net/artworks/90375174', imgSrc:'./images/miko_header_4.webp',alt:'pixiv90375174'},
-        ]}
-    
-        new Vue({
-            el:'#header',
-            data:headerData,
-            methods: {
-                imgSwitch(index){
-                    this.key = (index + this.img.length) % this.img.length;
+            new Vue({
+                el:'#header',
+                data:headerData,
+                methods: {
+                    imgSwitch(index){
+                        this.key = (index + this.img.length) % this.img.length;
+                    },
                 },
-            },
-            mounted: function(){
-                setInterval(()=>{
-                    if(this.key < this.img.length -1){
-                        this.key +=1;
-                    }else{
-                        this.key = 0;
-                    }
-                },15000)
-            },
-        })
-    })
+                mounted: function(){
+                    setInterval(()=>{
+                        if(this.key < this.img.length -1){
+                            this.key +=1;
+                        }else{
+                            this.key = 0;
+                        }
+                    },15000)
+                },
+            })
+        })(Vue)
     </script>
 
     <script src="js/jquery-3.6.0.min.js"></script>
@@ -290,9 +289,14 @@
     <script src="js/vt_javascript.js"></script>
     <script src="js/jquery.fancybox.min.js"></script>   
     <script>
-    $('[data-fancybox="vt_c1"]').fancybox({
-        loop : true
-    })
+        ;(function(){
+            $('[data-fancybox="vt_c1"]').fancybox({
+                loop : true
+            })
+            $('[data-fancybox="vt_c3"]').fancybox({
+                loop: true,
+            });
+        })()
     </script>
 </body>
 </html>

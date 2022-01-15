@@ -102,7 +102,7 @@
         <div class="mob_menu" id="mob_menu_div">
             <ul>
                 <li><a href="index.html">首頁</a></li>
-                <li><a href="vtuber.html">速覽VTuber</a></li>
+                <li><a href="vtuber.html">速覽百名VTuber</a></li>
                 <li class="mob_menu3">
                     <a href="#" class="menu3_control">介紹成員&nbsp;<img src="images/chevron-down.svg" class="nav_down"></a>
                     <ul class="menu3">
@@ -139,7 +139,7 @@
         <div class="nav_menu">
             <ul>
                 <li><a href="index.html">首頁</a></li>
-                <li><a href="vtuber.html">速覽VTuber</a></li>
+                <li><a href="vtuber.html">速覽百名VTuber</a></li>
                 <li class="nav_menu3">
                     <a href="#">介紹成員&nbsp;<img src="images/chevron-down.svg" class="nav_down"></a>
                     <ul>
@@ -210,7 +210,7 @@
         <section class="vt_content4">
             <div class="vt_video_div" id="vt_video_div">
                 <h1>狗狗念英文</h1>
-                <video muted src="video/korone_c4.mp4" controls loop></video>
+                <video src="video/korone_c4.mp4" controls loop ></video>
             </div>
             <section class="vt_audio_div" id="vt_audio_div">
                 <div>
@@ -245,42 +245,46 @@
     <!-- vue2.6.14 -->
     <script src="js/vue.min.js"></script>
     <script>
-    window.addEventListener('load',function(){
-
-        let headerData = {
-            key:0,
-            img:[
-                {imgPixivSrc:'https://www.pixiv.net/artworks/92686622', imgSrc:'./images/92686622_korone_header.webp',alt:'pixiv92686622'},
-                {imgPixivSrc:'https://www.pixiv.net/artworks/92838286', imgSrc:'./images/92838286_korone_header.webp',alt:'pixiv92838286'},
-                {imgPixivSrc:'https://twitter.com/fuka_hire/status/1381973482099990534/photo/1', imgSrc:'./images/1381973482099990534_korone_header.webp',alt:'twitter1381973482099990534'},
-                {imgPixivSrc:'https://www.pixiv.net/artworks/93132546', imgSrc:'./images/93132546_korone_header.webp',alt:'pixiv93132546'},
-            ]}
-    
-        new Vue({
-            el:'#header',
-            data:headerData,
-            methods: {
-                imgSwitch(index){
-                    this.key = (index + this.img.length) % this.img.length;
+        ;(function(Vue){
+            let headerData = {
+                key:0,
+                img:[
+                    {imgPixivSrc:'https://www.pixiv.net/artworks/92686622', imgSrc:'./images/92686622_korone_header.webp',alt:'pixiv92686622'},
+                    {imgPixivSrc:'https://www.pixiv.net/artworks/92838286', imgSrc:'./images/92838286_korone_header.webp',alt:'pixiv92838286'},
+                    {imgPixivSrc:'https://twitter.com/fuka_hire/status/1381973482099990534/photo/1', imgSrc:'./images/1381973482099990534_korone_header.webp',alt:'twitter1381973482099990534'},
+                    {imgPixivSrc:'https://www.pixiv.net/artworks/93132546', imgSrc:'./images/93132546_korone_header.webp',alt:'pixiv93132546'},
+                ]}
+        
+            new Vue({
+                el:'#header',
+                data:headerData,
+                methods: {
+                    imgSwitch(index){
+                        this.key = (index + this.img.length) % this.img.length;
+                    },
                 },
-            },
-            mounted: function(){
-                setInterval(()=>{
-                    if(this.key < this.img.length -1){
-                        this.key +=1;
-                    }else{
-                        this.key = 0;
-                    }
-                },15000)
-            },
-        })
-    })
-
+                mounted: function(){
+                    setInterval(()=>{
+                        if(this.key < this.img.length -1){
+                            this.key +=1;
+                        }else{
+                            this.key = 0;
+                        }
+                    },15000)
+                },
+            })
+        })(Vue)
     </script>
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/layout.js"></script>
     <script src="js/vt_javascript.js"></script>
     <script src="js/jquery.fancybox.min.js"></script>
-
+    <script>
+        ;(function(){
+            $('[data-fancybox="vt_c3"]').fancybox({
+                loop: true,
+            });
+        })()
+    </script>
 </body>
 </html>

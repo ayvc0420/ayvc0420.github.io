@@ -1,118 +1,109 @@
+(function () {
+	const now_year = document.getElementById('now_year');
+	const time = document.querySelector('.time');
+	const short = document.getElementById('short');
+	const middle = document.getElementById('middle');
+	const long = document.getElementById('long');
+	const mobTopBtn = document.getElementById('mob_top');
+	const clock = document.getElementById('content3_time');
+	function year() {
+		// let now = new Date();
+		// let new_year = new Date(2021,12,31);
+		// let end = new_year-now;
+		// // let end = new_year.getTime()-now.getTime()+now.getTimezoneOffset()*60*1000;
+		// let time = new Date(end);
+		// now_year.innerHTML = `${time.getMonth()-1}個月${time.getDate()}天${time.getHours()}小時${time.getMinutes()}分${time.getSeconds()}秒`
 
-window.addEventListener('load',function(){
+		// 測試時間BUG
+		// let nowTime = new Date(Date.now() - 169750000)
+		let nowTime = new Date();
+		let newYear = new Date(nowTime.getFullYear() + 1 + '/01/01');
+		let difference = newYear - nowTime;
+		let d = Math.floor(difference / 1000 / 60 / 60 / 24);
+		let h = Math.floor((difference / 1000 / 60 / 60) % 24);
+		let m = Math.floor((difference / 1000 / 60) % 60);
+		let s = Math.floor((difference / 1000) % 60);
+		now_year.textContent = `${d}天${h}小時${m}分${s}秒`;
 
-    const now_year = document.getElementById('now_year');
-    const time = document.querySelector('.time');
-    const short = document.getElementById('short');
-    const middle = document.getElementById('middle');
-    const long = document.getElementById('long');
-    const mobTopBtn = document.getElementById('mob_top')
+		let nowHr = nowTime.getHours();
+		let nowMin = nowTime.getMinutes();
+		let nowS = 60 - s;
+		if (nowMin <= 9) {
+			nowMin = '0' + nowMin;
+		}
+		if (nowS <= 9) {
+			nowS = '0' + nowS;
+		}
+		let timeHr = nowTime.getHours();
+		const timeMin = nowTime.getMinutes();
+		const timeS = nowS;
+		if (timeHr > 12) {
+			timeHr -= 12;
+		}
+		const longDeg = timeHr * 30 + (timeMin * 30) / 60;
+		const middleDeg = timeMin * 6 + (timeS * 6) / 60;
+		const shortDeg = timeS * 6;
 
-    // 減少當前可視距離100 讓DOM觸發動畫條件變困難
-    const aniN = 100
-    function year(){
-        // let now = new Date();
-        // let new_year = new Date(2021,12,31);
-        // let end = new_year-now;
-        // // let end = new_year.getTime()-now.getTime()+now.getTimezoneOffset()*60*1000;
-        // let time = new Date(end);
-        // now_year.innerHTML = `${time.getMonth()-1}個月${time.getDate()}天${time.getHours()}小時${time.getMinutes()}分${time.getSeconds()}秒`
-        
-        // 測試時間BUG
-        // let nowTime = new Date(Date.now() - 169750000)
-        let nowTime = new Date()
-        let newYear = new Date(nowTime.getFullYear()+1+'/01/01');
-        let difference = newYear - nowTime;
-        let d = Math.floor(difference/1000/60/60/24);
-        let h = Math.floor(difference/1000/60/60%24);
-        let m = Math.floor(difference/1000/60%60);
-        let s = Math.floor(difference/1000%60);
-        now_year.textContent = `${d}天${h}小時${m}分${s}秒`
+		if (nowS === 60) {
+			nowS = '00';
+			nowMin += 1;
+		}
+		if (nowMin === 60) {
+			nowMin = '00';
+			nowHr += 1;
+		}
 
+		time.textContent = `現在時間:${nowHr}:${nowMin}:${nowS}`;
+		long.style.transform = `rotate(${longDeg - 90}deg)`;
+		middle.style.transform = `rotate(${middleDeg - 90}deg)`;
+		short.style.transform = `rotate(${shortDeg - 90}deg)`;
 
-        let nowHr = nowTime.getHours()
-        let nowMin = nowTime.getMinutes()
-        let nowS = 60-s;
-        if(nowMin <= 9){
-            nowMin = '0'+nowMin;
-        }
-        if(nowS <= 9 ){
-            nowS = '0'+nowS;
-        }
-        let timeHr = nowTime.getHours()
-        const timeMin =nowTime.getMinutes()
-        const timeS = nowS;
-        if(timeHr > 12){
-            timeHr -= 12;
-        }
-        const longDeg = timeHr*30+timeMin*30/60
-        const middleDeg = timeMin*6+timeS*6/60
-        const shortDeg = timeS*6
+		if (timeHr >= 0 && timeHr <= 3) {
+			long.style.top = '2px';
+			long.style.left = '-2px';
+		} else if (timeHr >= 4 && timeHr <= 8) {
+			long.style.top = '3px';
+			long.style.left = '3px';
+		} else if (timeHr >= 9 && timeHr <= 11) {
+			long.style.top = '5px';
+			long.style.left = '0px';
+		} else if (timeHr <= 12 && timeHr >= 14) {
+			long.style.top = '2px';
+			long.style.left = '1px';
+		}
+		timeS === '01'
+			? (short.style.transition = 'none')
+			: (short.style.transition = 'all .2s');
+		return year;
+	}
+	setInterval(year(), 1000);
 
-        if(nowS === 60){
-            nowS = '00';
-            nowMin += 1;
-        }
-        if(nowMin === 60){
-            nowMin = '00';
-            nowHr +=1
-        }
+	const ytScrollArray = document.querySelectorAll('.ytscroll_ani');
 
-        time.textContent = `現在時間:${nowHr}:${nowMin}:${nowS}`
-        long.style.transform = `rotate(${longDeg - 90}deg)`
-        middle.style.transform = `rotate(${ middleDeg - 90}deg)`
-        short.style.transform = `rotate(${shortDeg - 90}deg)`
+	
+	window.addEventListener('scroll', tableHandler);
+	function tableHandler() {
+		const nowHeight = document.documentElement.scrollTop;
+		const now_width = document.documentElement.scrollWidth;
+		const height = document.documentElement.clientHeight;
 
-        if(timeHr >= 0 && timeHr <= 3){
-            long.style.top = '2px'
-            long.style.left = '-2px'
-        }else if(timeHr >= 4 && timeHr <= 8){
-            long.style.top = '3px';
-            long.style.left = '3px';
-        }else if(timeHr >= 9 && timeHr <= 11){
-            long.style.top = '5px';
-            long.style.left = '0px';
-        }else if(timeHr <= 12 && timeHr >= 14){
-            long.style.top = '2px';
-            long.style.left = '1px';
-        }
-        timeS === '01' ? short.style.transition = 'none' : short.style.transition = 'all .2s';
-        return year;
-    }
-    setInterval(year(),1000);
+		ytScrollArray.forEach((item) => {
+			const control = item.offsetTop - height <= nowHeight - 100;
+			control ? item.classList.add('yt_title_ani') : '';
+		});
 
-    const c1_table = document.getElementById('c1_table')
-    const c1_title = document.getElementById('c1_title')
-    const c2_title = document.getElementById('c2_title');
-    const c2_table = document.getElementById('c2_table');
-    const content3_time = document.getElementById('content3_time')
+		now_width >= 1024
+			? (mobTopBtn.style.display = 'none')
+			: (mobTopBtn.style.display = 'block');
+		height <= nowHeight
+			? (mobTopBtn.style.transform = `translateX(0%)`)
+			: (mobTopBtn.style.transform = `translateX(1000%)`);
 
-    window.addEventListener('scroll',tableHandler)
-    tableHandler()
-    function tableHandler (){
-        const now_height = document.documentElement.scrollTop;
-        const now_width = document.documentElement.scrollWidth;
-        const height = document.documentElement.clientHeight;
+		const clockControl = clock.offsetTop - height <= nowHeight - 100;
+		clockControl ? clock.classList.add('yt_title_ani') : '';
+	}
 
-        const yt_control_c1_title = c1_title.offsetTop - height <= now_height-aniN;
-        const yt_control_c1_table = c1_table.offsetTop - height <= now_height-aniN;
-        const yt_control_c2_title = c2_title.offsetTop - height <= now_height-aniN;
-        const yt_control_c2_table = c2_table.offsetTop - height <= now_height-aniN;
-        const yt_control_content3_time = content3_time.offsetTop - height <= now_height-aniN;
-
-        now_width >= 1024 ? mobTopBtn.style.display = 'none' : mobTopBtn.style.display = 'block'
-        height <= now_height ? mobTopBtn.style.transform = `translateX(0%)` : mobTopBtn.style.transform = `translateX(1000%)`
-
-        yt_control_c1_title ? c1_title.classList.add('yt_title_ani') : ''
-        yt_control_c1_table ? setTimeout(()=>{c1_table.classList.add('yt_title_ani')}) : ''
-        yt_control_c2_title ? c2_title.classList.add('yt_title_ani') : ''
-        yt_control_c2_table ? setTimeout(()=>{c2_table.classList.add('yt_title_ani')}) : ''
-        yt_control_content3_time ? content3_time.classList.add('yt_title_ani') : ''
-
-
- 
-    }
-
-})
-
-
+	setTimeout(()=>{
+		tableHandler();
+	},200)
+})();

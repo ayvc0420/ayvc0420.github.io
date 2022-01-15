@@ -34,8 +34,6 @@
     <link rel="stylesheet" href="css/vt_style.css">
     <link rel="stylesheet" href="css/jquery.fancybox.min.css">
 
-
-
     <style>
         #mob_menu_div::before{
             content: url(images/mob_chloe.webp);
@@ -71,7 +69,6 @@
             width: 50vw;
             border-bottom: 1px solid rgba(114, 114, 114, 0.2); 
         }
-
     </style>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-7GGHVD11L0"></script>
@@ -103,7 +100,7 @@
         <div class="mob_menu" id="mob_menu_div">
             <ul>
                 <li><a href="index.html">首頁</a></li>
-                <li><a href="vtuber.html">速覽VTuber</a></li>
+                <li><a href="vtuber.html">速覽百名VTuber</a></li>
                 <li class="mob_menu3">
                     <a href="#" class="menu3_control">介紹成員&nbsp;<img src="images/chevron-down.svg" class="nav_down"></a>
                     <ul class="menu3">
@@ -140,7 +137,7 @@
         <div class="nav_menu">
             <ul>
                 <li><a href="index.html">首頁</a></li>
-                <li><a href="vtuber.html">速覽VTuber</a></li>
+                <li><a href="vtuber.html">速覽百名VTuber</a></li>
                 <li class="nav_menu3">
                     <a href="#">介紹成員&nbsp;<img src="images/chevron-down.svg" class="nav_down"></a>
                     <ul>
@@ -231,7 +228,7 @@
         <section class="vt_content4">
             <div class="vt_video_div" id="vt_video_div">
                 <h1>克蘿耶初配信-虎鯨登場</h1>
-                <video muted src="video/chloe_c4.mp4" controls loop></video>
+                <video src="video/chloe_c4.mp4" controls loop></video>
                 <!-- 彩蛋 -->
                 <!-- https://ayvc0420.github.io/video/chloe_baga.mp4 -->
             </div>
@@ -265,46 +262,50 @@
 
     <script src="js/vue.min.js"></script>
     <script>
-        
-    window.addEventListener('load',function(){
-
-        let headerData = {
-        key:0,
-        img:[
-            {imgPixivSrc:'https://www.pixiv.net/artworks/94491069', imgSrc:'./images/chloe_header.webp',alt:'圖片pixiv94491069'},
-            {imgPixivSrc:'https://www.pixiv.net/artworks/94544074', imgSrc:'./images/chloe_header_1.webp',alt:'圖片pixiv94544074'},
-            {imgPixivSrc:'https://www.pixiv.net/artworks/94544074', imgSrc:'./images/chloe_header_2.webp',alt:'圖片pixiv94544074'},
-            {imgPixivSrc:'https://www.pixiv.net/artworks/94465622', imgSrc:'./images/chloe_header_3.webp',alt:'圖片pixiv89707884'},
-        ]}
-
-        new Vue({
-            el:'#header',
-            data:headerData,
-            methods: {
-                imgSwitch(index){
-                    this.key = (index + this.img.length) % this.img.length;
+        ;(function(Vue){
+            let headerData = {
+            key:0,
+            img:[
+                {imgPixivSrc:'https://www.pixiv.net/artworks/94491069', imgSrc:'./images/chloe_header.webp',alt:'圖片pixiv94491069'},
+                {imgPixivSrc:'https://www.pixiv.net/artworks/94544074', imgSrc:'./images/chloe_header_1.webp',alt:'圖片pixiv94544074'},
+                {imgPixivSrc:'https://www.pixiv.net/artworks/94544074', imgSrc:'./images/chloe_header_2.webp',alt:'圖片pixiv94544074'},
+                {imgPixivSrc:'https://www.pixiv.net/artworks/94465622', imgSrc:'./images/chloe_header_3.webp',alt:'圖片pixiv89707884'},
+            ]}
+    
+            new Vue({
+                el:'#header',
+                data:headerData,
+                methods: {
+                    imgSwitch(index){
+                        this.key = (index + this.img.length) % this.img.length;
+                    },
                 },
-            },
-            mounted: function(){
-                setInterval(()=>{
-                    if(this.key < this.img.length -1){
-                        this.key +=1;
-                    }else{
-                        this.key = 0;
-                    }
-                },15000)
-            },
-        })
-    })
+                mounted: function(){
+                    setInterval(()=>{
+                        if(this.key < this.img.length -1){
+                            this.key +=1;
+                        }else{
+                            this.key = 0;
+                        }
+                    },15000)
+                },
+            })
+        })(Vue)
     </script>
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/layout.js"></script>
     <script src="js/vt_javascript.js"></script>
-    <script src="js/jquery.fancybox.min.js"></script>   
+    <script src="js/jquery.fancybox.min.js"></script>
     <script>
-    $('[data-fancybox="vt_c1"]').fancybox({
-        loop : true
-    })
+        ;(function(){
+            $('[data-fancybox="vt_c1"]').fancybox({
+                loop : true
+            })
+            $('[data-fancybox="vt_c3"]').fancybox({
+                loop: true,
+            });
+        })()
     </script>
+    
 </body>
 </html>

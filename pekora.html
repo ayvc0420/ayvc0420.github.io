@@ -99,7 +99,7 @@
         <div class="mob_menu" id="mob_menu_div">
             <ul>
                 <li><a href="index.html">首頁</a></li>
-                <li><a href="vtuber.html">速覽VTuber</a></li>
+                <li><a href="vtuber.html">速覽百名VTuber</a></li>
                 <li class="mob_menu3">
                     <a href="#" class="menu3_control">介紹成員&nbsp;<img src="images/chevron-down.svg" class="nav_down"></a>
                     <ul class="menu3">
@@ -136,7 +136,7 @@
         <div class="nav_menu">
             <ul>
                 <li><a href="index.html">首頁</a></li>
-                <li><a href="vtuber.html">速覽VTuber</a></li>
+                <li><a href="vtuber.html">速覽百名VTuber</a></li>
                 <li class="nav_menu3">
                     <a href="#">介紹成員&nbsp;<img src="images/chevron-down.svg" class="nav_down"></a>
                     <ul>
@@ -207,7 +207,7 @@
         <section class="vt_content4">
             <div class="vt_video_div" id="vt_video_div">
                 <h1>洗腦的佩克拉開場動畫</h1>
-                <video muted src="video/pekora_c4.mp4" controls loop></video>
+                <video src="video/pekora_c4.mp4" controls loop></video>
             </div>
             <section class="vt_audio_div" id="vt_audio_div">
                 <div>
@@ -240,8 +240,7 @@
 
     <script src="js/vue.min.js"></script>
     <script>
-        window.addEventListener('load',function(){
-
+        ;(function(Vue){
             let headerData = {
             key:0,
             img:[
@@ -269,14 +268,20 @@
                     },15000)
                 },
             })
-        })
-
+        })(Vue)
     </script>
 
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/layout.js"></script>
     <script src="js/vt_javascript.js"></script>
     <script src="js/jquery.fancybox.min.js"></script>   
+    <script>
+        ;(function(){
+            $('[data-fancybox="vt_c3"]').fancybox({
+                loop: true,
+            });
+        })()
+    </script>
 
 </body>
 </html>

@@ -777,12 +777,20 @@
             "id":97
         },
         {
-            "name":"櫻野露 RURU Ch.",
-            "content":"萬能型創作、治癒系台灣VTuber<br>實況/影片類型:漫畫創作、遊戲、雜談、翻唱<br><a href=\"./images/vt_098.webp\" data-fancybox data-caption=\"舊大頭貼 圖片取自於youtube頻道\">舊大頭貼</a>",
-            "href":"https://www.youtube.com/channel/UCgL6PS1vba90zrZW9xmiwng",
+            "name":"天晴Haruru",
+            "content":"台灣VTuber<br>實況/影片類型:雜談、遊戲、吉他音樂",
+            "href":"https://www.youtube.com/c/TCHaruru72",
             "img":"images/vt_98.webp",
             "area":"台灣",
             "id":98
+        },
+        {
+            "name":"櫻野露 RURU Ch.",
+            "content":"萬能型創作、治癒系台灣VTuber<br>實況/影片類型:漫畫創作、遊戲、雜談、翻唱<br><a href=\"./images/vt_099.webp\" data-fancybox data-caption=\"舊大頭貼 圖片取自於youtube頻道\">舊大頭貼</a>",
+            "href":"https://www.youtube.com/channel/UCgL6PS1vba90zrZW9xmiwng",
+            "img":"images/vt_99.webp",
+            "area":"台灣",
+            "id":99
         },
         {
             "name":"友人A",
@@ -790,7 +798,7 @@
             "href":"https://www.youtube.com/channel/UCJFZiqLMntJufDCHc6bQixg",
             "img":"images/vt_yujinA.jpg",
             "area":"日本",
-            "id":99
+            "id":100
         }
     ]
 }

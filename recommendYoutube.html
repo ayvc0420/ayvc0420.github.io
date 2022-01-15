@@ -65,7 +65,7 @@
         <div class="mob_menu" id="mob_menu_div">
             <ul>
                 <li><a href="index.html">首頁</a></li>
-                <li><a href="vtuber.html">速覽VTuber</a></li>
+                <li><a href="vtuber.html">速覽百名VTuber</a></li>
                 <li class="mob_menu3">
                     <a href="#" class="menu3_control">介紹成員&nbsp;<img src="images/chevron-down.svg" class="nav_down"></a>
                     <ul class="menu3">
@@ -104,7 +104,7 @@
         <div class="nav_menu">
             <ul>
                 <li><a href="index.html">首頁</a></li>
-                <li><a href="vtuber.html">速覽VTuber</a></li>
+                <li><a href="vtuber.html">速覽百名VTuber</a></li>
                 <li class="nav_menu3">
                     <a href="#">介紹成員&nbsp;<img src="images/chevron-down.svg" class="nav_down"></a>
                     <ul>
@@ -132,13 +132,13 @@
                 <p>以下將分享一些VTuber中經常性看見的術語與日翻中頻道。</p>
                 <p>透過日翻中頻道所剪輯的一系列影片可以好好的<span title="看看今天自家的VTuber又做了什麼蠢事">看得過癮</span>！</p>
             </div>
-            <div class="content1_title" id="c1_title">
+            <div class="content1_title ytscroll_ani" id="c1_title">
                 <h2>VTuber圈常見術語</h2>
                 <!-- <h3>在這個圈子會有各種術語以下將簡略介紹一些常見術語。</h3> -->
             </div>
             <div class="content1_table">
                 
-                <table id="c1_table">
+                <table id="c1_table" class="ytscroll_ani">
                     <tbody>
                         <tr>
                             <td>生肉</td>
@@ -246,11 +246,11 @@
         </article>
 
         <article class="recommend_content2">
-            <div class="content2_title" id="c2_title">
+            <div class="content2_title ytscroll_ani" id="c2_title">
                 <h2>以下是個人推薦的VTuber日翻中YouTube頻道</h2>
             </div>
-            <div class="content2_table">
-                <table id="c2_table">
+            <div class="content2_table ytscroll_ani">
+                <table id="c2_table" class="ytscroll_ani">
                     <thead>
                         <tr>
                             <th>順序</th>
@@ -366,7 +366,7 @@
     <!-- vue2.6.14 -->
     <script src="js/vue.min.js"></script>
     <script>
-        window.addEventListener('load',function(){
+        ;(function(Vue){
             let headerData = {
             key:0,
             img:[
@@ -395,7 +395,7 @@
                     },15000)
                 },
             })
-        })
+        })(Vue)
     </script>
 
     <script src="js/jquery-3.6.0.min.js"></script>

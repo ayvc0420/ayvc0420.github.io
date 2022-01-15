@@ -84,7 +84,7 @@
             color: rgb(219, 134, 7);
         }
         .game_block{
-            margin: 150px auto;
+            margin: 60px auto 100px;
         }
     </style>
 </head>
@@ -106,7 +106,7 @@
         <div class="mob_menu" id="mob_menu_div">
             <ul>
                 <li><a href="index.html">首頁</a></li>
-                <li><a href="vtuber.html">速覽VTuber</a></li>
+                <li><a href="vtuber.html">速覽百名VTuber</a></li>
                 <li class="mob_menu3">
                     <a href="#" class="menu3_control">介紹成員&nbsp;<img src="images/chevron-down.svg" class="nav_down"></a>
                     <ul class="menu3">
@@ -142,7 +142,7 @@
         <div class="nav_menu">
             <ul>
                 <li><a href="index.html">首頁</a></li>
-                <li><a href="vtuber.html">速覽VTuber</a></li>
+                <li><a href="vtuber.html">速覽百名VTuber</a></li>
                 <li class="nav_menu3">
                     <a href="#">介紹成員&nbsp;<img src="images/chevron-down.svg" class="nav_down"></a>
                     <ul>
@@ -166,7 +166,7 @@
         <div class="game_block">
             <article class="game_describe">
                 <h1>遊戲-勇者鬥魔王</h1>
-                <p>作者的話 : 原本想獨立放一個網站，但想想自己好像沒有什麼流量就算了，畢竟費心思做出來的遊戲希望有人玩啊QQ。<br>魔王的真面目一共有兩種，按照日期的偶數/奇數為切換標準因此最多兩天就可以徹底通關!</p>
+                <p>作者的話 : 原本想獨立放一個網站，但想想自己好像沒有什麼流量就算了<br>魔王的真面目一共有兩種，按照日期的偶數/奇數為切換標準因此最多兩天就可以徹底通關!</p>
                 <h4>遊戲故事:</h4>
                 <p>魔王潛伏在世界中危害人類數百年，誕生在人類之中的勇者覺醒戰鬥天賦後決定獨自一人向魔王發起進攻，揭穿魔王的真面目...</p>
                 <h4>遊戲時間長度:</h4>
@@ -225,7 +225,7 @@
     <!-- vue2.6.14 -->
     <script src="./js/vue.min.js"></script>
     <script>
-        window.addEventListener('load',function(){
+        ;(function(Vue){
             let headerData = {
             key:0,
             img:[
@@ -254,7 +254,7 @@
                     },15000)
                 },
             })
-        })
+        })(Vue)
     </script>
     <script src="./js/jquery-3.6.0.min.js"></script>
     <script src="./js/jquery.fancybox.min.js"></script>    
