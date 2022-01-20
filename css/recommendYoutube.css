@@ -276,9 +276,9 @@
 }
 .content3_clock .time{
     position: absolute;
-    width: 150px;
+    width: 200px;
     top: -140px;
-    left: -78px;
+    left: -70px;
     right: 0;
     margin: auto;
     font-size: 18px;
