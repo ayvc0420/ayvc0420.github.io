@@ -38,6 +38,15 @@
         .fancybox-image[src="./images/vt_078.jpg"],.fancybox-image[src="./images/vt_099.webp"]{
             border-radius: 50%;
         }
+        .reverse_btn{
+            background: rgba(52, 66, 255, 0.2);
+            padding:8px 12px;
+            cursor: pointer;
+            border-radius: 8px;
+            color: rgb(0, 17, 255);
+            font-weight: 900;
+            margin: 0 5px;
+        }
         article p>a{
             color: rgb(0, 4, 255);
             transition: all .3s;
@@ -149,6 +158,8 @@
                 </select>
             </span>
             <span>一共收錄了 {{vtNumber}} 位</span>
+            <br>
+            <div @click="reverseHandler" class="reverse_btn">反轉</div>
         </div>
 
         <!-- <article v-for="item in vtuberData0" class="vt_player">computed的-->

@@ -35,6 +35,9 @@
             : item.classList.remove('vt_player_ani');
         });
       },
+      reverseHandler(){
+        this.vtuberData = this.vtuberData.reverse();
+      },
       vtN() {
         this.$nextTick(function () {
           let n = 0;
