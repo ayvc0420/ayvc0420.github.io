@@ -793,12 +793,20 @@
             "id":99
         },
         {
+            "name":"藿星Hoshi",
+            "content":"星星系台灣VTuber<br>實況/影片類型:遊戲、音樂、雜談",
+            "href":"https://www.youtube.com/channel/UCnKrirgxW-tuyR5I8thAyfw",
+            "img":"images/vt_100.webp",
+            "area":"台灣",
+            "id":100
+        },
+        {
             "name":"友人A",
             "content":"hololive-Group<br>實況/影片類型:hololive官方各項發表、雜談",
             "href":"https://www.youtube.com/channel/UCJFZiqLMntJufDCHc6bQixg",
             "img":"images/vt_yujinA.jpg",
             "area":"日本",
-            "id":100
+            "id":101
         }
     ]
 }
