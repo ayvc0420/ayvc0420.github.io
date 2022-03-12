@@ -348,6 +348,16 @@ footer .footer_top_text{
     position: relative;
     display: inline-block;
 }
+footer .red_mark{
+    color: rgb(255,0,0);
+}
+footer .red_mark a{
+    color: rgb(255,255,0);
+    text-decoration: none;
+}
+footer .red_mark a:hover{
+    color: rgb(0, 255, 0);
+}
 .go_top , .go_top img{
     width: 45px;
     display: inline;
