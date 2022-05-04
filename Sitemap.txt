@@ -3,10 +3,6 @@
   <url>
     <loc>https://ayvc0420.github.io/</loc>
     <lastmod>2022-05-02T14:39:31+00:00</lastmod>
-    <image:image>
-      <image:loc>https://ayvc0420.github.io/images/maxresdefault.jpg</image:loc>
-      <image:title/>
-    </image:image>
   </url>
   <url>
     <loc>https://ayvc0420.github.io/vtuber.html</loc>
@@ -15,34 +11,19 @@
   <url>
     <loc>https://ayvc0420.github.io/pekora.html</loc>
     <lastmod>2022-05-02T14:39:31+00:00</lastmod>
-    <image:image>
-      <image:loc>https://ayvc0420.github.io/images/usadapekora_title.jpg</image:loc>
-      <image:title/>
-    </image:image>
   </url>
   <url>
     <loc>https://ayvc0420.github.io/miko.html</loc>
     <lastmod>2022-05-02T14:39:31+00:00</lastmod>
-    <image:image>
-      <image:loc>https://ayvc0420.github.io/images/miko_title.jpg</image:loc>
-      <image:title/>
-    </image:image>
   </url>
   <url>
     <loc>https://ayvc0420.github.io/rushia.html</loc>
     <lastmod>2022-05-02T14:39:31+00:00</lastmod>
-    <image:image>
-      <image:loc>https://ayvc0420.github.io/images/76193394_rushia_title.jpg</image:loc>
-      <image:title/>
-    </image:image>
+
   </url>
   <url>
     <loc>https://ayvc0420.github.io/korone.html</loc>
     <lastmod>2022-05-02T14:39:31+00:00</lastmod>
-    <image:image>
-      <image:loc>https://ayvc0420.github.io/images/76909869_koronne_title.jpg</image:loc>
-      <image:title/>
-    </image:image>
   </url>
   <url>
     <loc>https://ayvc0420.github.io/chloe.html</loc>
