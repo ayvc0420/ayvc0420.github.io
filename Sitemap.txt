@@ -5,7 +5,7 @@
     <lastmod>2022-05-02T14:39:31+00:00</lastmod>
     <image:image>
       <image:loc>https://ayvc0420.github.io/images/maxresdefault.jpg</image:loc>
-      <image:title>hololive</image:title>
+      <image:title/>
     </image:image>
   </url>
   <url>
@@ -17,7 +17,7 @@
     <lastmod>2022-05-02T14:39:31+00:00</lastmod>
     <image:image>
       <image:loc>https://ayvc0420.github.io/images/usadapekora_title.jpg</image:loc>
-      <image:title>hololive 兔田佩克拉 | 兎田ぺこら | うさだぺこら</image:title>
+      <image:title/>
     </image:image>
   </url>
   <url>
@@ -25,7 +25,7 @@
     <lastmod>2022-05-02T14:39:31+00:00</lastmod>
     <image:image>
       <image:loc>https://ayvc0420.github.io/images/miko_title.jpg</image:loc>
-      <image:title>hololive 櫻巫女 | 桜巫女 | さくらみこ</image:title>
+      <image:title/>
     </image:image>
   </url>
   <url>
@@ -33,7 +33,7 @@
     <lastmod>2022-05-02T14:39:31+00:00</lastmod>
     <image:image>
       <image:loc>https://ayvc0420.github.io/images/76193394_rushia_title.jpg</image:loc>
-      <image:title>hololive 潤羽露西婭 | 潤羽るしあ | うるはるしあ</image:title>
+      <image:title/>
     </image:image>
   </url>
   <url>
@@ -41,7 +41,7 @@
     <lastmod>2022-05-02T14:39:31+00:00</lastmod>
     <image:image>
       <image:loc>https://ayvc0420.github.io/images/76909869_koronne_title.jpg</image:loc>
-      <image:title>hololive 戌神沁音 | 戌神ころね | いぬがみ ころね</image:title>
+      <image:title/>
     </image:image>
   </url>
   <url>
