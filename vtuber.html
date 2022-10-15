@@ -188,7 +188,7 @@
                 <img :src="item.img" :alt="item.name" :title="item.name+'圖片'">
             </div>
             <div>
-                <h3 :title="item.name">{{item.name}}</h3>
+                <h3 :title="item.name" v-html="item.name"></h3>
                 <p v-html="item.content"></p>
                 <a :href="item.href" target="new"><div class="player_href" title="前往VTuber的頻道">頻道連結<img src="images/youtube.svg"></div></a>
             </div>

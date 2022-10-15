@@ -338,7 +338,7 @@
         },
         {
             "name":"李李鈴蘭 / Linglan Lily",
-            "content":"唱歌系台灣VTuber<br>實況/影片類型:音樂、翻唱、雜談、遊戲<a href=\"https://www.facebook.com/CloudHorizonStudio/posts/331903789107574\" target=\"new\">2022/06/10重要公告</a>",
+            "content":"音樂系台灣VTuber<br>實況/影片類型:音樂、翻唱、雜談、遊戲<a href=\"https://www.facebook.com/CloudHorizonStudio/posts/331903789107574\" target=\"new\">2022/06/10重要公告</a>",
             "href":"https://www.youtube.com/channel/UCxWAL-c1psONO_DfG-cq2iA",
             "img":"./images/vt_43.jpg",
             "area":"台灣",
@@ -801,12 +801,28 @@
             "id":100
         },
         {
+            "name":"森森鈴蘭 / Lily Linglan <br>【箱箱The Box所屬】",
+            "content":"音樂系台灣VTuber<br>實況/影片類型:音樂、COVER、雜談、ASMR",
+            "href":"https://www.youtube.com/channel/UC3ZTQ8VZVCpwLHjFKSFe5Uw",
+            "img":"./images/vt_101.webp",
+            "area":"台灣",
+            "id":101
+        },
+        {
+            "name":"瑪格麗特 · 諾爾絲 / Margaret North 【箱箱The Box所屬】",
+            "content":"台灣VTuber<br>實況/影片類型:音樂、料理、遊戲、ASMR",
+            "href":"https://www.youtube.com/channel/UCbh7KHPMgYGgpISdbF6l0Kw",
+            "img":"./images/vt_102.webp",
+            "area":"台灣",
+            "id":102
+        },
+        {
             "name":"友人A",
             "content":"hololive-Group<br>實況/影片類型:hololive官方各項發表、雜談",
             "href":"https://www.youtube.com/channel/UCJFZiqLMntJufDCHc6bQixg",
             "img":"./images/vt_yujinA.jpg",
             "area":"日本",
-            "id":101
+            "id":103
         }
     ]
 }
