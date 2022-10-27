@@ -53,7 +53,7 @@
 			nowHr += 1;
 		}
 
-		time.textContent = `現在時間:${nowHr}:${nowMin}:${nowS}`;
+		time.textContent = `現在時間:${(nowHr).toString().padStart(2,'0')}:${nowMin}:${nowS}`;
 		long.style.transform = `rotate(${longDeg - 90}deg)`;
 		middle.style.transform = `rotate(${middleDeg - 90}deg)`;
 		short.style.transform = `rotate(${shortDeg - 90}deg)`;
