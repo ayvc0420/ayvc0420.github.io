@@ -2,6 +2,16 @@
   vertical-align: middle;
   width: 30px;
 }
+.graduate{
+  font-size: 30px;
+  color: rgb(255, 0, 0);
+  font-weight: 900;
+}
+.graduate>a{
+  padding: 0 !important;
+  border-bottom-color: rgb(255, 0, 0);
+  
+}
 .vt_content1,
 .vt_content2 {
   line-height: 2;
